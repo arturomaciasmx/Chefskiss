@@ -1,0 +1,618 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "164015303893c45fcd": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"page-width learn\">\n<h2 class=\"learn-top\">\nChef’s Kiss has the <span class=\"yellow h2 \">lowest<\/span> amount of <span class=\"yellow h2\">net carbs<\/span>, the <span class=\"yellow h2\">highest<\/span> amount of <span class=\"yellow h2\">protein<\/span> and the <span class=\"yellow h2\">highest<\/span> amount of <span class=\"yellow h2\">dietary fiber<\/span> compared to all other pastas.\n<\/h2>\n<\/div>"
+      }
+    },
+    "1647079559fb3aa9c1": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width learn\">\n\n<div class=\"learn-top-title\">\n\n  <center><h3>\nChef’s Kiss beats the competition across important nutritional categories. Compared to other pastas, Chef’s Kiss has:<\/h3><\/center>\n<\/div>\n  <\/div>"
+      }
+    },
+    "16535073741194446b": {
+      "type": "multicolumn",
+      "blocks": {
+        "1653507374d7d9e18d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lupin_01.png",
+            "title": "",
+            "text": "<h3><center>Lowest amount of Net Carbs<\/center><\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1653507374d7d9e18d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lupin_01.png",
+            "title": "",
+            "text": "<h3><center>Highest amount of Protein<\/center><\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1653507374d7d9e18d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lupin_01.png",
+            "title": "",
+            "text": "<h3><center>Highest amount of Dietary Fiber<\/center><\/h3>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1653507374d7d9e18d-0",
+        "1653507374d7d9e18d-1",
+        "1653507374d7d9e18d-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "heading_font_size": "",
+        "column_heading_font_size": "",
+        "column_content_font_size": "",
+        "mheading_font_size": "",
+        "mcolumn_heading_font_size": "",
+        "mcolumn_content_font_size": ""
+      }
+    },
+    "1640154206a3bd1e7f": {
+      "type": "learn-table",
+      "blocks": {
+        "248a6e93-3a23-4fde-af58-118f4e44a7ce": {
+          "type": "table",
+          "settings": {
+            "heading": "<p class=\"rawsonBold deepBlack\">\nPer 1.75 oz\n<\/p>",
+            "number": "Net Carbs",
+            "second-number": "Protein",
+            "third-number": "Fiber"
+          }
+        },
+        "16c173ec-cee4-4330-b2e9-d64260a04d5a": {
+          "type": "table",
+          "settings": {
+            "heading": "<svg width=\"185\" height=\"38\" viewBox=\"0 0 185 38\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.4435 0C9.47536 0 4.96816 1.8822 1.53654 4.98527C1.43411 5.59572 1.43411 6.3079 1.58776 6.86747C1.94629 8.3427 4.40476 12.2597 6.40227 14.2945C7.06811 15.0067 6.86323 16.1258 6.04374 16.5837H5.99252C5.17303 16.9906 4.30233 17.4485 3.79014 17.7028C3.89258 17.8554 4.45598 18.6693 5.22425 19.178C5.83887 19.585 5.99252 20.4498 5.48034 20.9585L4.45598 22.0268C4.96816 22.2811 5.68522 22.4337 5.94131 23.1459C6.04374 23.3494 6.04374 23.6038 6.04374 23.909C6.04374 24.1633 5.78765 24.3668 5.53156 24.5703C5.42912 24.672 5.27547 24.7738 5.22425 24.8755C4.91694 25.3333 4.76329 25.8929 4.86573 26.4016C4.86573 26.6051 4.91694 26.8086 5.01938 26.9612C5.27547 27.6734 5.58278 28.6399 5.48034 29.5047C5.42912 30.2169 4.25111 30.9291 2.97065 31.4378C1.99751 31.8447 0.921927 31.8447 0 31.4378C3.17553 35.0495 7.68272 37.4913 12.8045 37.8983C13.1118 36.7791 13.2143 35.3039 12.8045 33.2691C12.446 32.4043 12.3948 31.4378 12.3436 30.6747C12.2924 29.3012 11.8314 27.826 11.2168 26.6051L10.2436 25.1807C10.1412 24.8755 10.2436 24.5194 10.5509 24.4177C12.7533 23.4511 13.7265 26.3507 13.7265 26.3507C13.7265 26.3507 14.0338 27.1138 14.9557 28.1312C15.8776 29.1486 15.1606 28.8942 16.2874 29.1486C17.619 29.4538 19.0019 27.2664 19.0019 27.2664C17.4142 26.1473 16.441 24.8246 16.441 24.8246C13.7777 24.3159 12.0875 23.909 12.1899 22.739C12.2924 21.5689 12.8558 21.7216 15.3654 21.7724C16.5435 21.7724 17.2093 21.925 17.5678 22.1285C17.0556 21.7724 16.6459 21.4163 16.6459 21.4163C16.6459 21.4163 14.802 21.2129 14.8533 19.7885C14.9045 18.3641 16.1849 18.415 16.1849 18.415L18.08 19.0763L19.3605 19.7885C18.7971 18.3641 18.0288 17.1432 19.7702 16.6345C19.7702 16.6345 20.3848 16.6345 20.9994 17.7028C21.7677 19.0763 23.6116 21.2637 23.8164 22.4337C24.0213 23.6546 24.175 26.2999 24.8408 27.8768C24.9432 29.7082 24.7384 29.8099 23.5091 31.4886C22.9457 32.2517 22.6384 33.3199 21.9214 34.1847C21.7677 34.7952 21.5628 35.7617 21.3068 36.7791C28.5797 34.083 33.7015 27.1138 33.7015 18.9746C33.6503 8.54618 25.0457 0 14.4435 0Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M41.3843 20.0937C41.3843 13.9893 45.8403 9.66533 51.7303 9.66533C56.8522 9.66533 59.9765 12.7175 61.1033 16.1767L57.518 17.6011C56.6985 14.905 54.7522 13.1754 51.6279 13.1754C47.889 13.1754 45.1744 15.9732 45.1744 20.0937C45.1744 24.2142 47.889 27.012 51.6279 27.012C54.8034 27.012 56.6985 25.2825 57.518 22.5863L61.1033 24.0107C59.9253 27.5716 56.8009 30.5221 51.7303 30.5221C45.8403 30.4712 41.3843 26.1473 41.3843 20.0937Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M77.9029 20.6024V30.1151H74.164V21.3146C74.164 19.1272 72.7811 17.8045 70.6812 17.8045C68.6837 17.8554 67.1471 19.2289 67.0959 20.9585V30.166H63.4082V8.95314H67.0959V16.3293C68.1715 15.261 69.7593 14.5489 71.7568 14.5489C75.5469 14.498 77.9029 16.9906 77.9029 20.6024Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M88.5049 27.3681C90.6049 27.3681 91.7316 26.6051 92.3975 25.2316L95.3169 27.0629C94.1389 28.9451 92.0902 30.5221 88.3513 30.5221C83.4343 30.5221 80.2588 27.0629 80.2588 22.5355C80.2588 18.1098 83.7416 14.5489 88.1464 14.5489C93.0121 14.5489 95.9315 18.3132 95.9315 22.2302C95.9315 22.7898 95.8803 23.4003 95.8291 23.7055H83.8953C84.4075 25.9438 86.2001 27.3681 88.5049 27.3681ZM92.3975 21.1111C91.9877 18.8219 90.4 17.4485 88.2488 17.4485C86.0977 17.4485 84.4075 18.7711 83.9465 21.1111H92.3975Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M103.153 14.2945V14.8541H106.688V18.008H103.153V30.1151H99.4657V18.008H96.9561V14.8541H99.4657V14.6506C99.4657 10.8862 101.617 8.59705 105.663 8.59705H106.739V11.4966H105.817C104.127 11.4966 103.153 12.514 103.153 14.2945Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M112.987 11.4458C112.987 12.1071 112.834 12.7684 112.424 13.6841L110.836 16.9906H108.736L110.426 13.4297C109.351 13.2771 108.634 12.5649 108.634 11.3949C108.634 10.174 109.607 9.20749 110.836 9.20749C112.065 9.20749 112.987 10.174 112.987 11.4458Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M111.604 26.5542L114.831 25.2825C115.292 26.7068 116.47 27.5207 118.314 27.5207C119.799 27.5207 120.721 26.9103 120.721 25.842C120.721 22.8407 112.27 24.2142 112.27 18.9746C112.27 16.1767 114.626 14.4471 118.212 14.4471C121.182 14.4471 123.333 15.668 123.999 17.7537L120.773 18.9746C120.363 17.8045 119.441 17.245 118.16 17.245C116.778 17.245 116.06 17.8045 116.06 18.7711C116.06 21.5689 124.511 19.9411 124.511 25.5368C124.511 28.589 122.002 30.3695 118.16 30.3695C114.882 30.4712 112.475 29.1486 111.604 26.5542Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M145.716 30.1151L137.111 20.6533V30.1151H133.372V9.97055H137.111V18.8728L145.255 9.97055H149.557L140.85 19.6867L150.069 30.1151H145.716Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M151.094 9.97054C151.094 8.54618 152.221 7.47791 153.655 7.47791C155.089 7.47791 156.216 8.54618 156.216 9.97054C156.216 11.3949 155.089 12.4123 153.655 12.4123C152.221 12.4123 151.094 11.3949 151.094 9.97054ZM151.76 14.8541H155.447V30.1151H151.76V14.8541Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M157.752 26.5542L160.979 25.2825C161.44 26.7068 162.618 27.5207 164.462 27.5207C165.947 27.5207 166.869 26.9103 166.869 25.842C166.869 22.8407 158.418 24.2142 158.418 18.9746C158.418 16.1767 160.774 14.4471 164.359 14.4471C167.33 14.4471 169.481 15.668 170.147 17.7537L166.92 18.9746C166.51 17.8045 165.588 17.245 164.308 17.245C162.925 17.245 162.208 17.8045 162.208 18.7711C162.208 21.5689 170.659 19.9411 170.659 25.5368C170.659 28.589 168.149 30.3695 164.308 30.3695C161.03 30.4712 158.571 29.1486 157.752 26.5542Z\" fill=\"#F4EEE1\"\/>\n<path d=\"M172.042 26.5542L175.269 25.2825C175.73 26.7068 176.908 27.5207 178.752 27.5207C180.237 27.5207 181.159 26.9103 181.159 25.842C181.159 22.8407 172.708 24.2142 172.708 18.9746C172.708 16.1767 175.064 14.4471 178.649 14.4471C181.62 14.4471 183.771 15.668 184.437 17.7537L181.21 18.9746C180.8 17.8045 179.878 17.245 178.598 17.245C177.215 17.245 176.498 17.8045 176.498 18.7711C176.498 21.5689 184.949 19.9411 184.949 25.5368C184.949 28.589 182.439 30.3695 178.598 30.3695C175.269 30.4712 172.861 29.1486 172.042 26.5542Z\" fill=\"#F4EEE1\"\/>\n<\/svg>",
+            "number": "1g",
+            "second-number": "20g",
+            "third-number": "14g"
+          }
+        },
+        "f2b86e14-72ec-424b-b6bc-72701028c6e2": {
+          "type": "table",
+          "settings": {
+            "heading": "<p class=\"rawsonBold deepBlack\">\nWheat Pasta\n<\/p>",
+            "number": "39g",
+            "second-number": "7g",
+            "third-number": "3g"
+          }
+        },
+        "028da0d9-6236-429e-ae1f-1ca28066e825": {
+          "type": "table",
+          "settings": {
+            "heading": "<p class=\"rawsonBold  deepBlack\">\nChickpea Pasta\n<\/p>",
+            "number": "24g",
+            "second-number": "11g",
+            "third-number": "4g"
+          }
+        },
+        "ef15726e-92d8-47af-8960-16d4897338ab": {
+          "type": "table",
+          "settings": {
+            "heading": "<p class=\"rawsonBold deepBlack\">\nAlmond Flour Pasta\n<\/p>",
+            "number": "16g",
+            "second-number": "5g",
+            "third-number": "2g"
+          }
+        },
+        "7176caac-725a-4a81-8dd9-56d87f6f7443": {
+          "type": "table",
+          "settings": {
+            "heading": "<p class=\"rawsonBold deepBlack\">\nLentil Pasta\n<\/p>",
+            "number": "25g",
+            "second-number": "11g",
+            "third-number": "5g"
+          }
+        }
+      },
+      "block_order": [
+        "248a6e93-3a23-4fde-af58-118f4e44a7ce",
+        "16c173ec-cee4-4330-b2e9-d64260a04d5a",
+        "f2b86e14-72ec-424b-b6bc-72701028c6e2",
+        "028da0d9-6236-429e-ae1f-1ca28066e825",
+        "ef15726e-92d8-47af-8960-16d4897338ab",
+        "7176caac-725a-4a81-8dd9-56d87f6f7443"
+      ],
+      "settings": {
+        "heading": "How we stack up",
+        "bg-color": "",
+        "padding": 80
+      }
+    },
+    "16401585259ad8335b": {
+      "type": "its-LUPIN",
+      "blocks": {
+        "ceb988e9-7300-43ab-b614-3ffdc5c14e5a": {
+          "type": "sider",
+          "settings": {
+            "svg_image": "<svg width=\"106\" height=\"109\" viewbox=\"0 0 106 109\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M4.43079 29.7364C8.4969 20.0082 15.858 13.3595 25.0418 8.6704C34.5061 3.84133 44.6713 1.11186 55.2573 0.41199C63.1792 -0.147902 70.9609 1.04187 78.0415 4.89113C85.8233 9.09032 96.269 16.9288 100.055 24.9073C105.593 36.595 106.224 43.7337 105.523 56.5412C104.822 69.1388 95.5679 82.9261 84.982 89.9248C81.8974 91.9544 78.6725 93.7041 75.4477 95.5237C73.8353 96.4335 72.8537 97.6933 72.0826 99.373C69.2083 106.022 62.2678 109.801 55.4676 108.471C53.0139 107.981 50.7004 107.001 48.9478 105.182C47.4756 103.712 45.6528 102.732 43.8301 101.753C35.4174 97.4133 26.4439 94.124 18.6622 88.525C11.6517 83.486 6.04321 77.2572 3.02868 69.0688C-0.967337 58.0809 -0.756986 46.8831 2.18744 35.7552C2.46787 34.7054 2.74828 33.7256 3.09881 32.6758C3.51944 31.626 4.01015 30.7162 4.43079 29.7364ZM54.2758 100.563C57.6409 101.333 61.4266 100.703 64.7916 97.9732C66.9649 96.2236 66.6144 94.124 64.0906 93.0042C61.076 91.6744 55.1171 92.8642 52.5933 95.3137C50.5602 97.2734 50.9108 99.093 54.2758 100.563Z\" fill=\"#F4EEE1\"><\/path> <\/svg>",
+            "text": "Highest protein content of ANY plant based source on the planet!"
+          }
+        },
+        "e65739f6-dd9c-41d6-8139-0afe8fda13da": {
+          "type": "sider",
+          "settings": {
+            "svg_image": "<svg width=\"106\" height=\"109\" viewbox=\"0 0 106 109\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M4.43079 29.7364C8.4969 20.0082 15.858 13.3595 25.0418 8.6704C34.5061 3.84133 44.6713 1.11186 55.2573 0.41199C63.1792 -0.147902 70.9609 1.04187 78.0415 4.89113C85.8233 9.09032 96.269 16.9288 100.055 24.9073C105.593 36.595 106.224 43.7337 105.523 56.5412C104.822 69.1388 95.5679 82.9261 84.982 89.9248C81.8974 91.9544 78.6725 93.7041 75.4477 95.5237C73.8353 96.4335 72.8537 97.6933 72.0826 99.373C69.2083 106.022 62.2678 109.801 55.4676 108.471C53.0139 107.981 50.7004 107.001 48.9478 105.182C47.4756 103.712 45.6528 102.732 43.8301 101.753C35.4174 97.4133 26.4439 94.124 18.6622 88.525C11.6517 83.486 6.04321 77.2572 3.02868 69.0688C-0.967337 58.0809 -0.756986 46.8831 2.18744 35.7552C2.46787 34.7054 2.74828 33.7256 3.09881 32.6758C3.51944 31.626 4.01015 30.7162 4.43079 29.7364ZM54.2758 100.563C57.6409 101.333 61.4266 100.703 64.7916 97.9732C66.9649 96.2236 66.6144 94.124 64.0906 93.0042C61.076 91.6744 55.1171 92.8642 52.5933 95.3137C50.5602 97.2734 50.9108 99.093 54.2758 100.563Z\" fill=\"#F4EEE1\"><\/path> <\/svg>",
+            "text": "Includes all 9 essential amino acids"
+          }
+        },
+        "6622ffd5-dbf5-4260-8ade-5bfb0e633e50": {
+          "type": "sider",
+          "settings": {
+            "svg_image": "<svg width=\"106\" height=\"109\" viewbox=\"0 0 106 109\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M4.43079 29.7364C8.4969 20.0082 15.858 13.3595 25.0418 8.6704C34.5061 3.84133 44.6713 1.11186 55.2573 0.41199C63.1792 -0.147902 70.9609 1.04187 78.0415 4.89113C85.8233 9.09032 96.269 16.9288 100.055 24.9073C105.593 36.595 106.224 43.7337 105.523 56.5412C104.822 69.1388 95.5679 82.9261 84.982 89.9248C81.8974 91.9544 78.6725 93.7041 75.4477 95.5237C73.8353 96.4335 72.8537 97.6933 72.0826 99.373C69.2083 106.022 62.2678 109.801 55.4676 108.471C53.0139 107.981 50.7004 107.001 48.9478 105.182C47.4756 103.712 45.6528 102.732 43.8301 101.753C35.4174 97.4133 26.4439 94.124 18.6622 88.525C11.6517 83.486 6.04321 77.2572 3.02868 69.0688C-0.967337 58.0809 -0.756986 46.8831 2.18744 35.7552C2.46787 34.7054 2.74828 33.7256 3.09881 32.6758C3.51944 31.626 4.01015 30.7162 4.43079 29.7364ZM54.2758 100.563C57.6409 101.333 61.4266 100.703 64.7916 97.9732C66.9649 96.2236 66.6144 94.124 64.0906 93.0042C61.076 91.6744 55.1171 92.8642 52.5933 95.3137C50.5602 97.2734 50.9108 99.093 54.2758 100.563Z\" fill=\"#F4EEE1\"><\/path> <\/svg>",
+            "text": "Super Low in Carbs"
+          }
+        },
+        "1d89061e-429b-4fbd-82e3-d8cb563519d8": {
+          "type": "sider",
+          "settings": {
+            "svg_image": "<svg width=\"106\" height=\"109\" viewbox=\"0 0 106 109\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M4.43079 29.7364C8.4969 20.0082 15.858 13.3595 25.0418 8.6704C34.5061 3.84133 44.6713 1.11186 55.2573 0.41199C63.1792 -0.147902 70.9609 1.04187 78.0415 4.89113C85.8233 9.09032 96.269 16.9288 100.055 24.9073C105.593 36.595 106.224 43.7337 105.523 56.5412C104.822 69.1388 95.5679 82.9261 84.982 89.9248C81.8974 91.9544 78.6725 93.7041 75.4477 95.5237C73.8353 96.4335 72.8537 97.6933 72.0826 99.373C69.2083 106.022 62.2678 109.801 55.4676 108.471C53.0139 107.981 50.7004 107.001 48.9478 105.182C47.4756 103.712 45.6528 102.732 43.8301 101.753C35.4174 97.4133 26.4439 94.124 18.6622 88.525C11.6517 83.486 6.04321 77.2572 3.02868 69.0688C-0.967337 58.0809 -0.756986 46.8831 2.18744 35.7552C2.46787 34.7054 2.74828 33.7256 3.09881 32.6758C3.51944 31.626 4.01015 30.7162 4.43079 29.7364ZM54.2758 100.563C57.6409 101.333 61.4266 100.703 64.7916 97.9732C66.9649 96.2236 66.6144 94.124 64.0906 93.0042C61.076 91.6744 55.1171 92.8642 52.5933 95.3137C50.5602 97.2734 50.9108 99.093 54.2758 100.563Z\" fill=\"#F4EEE1\"><\/path> <\/svg>",
+            "text": "High in Dietary Fiber"
+          }
+        },
+        "21426584-9a29-455b-a7b1-b27d19eddd80": {
+          "type": "sider",
+          "settings": {
+            "svg_image": "<svg width=\"106\" height=\"109\" viewbox=\"0 0 106 109\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M4.43079 29.7364C8.4969 20.0082 15.858 13.3595 25.0418 8.6704C34.5061 3.84133 44.6713 1.11186 55.2573 0.41199C63.1792 -0.147902 70.9609 1.04187 78.0415 4.89113C85.8233 9.09032 96.269 16.9288 100.055 24.9073C105.593 36.595 106.224 43.7337 105.523 56.5412C104.822 69.1388 95.5679 82.9261 84.982 89.9248C81.8974 91.9544 78.6725 93.7041 75.4477 95.5237C73.8353 96.4335 72.8537 97.6933 72.0826 99.373C69.2083 106.022 62.2678 109.801 55.4676 108.471C53.0139 107.981 50.7004 107.001 48.9478 105.182C47.4756 103.712 45.6528 102.732 43.8301 101.753C35.4174 97.4133 26.4439 94.124 18.6622 88.525C11.6517 83.486 6.04321 77.2572 3.02868 69.0688C-0.967337 58.0809 -0.756986 46.8831 2.18744 35.7552C2.46787 34.7054 2.74828 33.7256 3.09881 32.6758C3.51944 31.626 4.01015 30.7162 4.43079 29.7364ZM54.2758 100.563C57.6409 101.333 61.4266 100.703 64.7916 97.9732C66.9649 96.2236 66.6144 94.124 64.0906 93.0042C61.076 91.6744 55.1171 92.8642 52.5933 95.3137C50.5602 97.2734 50.9108 99.093 54.2758 100.563Z\" fill=\"#F4EEE1\"><\/path> <\/svg>",
+            "text": "Gluten Free"
+          }
+        },
+        "cf8105b5-e110-4344-a7bd-381a7805a5a8": {
+          "type": "sider",
+          "settings": {
+            "svg_image": "<svg width=\"106\" height=\"109\" viewbox=\"0 0 106 109\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M4.43079 29.7364C8.4969 20.0082 15.858 13.3595 25.0418 8.6704C34.5061 3.84133 44.6713 1.11186 55.2573 0.41199C63.1792 -0.147902 70.9609 1.04187 78.0415 4.89113C85.8233 9.09032 96.269 16.9288 100.055 24.9073C105.593 36.595 106.224 43.7337 105.523 56.5412C104.822 69.1388 95.5679 82.9261 84.982 89.9248C81.8974 91.9544 78.6725 93.7041 75.4477 95.5237C73.8353 96.4335 72.8537 97.6933 72.0826 99.373C69.2083 106.022 62.2678 109.801 55.4676 108.471C53.0139 107.981 50.7004 107.001 48.9478 105.182C47.4756 103.712 45.6528 102.732 43.8301 101.753C35.4174 97.4133 26.4439 94.124 18.6622 88.525C11.6517 83.486 6.04321 77.2572 3.02868 69.0688C-0.967337 58.0809 -0.756986 46.8831 2.18744 35.7552C2.46787 34.7054 2.74828 33.7256 3.09881 32.6758C3.51944 31.626 4.01015 30.7162 4.43079 29.7364ZM54.2758 100.563C57.6409 101.333 61.4266 100.703 64.7916 97.9732C66.9649 96.2236 66.6144 94.124 64.0906 93.0042C61.076 91.6744 55.1171 92.8642 52.5933 95.3137C50.5602 97.2734 50.9108 99.093 54.2758 100.563Z\" fill=\"#F4EEE1\"><\/path> <\/svg>",
+            "text": "Non-GMO"
+          }
+        }
+      },
+      "block_order": [
+        "ceb988e9-7300-43ab-b614-3ffdc5c14e5a",
+        "e65739f6-dd9c-41d6-8139-0afe8fda13da",
+        "6622ffd5-dbf5-4260-8ade-5bfb0e633e50",
+        "1d89061e-429b-4fbd-82e3-d8cb563519d8",
+        "21426584-9a29-455b-a7b1-b27d19eddd80",
+        "cf8105b5-e110-4344-a7bd-381a7805a5a8"
+      ],
+      "settings": {
+        "bg-color": "#353535",
+        "padding": 50,
+        "subHeading": "How’d we do it?",
+        "heading": "It’s not magic, it’s LUPIN!",
+        "subheading_font_size": "",
+        "heading_font_size": "",
+        "msubheading_font_size": "",
+        "mheading_font_size": "",
+        "image": "shopify:\/\/shop_images\/Lupin_Bean.png",
+        "inner-heading": "Meet the secret behind Chef’s Kiss Pasta",
+        "inner-content": "Lupin beans are part of the legume family and related to chickpeas, lentils, and peas. It’s roots go back over 2000 years, where it was first reported to be found within the tombs of ancient Egyptian Pharaohs and even consumed by the Romans.",
+        "inner_heading_font_size": "",
+        "inner_content_font_size": "",
+        "block_content_font_size": "",
+        "minner_heading_font_size": "",
+        "minner_content_font_size": "",
+        "mblock_content_font_size": ""
+      }
+    },
+    "1640162454616223e6": {
+      "type": "supper-food",
+      "blocks": {
+        "6f25e4b5-f72f-4ea8-ac29-47d0f56451b7": {
+          "type": "content",
+          "settings": {
+            "heading": "LOW CARB",
+            "big-text": "15x",
+            "content": "<p>less NET CARBS <\/p><p>than chickpeas<\/p>",
+            "big-text-2": "26x",
+            "content-2": "<p>less NET CARBS <\/p><p>than cassava flour<\/p>"
+          }
+        },
+        "64370b59-25ed-4210-9e07-9ac7f8f36a1d": {
+          "type": "content",
+          "settings": {
+            "heading": "HIGH PROTEIN",
+            "big-text": "2x",
+            "content": "<p>MORE PROTEIN<\/p><p> than chickpeas<\/p>",
+            "big-text-2": "2.5x",
+            "content-2": "<p>MORE PROTEIN<\/p><p>than chia seeds<\/p>"
+          }
+        },
+        "4bad1c26-1eac-4a97-bceb-9b41f51aab98": {
+          "type": "content",
+          "settings": {
+            "heading": "GUT FRIENDLY",
+            "big-text": "4x",
+            "content": "<p>MORE FIBER <\/p><p>than OATS<\/p>",
+            "big-text-2": "3x",
+            "content-2": "<p>More FIBER<\/p><p>than Lentils<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6f25e4b5-f72f-4ea8-ac29-47d0f56451b7",
+        "64370b59-25ed-4210-9e07-9ac7f8f36a1d",
+        "4bad1c26-1eac-4a97-bceb-9b41f51aab98"
+      ],
+      "settings": {
+        "heading": "A superfood unlike any other!",
+        "bg-color": "",
+        "padding": 50,
+        "heading_font_size": "62px",
+        "block_heading_font_size": "",
+        "number_font_size": "",
+        "text_font_size": "",
+        "mheading_font_size": "",
+        "mblock_heading_font_size": "",
+        "mnumber_font_size": "",
+        "mtext_font_size": ""
+      }
+    },
+    "1640165835686965d1": {
+      "type": "healthy-lupin",
+      "blocks": {
+        "3d86f82d-f610-40bd-b5b5-c846f1fa5024": {
+          "type": "content",
+          "settings": {
+            "heading": "Brimming with essential nutrients like:",
+            "show-lupin-one": true,
+            "content-one": "Vitamins A, B, C and E.",
+            "show-lupin-two": true,
+            "content-two": "Calcium, folates, potassium,<br> magnesium, phosphorus,<br> iron and zinc.",
+            "show-lupin-three": true,
+            "content-three": "Antioxidants like<br> carotenoids lutein,<br> zeaxanthin"
+          }
+        },
+        "8dc1eb7d-3d60-4d9b-a16b-452d58f95f42": {
+          "type": "content",
+          "settings": {
+            "heading": "Extremely low in antinutrients",
+            "show-lupin-one": false,
+            "content-one": "No lectins.",
+            "show-lupin-two": false,
+            "content-two": "Low in phytic acid, saponins, and trypsin inhibitors, all of which are typically high in other legumes.",
+            "show-lupin-three": false,
+            "content-three": "Low antinutrients = much easier to digest and more gut friendly when compared to all other legumes."
+          }
+        }
+      },
+      "block_order": [
+        "3d86f82d-f610-40bd-b5b5-c846f1fa5024",
+        "8dc1eb7d-3d60-4d9b-a16b-452d58f95f42"
+      ],
+      "settings": {
+        "heading": "Lupin is packed with healthy nutrients and devoid of the bad ones",
+        "sub-heading": "",
+        "bg-color": "#9a9381",
+        "padding": 50,
+        "heading_font_size": "",
+        "block_heading_font_size": "",
+        "block_content_font_size": "",
+        "mheading_font_size": "",
+        "mblock_heading_font_size": "",
+        "mblock_content_font_size": ""
+      }
+    },
+    "164018193646519cc4": {
+      "type": "lupin-ingredients",
+      "blocks": {
+        "059a6944-0560-4a92-a931-c82a5ecc9d1b": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Milk-Icon.png",
+            "sub_title": "CALCIUM<br>THAN",
+            "title": "Milk"
+          }
+        },
+        "3bb819ad-984d-4939-9889-ba7211d985b6": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banana-Icon.png",
+            "sub_title": "Pottasium<br>THAN",
+            "title": "Bananas"
+          }
+        },
+        "48cab938-a1e9-41db-9627-66815669b059": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spinach-Icon.png",
+            "sub_title": "magnesium<br>THAN",
+            "title": "Spinach"
+          }
+        },
+        "b9699f45-b019-4875-b94c-43e569d925d9": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kale-Icon.png",
+            "sub_title": "IRON<br>THAN",
+            "title": "Kale"
+          }
+        },
+        "8e4face4-cb68-4bf6-b50a-168a36e2fe79": {
+          "type": "content",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Berry-Icon.png",
+            "sub_title": "antioxidants<br>THAN",
+            "title": "Most Berries"
+          }
+        }
+      },
+      "block_order": [
+        "059a6944-0560-4a92-a931-c82a5ecc9d1b",
+        "3bb819ad-984d-4939-9889-ba7211d985b6",
+        "48cab938-a1e9-41db-9627-66815669b059",
+        "b9699f45-b019-4875-b94c-43e569d925d9",
+        "8e4face4-cb68-4bf6-b50a-168a36e2fe79"
+      ],
+      "settings": {
+        "heading": "Lupin  <br>has more:",
+        "sub-heading": "",
+        "bg-color": "#353535",
+        "padding": 50,
+        "heading_font_size": "",
+        "block_subtitle_font_size": "",
+        "block_title_font_size": "",
+        "mheading_font_size": "",
+        "mblock_subtitle_font_size": "",
+        "mblock_title_font_size": ""
+      }
+    },
+    "16402637221dff3e10": {
+      "type": "health-benefits",
+      "blocks": {
+        "d6d092eb-027b-4d87-990e-dd348fd7b46e": {
+          "type": "content",
+          "settings": {
+            "big-text": "1",
+            "content": "<p>Helps control<br\/>blood sugar levels.<\/p>"
+          }
+        },
+        "1bc0bf1c-4501-44d7-b455-2b1b9d7894da": {
+          "type": "content",
+          "settings": {
+            "big-text": "2",
+            "content": "<p>Has beneficial impact<br\/>on markers relating to cardiovascular health.<\/p>"
+          }
+        },
+        "e59f31d0-c4e6-471e-b2bb-09cc34d44139": {
+          "type": "content",
+          "settings": {
+            "big-text": "3",
+            "content": "<p>Reduces<br\/>blood pressure.<\/p>"
+          }
+        },
+        "5253a9cb-02e9-4009-956a-ce020d2b0704": {
+          "type": "content",
+          "settings": {
+            "big-text": "4",
+            "content": "<p>Highly satiating and helps<br\/>reduce appetite, helping<br\/>maintain healthy bodyweight.<\/p>"
+          }
+        },
+        "7da8a9da-6249-4752-9dfd-6d4e88faf8e5": {
+          "type": "content",
+          "settings": {
+            "big-text": "5",
+            "content": "<p>Helps provide protection from diseases related to oxidative stress, including type 2 diabetes.<\/p>"
+          }
+        },
+        "492cf8be-e6b8-41a2-9869-9ea93e3bbbe4": {
+          "type": "content",
+          "settings": {
+            "big-text": "6",
+            "content": "<p>Powerful source of<br\/>plant based protein<br\/>for muscle strength.<\/p>"
+          }
+        },
+        "63fe6269-142a-4e6b-bdbe-4ca4fbf2e31c": {
+          "type": "content",
+          "settings": {
+            "big-text": "7",
+            "content": "<p>Improves<br\/>bowel health.<\/p>"
+          }
+        },
+        "0f2e61f8-0de0-4574-9712-21b0a5b30384": {
+          "type": "content",
+          "settings": {
+            "big-text": "8",
+            "content": "<p>Gut friendly and<br\/>promotes growth of<br\/>good gut bacteria.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d6d092eb-027b-4d87-990e-dd348fd7b46e",
+        "1bc0bf1c-4501-44d7-b455-2b1b9d7894da",
+        "e59f31d0-c4e6-471e-b2bb-09cc34d44139",
+        "5253a9cb-02e9-4009-956a-ce020d2b0704",
+        "7da8a9da-6249-4752-9dfd-6d4e88faf8e5",
+        "492cf8be-e6b8-41a2-9869-9ea93e3bbbe4",
+        "63fe6269-142a-4e6b-bdbe-4ca4fbf2e31c",
+        "0f2e61f8-0de0-4574-9712-21b0a5b30384"
+      ],
+      "settings": {
+        "heading": "Lupin has tremendous health benefits:",
+        "sub-heading": "Studies show that Lupin...",
+        "bg-color": "",
+        "padding": 50,
+        "heading_font_size": "",
+        "subheading_font_size": "",
+        "number_font_size": "",
+        "block_text_font_size": "",
+        "mheading_font_size": "",
+        "msubheading_font_size": "",
+        "mnumber_font-size": "",
+        "mblock_text_font_size": ""
+      }
+    },
+    "1640264299ed92e0ab": {
+      "type": "multicolumn",
+      "blocks": {
+        "1640264299d3e19f6b-0": {
+          "type": "column",
+          "settings": {
+            "title": "Do good for your body and the environment",
+            "text": "<p>Lupin makes contributions to sustainable agriculture.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1640264299d3e19f6b-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul>\n<li>Binds nitrogen to the soil and thereby enhances soil quality.<\/li>\n<li>Requires much less water than other crops.<\/li>\n<li>Mobilizes soil nutrients for interplanted and subsequent rotation crops, enabling farmers to improve the quality of other crops.<\/li>\n<li>Contributes to sustainable environmental activities such as acting as a green manure and game fodder crop, and even in stabilizing fertility in pine forests and sheltering young trees.<\/li>\n<li>Naturally repels pests, and requires no pesticides to harvest.<\/li>\n<\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1640264299d3e19f6b-0",
+        "1640264299d3e19f6b-1"
+      ],
+      "settings": {
+        "title": "",
+        "section_bg_img": "shopify:\/\/shop_images\/Environment_BG.jpg",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "heading_font_size": "",
+        "column_heading_font_size": "",
+        "column_content_font_size": "",
+        "mheading_font_size": "",
+        "mcolumn_heading_font_size": "",
+        "mcolumn_content_font_size": ""
+      }
+    },
+    "164018571181ff80b8": {
+      "type": "multicolumn",
+      "blocks": {
+        "16401857112a4e8248-0": {
+          "type": "column",
+          "settings": {
+            "title": "We weren’t kidding when we said this powerful little legume really is unmatched!",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16401857112a4e8248-0"
+      ],
+      "settings": {
+        "title": "",
+        "section_bg_img": "shopify:\/\/shop_images\/Learn-BG_e679d4a2-0e66-4f07-894c-9983727cdb25.jpg",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections\/all",
+        "swipe_on_mobile": false,
+        "heading_font_size": "",
+        "column_heading_font_size": "",
+        "column_content_font_size": "",
+        "mheading_font_size": "",
+        "mcolumn_heading_font_size": "",
+        "mcolumn_content_font_size": ""
+      }
+    },
+    "165895256086d13238": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "165895256028ba076d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We weren’t kidding when we said this powerful little legume really is unmatched!",
+            "heading_size": "medium"
+          }
+        },
+        "165895256028ba076d-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "165895256028ba076d-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify:\/\/collections\/all-products",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "165895256028ba076d-0",
+        "165895256028ba076d-1",
+        "165895256028ba076d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Learn-BG_e679d4a2-0e66-4f07-894c-9983727cdb25.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Learn-BG-Mobile.jpg",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "heading-color": "#353535",
+        "content-color": "",
+        "heading_font": "",
+        "content_font": "",
+        "mobile_heading_font": "",
+        "mobile_content_font": "",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "inverse",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164015303893c45fcd",
+    "1647079559fb3aa9c1",
+    "16535073741194446b",
+    "1640154206a3bd1e7f",
+    "16401585259ad8335b",
+    "1640162454616223e6",
+    "1640165835686965d1",
+    "164018193646519cc4",
+    "16402637221dff3e10",
+    "1640264299ed92e0ab",
+    "164018571181ff80b8",
+    "165895256086d13238"
+  ]
+}

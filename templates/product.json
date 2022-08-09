@@ -1,0 +1,136 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "dfc85cfe-d8d0-468e-8f4f-1a4cb8d936e6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "content": "<p>This is Ingredients text<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "ddd424cd-f092-4f88-a054-42b97d0c9379": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "NUTRITION",
+            "content": "<p>This is Nutrition text<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "b0074e65-49ea-4350-9f3a-97ab4477e9a1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "COOKING INSTRUCTIONS",
+            "content": "<p>This is cooking instuctions<\/p>",
+            "page": "",
+            "icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "subtitle",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "dfc85cfe-d8d0-468e-8f4f-1a4cb8d936e6",
+        "ddd424cd-f092-4f88-a054-42b97d0c9379",
+        "b0074e65-49ea-4350-9f3a-97ab4477e9a1"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1642924923612782d9": {
+      "type": "apps",
+      "blocks": {
+        "99966f35-a671-493a-9d1c-5b538631455d": {
+          "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "99966f35-a671-493a-9d1c-5b538631455d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1642924923612782d9"
+  ]
+}

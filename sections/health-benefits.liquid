@@ -1,0 +1,171 @@
+<section class="health-benefits-section page-width">
+    <div class="health-benefits-box">
+        <div class="heading-area">
+               <h2 class="section-heading text-center RecoletaRegular ">{{section.settings.heading}}</h2>
+          <h4 class="superFood-content sub-heading rawsonBold text-center lt uppercase"> {{section.settings.sub-heading}}</h4>
+        </div>
+        
+
+        <div class="health-benefits-content">
+            {%- for block in section.blocks -%}
+            <div class="health-benefits-block">
+                
+                
+                <div class="inner-content topOne">
+                    <div class="bigNumber ">{{block.settings.big-text}}</div>
+                    <div class="smallText-health-benefits">{{block.settings.content}}</div>
+                </div>
+               
+            </div>
+            {%- endfor -%}
+        </div>
+       
+    </div>
+</section>
+<style>
+  .secton-Health-benefits{
+    background:{{section.settings.bg-color}};
+      padding:{{section.settings.padding}}px 0;
+  
+  }
+  
+ @media screen and (min-width: 750px) {
+  .health-benefits-box .heading-area h2{
+  	font-size: {{ section.settings.heading_font_size }};
+  }
+  .health-benefits-box .heading-area h4{
+  	font-size: {{ section.settings.subheading_font_size }};
+  }
+  .health-benefits-box .health-benefits-content .health-benefits-block .bigNumber{
+  	font-size: {{ section.settings.number_font_size }};
+  }
+  .health-benefits-box .health-benefits-content .health-benefits-block .smallText-health-benefits{
+  	font-size: {{ section.settings.block_text_font_size }};
+  }
+ }
+  
+  @media screen and (max-width: 749px) {
+  .health-benefits-box .heading-area h2{
+  	font-size: {{ section.settings.mheading_font_size }};
+  }
+  .health-benefits-box .heading-area h4{
+  	font-size: {{ section.settings.msubheading_font_size }};
+  }
+  .health-benefits-box .health-benefits-content .health-benefits-block .bigNumber{
+  	font-size: {{ section.settings.mnumber_font_size }};
+  }
+  .health-benefits-box .health-benefits-content .health-benefits-block .smallText-health-benefits{
+  	font-size: {{ section.settings.mblock_text_font_size }};
+  }
+ }
+</style>
+{% schema %}
+{
+"name": "Health benefits",
+"tag": "section",
+"class": "secton-Health-benefits",
+"settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub-heading",
+      "label": "Section sub-heading"
+    },
+	{
+      "type": "color",
+      "id": "bg-color",
+      "label": "Section Background"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 250,
+      "step": 5,
+      "default": 50,
+      "unit": "px",
+      "label": "Section padding"
+    },
+	{
+      "type": "header",
+      "content": "Desktop font Size"
+    },
+	{
+      "type": "text",
+      "id": "heading_font_size",
+      "label": "Section heading font size"
+    },
+	{
+      "type": "text",
+      "id": "subheading_font_size",
+      "label": "Section sub heading font size"
+    },
+	{
+      "type": "text",
+      "id": "number_font_size",
+      "label": "Block number font size"
+    },
+	{
+      "type": "text",
+      "id": "block_text_font_size",
+      "label": "Block text font size"
+    },
+	{
+      "type": "header",
+      "content": "Mobile font Size"
+    },
+	{
+      "type": "text",
+      "id": "mheading_font_size",
+      "label": "Section heading font size"
+    },
+	{
+      "type": "text",
+      "id": "msubheading_font_size",
+      "label": "Section sub heading font size"
+    },
+	{
+      "type": "text",
+      "id": "mnumber_font-size",
+      "label": "Block number font size"
+    },
+	{
+      "type": "text",
+      "id": "mblock_text_font_size",
+      "label": "Block text font size"
+    }
+],
+"blocks": [
+{
+"type": "content",
+"name": "Block content",
+"settings": [
+	{
+      "type": "text",
+      "id": "big-text",
+      "label": "Block number"
+    },
+	{
+      "type": "richtext",
+      "id": "content",
+      "label": "Block content"
+    }
+]
+}
+],
+"presets": [
+{
+"name": "Health benefits",
+"blocks": [
+
+
+]
+}
+]
+}
+
+{% endschema %}

@@ -1,0 +1,181 @@
+<section class="compare-section mobile-hide">
+<div class="compare-content page-width">
+    <div class=" box left-side">
+        <div class="single-box">
+        <h4 class="heading rawsonBold lt uppercase">{{ section.settings.first-heading }}</h4>
+        <p class="content rawsonLight">{{ section.settings.first-content }}</p>
+        </div>
+        <div class="single-box">
+            <h4 class="heading rawsonBold lt uppercase">{{ section.settings.second-heading }}</h4>
+            <p class="content rawsonLight">{{ section.settings.second-content }}</p>
+            </div>
+            <div class="single-box">
+                <h4 class="heading rawsonBold lt uppercase">{{ section.settings.third-heading }}</h4>
+                <p class="content rawsonLight">{{ section.settings.third-content }}</p>
+                </div>
+    </div>
+    <div class="box middle">
+        <img src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/CK_Rotini_Lines.png?v=1639891744" alt="">
+    </div>
+    <div class=" box right-side">
+        <div class="single-box">
+            <h4 class="heading rawsonBold lt uppercase">{{ section.settings.fourth-heading }}</h4>
+            <p class="content rawsonLight">{{ section.settings.fourth-content }}</p>
+        </div>
+            <div class="single-box">
+                <h4 class="heading rawsonBold lt uppercase">{{ section.settings.fifth-heading }}</h4>
+                <p class="content rawsonLight">{{ section.settings.fifth-content }}</p>
+            </div>
+                <div class="single-box">
+                    <h4 class="heading rawsonBold lt uppercase">{{ section.settings.sixth-heading }}</h4>
+                    <p class="content rawsonLight">{{ section.settings.sixth-content }}</p>
+                 </div>
+    </div>
+  
+  
+  
+</div>
+  <div class="btn-box">
+    <a class="custom-btn" href="{{section.settings.btn_url}}" >SEE HOW WE COMPARE</a>
+  </div>
+</section>
+
+
+<style>
+  .compare{
+    background:{{section.settings.bg-color}};
+      padding:{{section.settings.padding}}px 0;
+  
+  }
+  @media screen and (min-width: 750px) {
+  .compare-section .compare-content .single-box h4{
+  	font-size: {{section.settings.title_font}}
+  }
+  .compare-section .compare-content .single-box p{
+  	font-size: {{section.settings.content_font}}
+  }
+ }
+  
+</style>
+
+
+{% schema %}
+ {
+  "name": "Compare desktop",
+  "tag": "section",
+   "class": "compare",
+  "settings": [
+  {
+  "type": "color",
+  "id": "bg-color",
+  "label": "Section Background"
+  },
+  {
+    "type": "range",
+    "id": "padding",
+    "min": 0,
+    "max": 250,
+    "step": 5,
+    "default": 50,
+    "unit": "px",
+    "label": "Section padding"
+  },
+  {
+    "type": "header",
+    "content": "Font Size"
+  },
+  {
+    "type": "text",
+    "id": "title_font",
+    "label": "Title Font Size"
+  },
+  {
+    "type": "text",
+    "id": "content_font",
+    "label": "Content Font Size"
+  },
+  {
+    "type": "text",
+    "id": "first-heading",
+    "default": "KETO FRIENDLY",
+    "label": "First Block Heading"
+  },
+  {
+    "type": "text",
+    "id": "first-content",
+    "label": "First Block content"
+  },
+  {
+    "type": "text",
+    "id": "second-heading",
+    "default": "KETO FRIENDLY",
+    "label": "Second Block Heading"
+  },
+  {
+    "type": "text",
+    "id": "second-content",
+    "label": "Second Block content"
+  },
+  {
+    "type": "text",
+    "id": "third-heading",
+    "default": "KETO FRIENDLY",
+    "label": "Third Block Heading"
+  },
+  {
+    "type": "text",
+    "id": "third-content",
+    "label": "Third Block content"
+  },
+  {
+    "type": "text",
+    "id": "fourth-heading",
+    "default": "KETO FRIENDLY",
+    "label": "Fourth Block Heading"
+  },
+  {
+    "type": "text",
+    "id": "fourth-content",
+    "label": "Fourth Block content"
+  },
+  {
+    "type": "text",
+    "id": "fifth-heading",
+    "default": "KETO FRIENDLY",
+    "label": "Fifth Block Heading"
+  },
+  {
+    "type": "text",
+    "id": "fifth-content",
+    "label": "Fifthe= Block content"
+  },
+  {
+    "type": "text",
+    "id": "sixth-heading",
+    "default": "KETO FRIENDLY",
+    "label": "Sixth Block Heading"
+  },
+  {
+    "type": "text",
+    "id": "sixth-content",
+    "label": "Sixth Block content"
+  },
+  {
+    "type": "url",
+    "id": "btn_url",
+    "label": "Button URl"
+  }
+  ],
+ 
+ "presets": [
+    {
+      "name": "Compare desktop",
+      "blocks": [
+       
+       
+      ]
+    }
+  ]
+}
+
+{% endschema %}

@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": false,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "1642928352037f60ca": {
+      "type": "rich-text",
+      "blocks": {
+        "164292835270a2e8ef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Did you make this recipe or create your own?",
+            "heading_size": "h2"
+          }
+        },
+        "164292835270a2e8ef-1": {
+          "type": "text",
+          "settings": {
+            "text": "Share your photos and tag us <span class=\"yellow\"><a href=\"https:\/\/instagram.com\/eatchefskiss\" target=\"_blank\" class=\"yellow instaLink\">@eatchefskiss <\/a><\/span>.  We can’t wait to\n see what you created!"
+          }
+        }
+      },
+      "block_order": [
+        "164292835270a2e8ef-0",
+        "164292835270a2e8ef-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false
+      }
+    },
+    "164292731030f9ff8d": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "Endless pastabilities",
+        "blog": "recipes",
+        "post_limit": 2,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1642928352037f60ca",
+    "164292731030f9ff8d"
+  ]
+}

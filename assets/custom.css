@@ -1,0 +1,1746 @@
+h1, h2, h3, h4, h5, h6, p{
+
+    margin: 0;
+  
+}
+h1, h2, .h2 {
+  font-size:58px !important;
+  line-height: 68px !important; 
+  font-weight: bold;
+}
+h3 {
+  font-size:36px !important;
+  line-height: 46px !important;
+  font-weight: bold;
+}
+h4 {
+  font-size:22px !important;
+  line-height: 28px !important;
+  font-weight: bold;
+  padding-bottom:5px;
+}
+p, span{
+    color: #353535 !important;
+    font-family: Rawson !important;
+  	font-size:16px !important;
+  	line-height: 24px !important;
+   }
+
+.lupin-slider #slick-slide00 > div > img {
+    width: 145px;
+    padding: 14px;
+}
+.footer-logo-box {
+    margin-bottom: 20px;
+}
+div#Banner-template--15285239840954__16402743621c319e0f .banner__box {
+    max-width: 678px !important;
+}
+@media only screen and (max-width: 750px) {
+	.product-slider-box {
+    flex-direction: inherit !important;
+}
+  #Banner-template--15285239840954__16398184069ef2e2b6 .banner__text p {
+    font-size: 16px !important;
+}
+  h1, h2, .h2 {
+  font-size:38px !important;
+  line-height: 40px !important;
+}
+h3 {
+  font-size:25px !important;
+  line-height: 32px !important;
+}
+h4 {
+  font-size:26px !important;
+  line-height: 32px !important;
+}
+p, span{
+  	font-size:18px !important;
+  	line-height: 24px !important;
+   }
+  .custom-btn {
+    font-size: 14px;
+    width: 210px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  section#shopify-section-template--15285239840954__1640506382d82d1f7d a.custom-btn {
+    width: 280px !important;
+    margin: auto;
+}
+ .button.custom-btn {
+    margin: auto;
+    width: 280px !important;
+}
+  
+
+}
+
+
+
+
+   .yellow {
+   color: #dba036 !important;
+   
+   }
+   
+   .white{
+   color: #fff !important;
+   }
+.offwhite{ 
+  color: #F4EEE1 !important;
+}
+   
+.deepBlack {
+    font-size: 25.5px !important;
+    line-height: 31px !important;
+    color: #000 !important;
+}
+   .black{
+   color: #353535 !important;
+   
+   }
+.offblack{
+  color: #414042;
+}
+.text-center{
+    text-align: center;
+}
+.rawson{
+    font-family: Rawson !important;
+}
+.rawsonBold{
+    font-family: RawsonBold !important;
+}
+.rawsonThin{
+    font-family: Rawson !important;
+}
+.rawsonLight{
+    font-family: Rawson !important;
+}
+.recoleta{
+    font-family: RecoletaUpdated !important;
+}
+.recoletaBold{
+    font-family: Recoleta !important;
+}
+.recoletaRegular{
+    font-family: RecoletaUpdated !important;
+    font-weight: 400 !important;
+}
+.recoletaThin{
+    font-family: RecoletaUpdated !important;
+}
+.recoletaLight{
+    font-family: RecoletaUpdated !important;
+}
+
+.lt{
+ letter-spacing:0.2em;
+}
+a.header__menu-item.header__menu-item.list-menu__item.link span {
+    font-family: RawsonBold !important;
+}
+section#shopify-section-template--15285239840954__16402743621c319e0f h2.Hero-heading {
+/*     font-family: RecoletaMedium !important; */
+}
+/* Hero Section */
+.list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+    justify-content: flex-start;
+    color: #F4EEE1 !important;
+}
+.announcement-bar {
+    background: #353535;
+}
+.announcement-bar__message {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+/*     letter-spacing: .2em; */
+}
+
+.header-wrapper {
+    background: transparent;
+  	z-index: 5;
+}
+.transparent-bg .header-wrapper {
+/*     background: #fbeee5; */
+}
+a.custom-btn {
+    padding: 17px 40px;
+}
+.custom-btn {
+    background: #DBA036;
+    font-family: RawsonBold;
+    font-style: normal;
+    font-weight: 800;
+  	padding: 15px 40px;
+    font-size: 16px;
+    line-height: 100% !important;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #F4EEE1;
+    border-radius: 100px;
+   text-transform: uppercase;
+  	text-decoration: none;
+  	border: 2px solid #DBA036;
+}
+.custom-btn a {
+    text-decoration: none;
+    color: #F4EEE1;
+}
+.custom-btn input {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: #F4EEE1;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: RawsonBold;
+/*     line-height: 14px; */
+    letter-spacing: .5em;
+  	border: none;
+  	padding:0;
+}
+.cart-count-bubble {
+    background: #dba036;
+}
+.banner__content.banner__content--center.page-width,
+.banner__content.banner__content--center-right.page-width {
+    display: block;
+}
+.center-right{
+ float:right;
+}
+.banner__content.banner__content--center .banner__box,
+.banner__content.banner__content--center-right.page-width .banner__box {
+    text-align: left;
+    max-width: 615px!important;
+}
+/* .banner__box>.banner__buttons {
+    justify-content: flex-start !important;
+
+} */
+.Hero-heading {
+    font-size: 62px;
+    line-height: 78px;
+  	margin: 0;
+}
+a.header__menu-item.header__menu-item.list-menu__item.link {
+    font-size: 18px;
+    font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height:22px;
+  text-transform: uppercase;
+}
+.header__active-menu-item {
+    color: #dba036 !important;
+    text-decoration: none;
+}
+a.header__menu-item.header__menu-item.list-menu__item.link span:hover {
+    color: #dba036 !important;
+}
+/*  Excelent pasta Section */
+.bigger-content h4 {
+    font-size: 78px !important;
+    line-height: 102px;
+}
+.excelent-pasta {
+
+ background: transparent;
+ border: none;
+}
+.excelent-pasta span {
+
+  color: #dba036;
+  font-family: Recoleta;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  display: block;
+}
+.excelent-pasta-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 25px;
+    align-items: self-end;
+}
+.top {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.custom-block {
+    position: relative;
+    margin: 30px 0;
+}
+.custom-block:before {
+    content: "";
+    position: absolute;
+    background: #f4eee1;
+    width: 2px;
+    height: 100%;
+    right: 0;
+}
+.custom-block:last-child:before {
+    display: none;
+}
+
+/* Product Collection */
+div#main-collection-filters {
+    display: none;
+}
+.form-box {
+    text-align: center;
+    margin: 10px 0;
+}
+/* Testimonial Section */
+section#shopify-section-template--15240483209402__16398852713f1264c3 {
+    background: #AE685E;
+}
+.single-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    max-width: 1000px;
+    margin: 50px auto;
+   
+}
+.img-box {
+    
+}
+.img-box img {
+	width: 207px;
+    height: 207px;
+    border-radius: 50%;
+}
+
+/* compare section desktop */
+.compare-content {
+    /* background: url(https://cdn.shopify.com/s/files/1/0528/4111/9930/files/CK_Rotini_Lines.png?v=1639891744); */
+    background-size: 40% 136%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
+.single-box {
+    max-width: 350px;
+    /* margin: 50px 0; */
+}
+.compare-content .left-side .single-box:nth-child(1),
+.compare-content .right-side .single-box:nth-child(1),
+.compare-content .left-side .single-box:nth-child(2) {
+  margin-top: 35px;
+}
+.compare-content .right-side .single-box:nth-child(2) {
+  margin-top: 30px;
+}
+.compare-content .right-side .single-box:nth-child(3),
+.compare-content .left-side .single-box:nth-child(3) {
+  margin-top: 60px;
+}
+.box.middle {
+    text-align: center;
+}
+.box.middle img{ 
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-top: -51px;
+}
+.btn-box {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: -20px;
+}
+.author {
+    margin-top: 25px;
+}
+.single-box h4.heading.rawson.lt {
+    margin-bottom: 5px;
+}
+section#shopify-section-template--15285239840954__16398353568060b602 {
+    margin: 0;
+    margin-bottom: 80px;
+}
+/* Ingredient Item section */
+section#shopify-section-template--15240483045562__16399774445fe21d5f {
+    background: #9A9381;
+    margin: 25px 0;
+    padding: 20px 0;
+}
+
+.ingredient-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    column-gap: 8.5%;
+}
+.single-item {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+.odd{
+  background-image: url("https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Lupin-Yellow.svg?v=1652889047");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.even{
+  background-image: url("https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Lupin-Cream.svg?v=1652889048");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+span.price-item.price-item--regular.rawsonBold.lt {
+    text-transform: uppercase;
+}
+
+div#shopify-section-template--15285239808186__product-grid input.custom-btn {
+    text-transform: uppercase;
+}
+div#shopify-section-template--15285239808186__product-grid {
+    padding-bottom: 90px;
+}
+/* Ingredients section  */
+section#shopify-section-template--15240483045562__16399859601c8a92f3 {
+    margin: 70px 0;
+}
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.ingredients-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.single-ingredietns-item {
+    margin: 0 50px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+.ingredient-imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+img.ingredients-img {
+    width: 150px;
+}
+.ingredients-text-box {
+    max-width: 270px;
+    background: #353535;
+  	opacity: 0.9;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    top: 27px;
+    right: -175px;
+    display: none;
+    z-index: 1;
+}
+.ingredientsContent {
+    line-height: 38px !important;
+    margin-top: 15px;
+}
+.single-ingredietns-item.show-text .ingredients-text-box {
+    display: block;
+}
+.ingredients-content div:nth-last-child(1) > div.ingredients-text-box {
+    left: -30px;
+}
+.csicon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #353535;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    top: -25px;
+}
+.minus-icon {
+    visibility: hidden;
+}
+.show .minus-icon {
+    visibility: visible;
+}
+.show .plus-icon {
+    visibility: hidden;
+}
+/* Product page */
+
+.variant-with-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.atc-with-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__accordion.accordion svg path {
+    fill: #dba036;
+}
+fieldset.js.product-form__input label {
+    font-size: 16px !important;
+    letter-spacing: .5em  !important;
+    font-family: RawsonBold;
+    line-height: 19px !important;
+}
+/* Recipes page */
+
+form.search.search-modal__form {
+    margin: 20px auto;
+}
+.customSearch.field__label {
+    font-size: 16px;
+    letter-spacing: .5em;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+input#Search-In-Modal-1 {
+    border: none;
+    box-shadow: none;
+    background: white;
+    border-radius: 50px;
+}
+button.search__button.field__button {
+    background: transparent;
+    color: #353535;
+    width: 50px !important;
+}
+img.product-image-blog {
+    position: unset!important;
+    width: 250px !important;
+}
+.product-card-blog {
+    max-width: 350px;
+    display: grid;
+    justify-content: flex-start;
+    text-align: center;
+}
+.aritcle-with-product {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+.excerpt-box h3, .article-template__content h3 {
+    font-family: 'RecoletaRegular';
+}
+.excerpt-box ul li {
+    font-family: 'Rawson';
+    font-size: 18px;
+    line-height: 28px;
+}
+.article-template__content strong, .article-template__content b {
+    font-family: 'RawsonBold';
+    font-size: 18px;
+    line-height: 28px;
+}
+/* Learn page */
+section#shopify-section-template--15247567978682__main {
+    display: none;
+}
+h2.learn-top {
+    max-width: 1125px;
+    margin: 25px auto;
+    text-align: center;
+    font-family: RecoletaUpdated;
+    font-weight: 400;
+}
+/* Table section */
+section.learn-table-section {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.table-left-image {
+    max-width: 200px;
+    margin-bottom: -40px;
+}
+.table-right-image {
+    max-width: 150px;
+    margin-bottom: -40px;
+}
+.table-right-image img {
+    width: 100%;
+    height: 100%;
+}
+.table-left-image img {
+    width: 100%;
+    height: 100%;
+}
+.learn-table-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #9a9381;
+    padding: 10px 0;
+}
+.learn-table-block:nth-child(2) {
+    background: #9A9381;
+  	padding-left: 8px;
+}
+.item-name {
+    width: 300px;
+}
+.item-number {
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.learn-table-block p {
+    font-weight: bold;
+}
+.learn-table-block:nth-child(2) .table-bg p{
+ color:#fff !important;
+}
+.learn-table-block:nth-child(2) > .item-number:nth-child(2) .table-bg,
+.learn-table-block:nth-child(2) > .item-number:nth-child(3) .table-bg,
+.learn-table-block:nth-child(2) > .item-number:nth-child(4) .table-bg{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Vector_2.png?v=1640155539);
+    background-position: 10% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.learn-table-block:nth-child(1) p {
+    font-style: italic;
+    font-size: 25px !important;
+    line-height: 30px !important;
+}
+
+/* Its lupin */
+section#shopify-section-template--15247567978682__16401585259ad8335b {
+    background: #353535;
+    padding:50px 0;
+}
+.image-with-conten {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+img.lupin-img {
+    max-width: 200px;
+    margin: 30px 0;
+}
+.lupin-block {
+    text-align: center;
+}
+.lupin-block-image {
+    max-width: 150px;
+    margin: auto;
+  transition: .3s;
+}
+.lupin-block-image img {
+    max-width: 150px;
+}
+l#slick-slide00 > p {
+    font-weight: bold;
+}
+.lupin-slider ul.slick-dots {
+    display: none;
+}
+.Lupin-box .image-with-conten h3 {
+    margin-bottom: 12px;
+}
+/* supper food section */
+section#shopify-section-template--15247567978682__1640162454616223e6 {
+    padding: 50px 0;
+}
+.super-food-content {
+    display: flex;
+    justify-content: space-around;
+}
+.super-food-block {
+    text-align: center;
+    min-width: 250px;
+}
+.inner-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.bigNumber {
+    font-size: 82px;
+    font-family: 'RecoletaUpdated';
+    color: #9a9381;
+    
+}
+.health-benefits-block .bigNumber {
+    width: 40px;
+}
+.smallText {
+    text-align: left;
+}
+.smallText p {
+    font-family: 'RawsonBold' !important;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Healthy lupin section */
+section#shopify-section-template--15247567978682__1640165835686965d1 {
+    background: #9A9381;
+    padding: 50px 0;
+}
+.healthy-item-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.healthy-item-block {
+    max-width: 520px;
+}
+li.list-itme {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    column-gap: 15px;
+    margin: 25px 0;
+  	position: relative;
+}
+
+li.list-itme:first-child{
+
+  align-items: center;
+
+}
+/* Lupin nutiretions section */
+  section#shopify-section-template--15247567978682__164018193646519cc4 {
+    background: #353535;
+}
+
+	.lupin-ingredients-item-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+     
+}
+  .lupin-ingredients-block-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+  .lupin-ingredients-item-block-title h2 {
+    text-align: center;
+}
+  .lupin-ingredients-item-block {
+    margin: auto 20px;
+    text-align: center;
+    width: 210px;
+}
+ 
+  .lupin-ingredients-item-block-image img {
+/*     width: 100%; */
+}
+  .lupin-ingredients-item-block-image {
+    max-width: 80px;
+    margin: auto;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+/* Health benefits */
+.health-benefits-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: start;
+}
+.health-benefits-block {
+    max-width: 320px;
+}
+/* Multicolumn with background image */
+section#shopify-section-template--15285240004794__1640264299ed92e0ab {
+    padding-top: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-bottom: 250px;
+  	margin-top: 0px;
+}
+.multicolumn-list__item:only-child {
+    max-width: 900px !important;
+    text-align: center;
+}
+/* Footer */
+footer.footer {
+    background: #928B80;
+}
+img.footer-logo {
+    width: 90px;
+    height: auto;
+}
+.footer-heading {
+    margin-bottom: 10px;
+}
+.footer_block_image {
+    display: flex;
+    column-gap: 15px;
+    justify-content: flex-start;
+/*     align-items: center; */
+}
+li.list-social__item:nth-child(1) a {
+    padding-left: 0 !important;
+}
+.list-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.list-social__item .icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.list-social__link {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  color: rgb(var(--color-foreground));
+}
+a.link.list-social__link svg {
+    width: 25px;
+    height: 25px;
+}
+
+.list-social__link:hover .icon {
+  transform: scale(1.07);
+}
+section#shopify-section-template--15285239709882__1642928352037f60ca {
+    background: #353535;
+    padding: 10px 0;
+}
+section#shopify-section-template--15285239709882__1642928352037f60ca .rich-text.color-background-1.gradient {
+    background: transparent;
+    color: #F4EEE1;
+}
+section#shopify-section-template--15285240004794__main {
+    display: none;
+}
+.multicolumn-card__info ul {
+    list-style: disc;
+}
+@media only screen and (max-width: 749px) {
+  .list-social {
+    justify-content: center;
+  }
+  h2.learn-top {
+    font-size: 30px !important;
+}
+}
+.custom-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100px;
+}
+.custom-links li {
+    margin: 0 30px;
+}
+.custom-links li:nth-child(1) {
+    margin-left: 0;
+}
+
+
+input#NewsletterForm--footer {
+    border: none!important;
+    box-shadow: unset;
+    background: white;
+    padding: 26px 40px !important;
+}
+.checkbox {
+    display: flex;
+    margin: 15px 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.checkbox input {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+.footer__content-top .grid {
+    border-bottom: 1px solid #353535;
+}
+.checkbox p {
+    font-size: 18px;
+    line-height: 28px;
+/*     color: #F3ECE1; */
+}
+small.copyright__content,
+.bottom-linklist ul li a {
+    font-size: 15px !important;
+    line-height: 18px;
+    font-family: 'Rawson';
+}
+.bottom-linklist ul li {
+    margin: 0 5px;
+}
+.bottom-linklist ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.custom-links li a {
+    font-size: 18px !important;
+    font-weight: 700;
+    line-height: 22px;
+    color: #353535!important;
+    font-family: RawsonBold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.footer-heading, .footer-block__heading {
+    text-transform: uppercase;
+}
+.junip-filters {
+    display: none;
+}
+.junip-review-list-item-container .junip-review-customer {
+    margin-bottom: 16px;
+    margin-right: 16px;
+    min-width: 200px;
+    display: none;
+}
+.junip-product-review-average-container {
+    margin-right: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+}
+.junip-product-review-bars-container {
+    margin-right: 48px;
+    width: 250px;
+    display: none;
+}
+.junip-select-container.junip-review-sort {
+    display: none;
+}
+.newsletterText {
+    max-width: 350px;
+}
+body.gradient.collection #shopify-section-header > div > header > nav > ul > li:nth-child(1) > a > span {
+    color: #dba036 !important;
+}
+@media only screen and (min-width: 751px) {
+  section#shopify-section-template--15285240004794__164015303893c45fcd {
+    margin-top: 20px;
+}
+  div#Banner-template--15285239840954__16402743621c319e0f .banner__content {
+    padding: 0;
+}
+  .desktop-hide{
+  	display: none !important;
+  }
+  li.list-itme:first-child p {
+    margin-top: -15px;
+}
+  .ingredients .section-heading {
+    margin-bottom: 70px;
+}
+  .lupin-ingredients-item-block-title {
+    margin-top: 10px;
+}
+  .main-blog {
+    width: 80%;
+}
+  div.healthy-item-content > div:nth-child(1) {
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+}
+  h4.healthyItem-content {
+    text-align: left;
+    margin-left: 50px;
+}
+img.smaller-section {
+    position: unset !important;
+    width: 350px !important;
+    margin: auto;
+}
+  #shopify-section-template--15285239840954__16398384382550835a > div > div > div:nth-child(1) > div > img {
+    width: 450px !important;
+}
+  div#shopify-section-template--15285239840954__16398384382550835a {
+    padding: 25px 0;
+}
+  fieldset.js.product-form__input {
+    max-width: 300px;
+}
+  #Banner-template--15285239840954__16402743621c319e0f .banner__text {
+    margin-bottom: 40px !important;
+}
+  .variant-box .product-form__input {
+    margin-bottom: 0;
+}
+  .learn-table {
+    width: 877px;
+}
+  .lupin-ingredients-item-block-image img {
+    width: 75px;
+}
+  div#img-059a6944-0560-4a92-a931-c82a5ecc9d1b img {
+    width: 50px;
+}
+  div#img-b9699f45-b019-4875-b94c-43e569d925d9 img {
+    width: 50px;
+}
+ 
+ section#shopify-section-template--15285239840954__16398353568060b602 {
+    padding-top: 60px;
+}
+  
+}
+p.lupin-content {
+    margin: 20px 0;
+}
+.super-food-box h4.superFood-content {
+    margin-bottom: 0px;
+}
+h4.superFood-content {
+    margin-top: 20px!important;
+    margin-bottom: 50px;
+}
+.excelent-pasta h3 {
+    padding: 10px 0 !important;
+}
+.lupin-slider {
+    margin-top: 40px;
+}
+button.product-form__submit.button.custom-btn.button--primary {
+    padding: 20px 40px;
+}
+.atc-with-quantity {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.multicolumn.background-none.no-heading.idtemplate--15285240004794__164018571181ff80b8 {
+    margin-bottom: 25px;
+}
+@media only screen and (max-width: 1450px) {
+  .box.middle img {
+    margin: -50px auto auto;
+    height: 620px;
+}
+  .lupin-ingredients-item-block {
+    margin: auto 5px;
+    text-align: center;
+    width: 150px;
+}
+  .lupin-ingredients-item-block-title h3 {
+    font-size: 25px !important;
+    line-height: 27px !important;
+}
+  .lupin-ingredients-item-block-subtitle p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+  .lupin-ingredients-item-content-heading h2 {
+    font-size: 55px !important;
+    line-height: 70px !important;
+}
+  .lupin-ingredients-item-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px 0;
+    column-gap: 4%;
+}
+  ul#Slider-template--15285240004794__1640264299ed92e0ab h2 {
+    font-size: 52px !important;
+    line-height: 70px !important;
+}
+}
+
+@media only screen and (max-width: 750px) {
+ button#Subscribe {
+    border-radius: 25px;
+}
+  .banner__buttons a.custom-btn {
+    width: 235px !important;
+}
+   div#Banner-template--15285239840954__16402743621c319e0f .banner__box {
+    padding: 4rem 4rem!important;
+    padding-left: 20px!important;
+}
+  .banner__box {
+    padding: 4rem 1.5rem !important;
+}
+  button.search__button.field__button {
+    position: absolute;
+}
+  .image-with-text__media--small {
+    height: 280px !important;
+    margin: 30px;
+}
+  #shopify-section-template--15285239840954__1641197566577f5198 > div > div > div:nth-child(1) > div {
+    height: 371px !important;
+}
+  
+  section#shopify-section-template--15285240004794__1640264299ed92e0ab {
+    padding-top: 0;
+    padding-bottom:350px;
+}
+  .multicolumn.background-none.no-heading.idtemplate--15285240004794__164018571181ff80b8 {
+    padding: 0px 0px;
+}
+  .lupin-ingredients-item-content-heading h2 br {
+    display: none;
+}
+  .healthy-item-box h3, .healthy-item-box h4 {
+    text-align: left;
+    margin-left: 10px !important;
+}
+  .super-food-box h2, .super-food-box h4, .health-benefits-box h2, .health-benefits-box h4 {
+    text-align: left !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+  h4.superFood-content {
+    margin-top: 20px !important;
+}
+  .csicon {
+    top: 0;
+}
+  .single-ingredietns-item.item-3 .icon-3 .csicon {
+    top: -12px;
+}
+  .custom-btn {
+    padding: 15px 12px;
+    font-size: 14px;
+}
+  .banner__box>*+.banner__text {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+  
+  #shopify-section-template--15285239840954__16398384382550835a > div > div {
+    flex-direction: column;
+}
+  .lupin-slider {
+    margin: 25px 0;
+}
+  .btn-box {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 80px;
+}
+  ul.menu-drawer__menu.list-menu {
+    margin-top: 25px;
+}
+  div#Banner-template--15285239840954__16398184069ef2e2b6 {
+    padding-bottom: 90px;
+}
+  .newsletter-form__field-wrapper .field {
+    width: 100%;
+}
+  .mobile-hide{
+  	display: none !important;
+  } 
+.header__icons {
+/*     display: none; */
+}
+  .header {
+    display: grid;
+    grid-template-areas: 'left-icon heading icons';
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+/*     direction: rtl; */
+}
+  .excelent-pasta-content {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+}
+  .custom-block:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    bottom: -24px;
+}
+  .single-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 50px;
+    text-align: center;
+    row-gap: 30px;
+}
+  .slick-next {
+    right: 0;
+}
+  .slick-prev {
+    left: 0;
+}
+  .ingredient-content {
+    
+    grid-template-columns: auto auto;
+    
+}
+  .ingredients-content {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    row-gap: 50px;
+}
+  .ingredients-text-box {
+    top: 52px;
+    right: 50px;
+   
+}
+  .footer_block_image {
+    display: flex;
+    column-gap: 15px;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+  .custom-links li a {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #353535 !important;
+}
+  .custom-links li {
+    margin: 0;
+}
+  .custom-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    height: auto;
+}
+  .bottom-linklist ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+  .bottom-linklist ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+  .super-food-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top:25px;
+}
+  .inner-content, .inner-content-topOne {
+    column-gap: 20px !important;
+}
+  h2.superFood-content {
+    text-align: left;
+}
+ h2.section-heading {
+    text-align: center;
+    max-width: 300px;
+    margin: 10px auto;
+}
+  .healthy-item-content {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 50px;
+}
+  .list-items ul {
+    padding: 0;
+}
+  .lupin-ingredients-item-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    flex-direction: column;
+    row-gap: 50px;
+}
+  .lupin-ingredients-item-content-heading {
+    max-width: 100%;
+}
+  .lupin-ingredients-block-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+  .health-benefits-content {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+  .aritcle-with-product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+  .field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+  .field__button {
+    align-items: center;
+    background-color: #353535;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    position: unset;
+    right: 0;
+    top: 0;
+    width: 100% !important;
+    letter-spacing: .5em;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Rawson;
+}
+  .bigger-content h4 {
+    line-height: 50px !important;
+    text-align: right;
+}
+  .card-information__text {
+    font-size: 36px !important;
+    line-height: 46px !important;
+}
+   div#Banner-template--15285239840954__16402743621c319e0f:not(.banner--mobile-bottom) .banner__content::before {
+    padding-bottom: 750px !important;
+}
+  .banner__content.banner__content--center-right.page-width {
+    position: relative;
+}
+  .banner__box.color-accent-1.center-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  .variant-with-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+  .variant-box {
+    width: 100%;
+}
+  .atc-with-quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+}
+ .article-template__title {
+    text-align: center;
+}
+  .product-card-blog {
+    justify-content: center;
+    text-align: center;
+}
+  .learn-table {
+    overflow: auto;
+    padding: 0 10px;
+}
+.overflow-box {
+    overflow: scroll;
+    width: 600px;
+}
+  .lupin-slider ul.slick-dots {
+    display: block;
+}
+  .banner__buttons {
+    margin-top: 25px;
+}
+  h3.announcement-bar__message.RecoletaThin.yellow {
+    font-size: 20px !important;
+}
+  .compare_box ul.slick-dots {
+    bottom: -50px;
+}
+  div#Banner-template--15285239840954__16402743621c319e0f > div.banner__media.media > img.desktop-hide {
+    object-fit: cover;
+}
+  .image-with-text__grid.color-background-1.grid.grid--gapless.grid--1-col.grid--2-col-tablet.gradient.image-with-text__grid--reverse {
+    flex-direction: column-reverse;
+}
+  .table-left-image, .table-right-image {
+    display: none;
+}
+  .healthy-item-block:first-child li.list-itme:last-child:before {
+    content: "";
+    position: absolute;
+    background: #f4eee1;
+    width: 100%;
+    height: 1px;
+    bottom: -40px;
+}
+  .secton-Health-benefits {
+    padding-bottom: 0 !important;
+}
+  ul#Slider-template--15285240004794__1640264299ed92e0ab .multicolumn-card__info {
+    padding-bottom: 0;
+}
+  .product-card-blog.desktop-hide {
+    margin-top: 20px;
+}
+  .compare-section .custom-btn {
+    font-size: 13px !important;
+    padding: 19px 12px;
+}
+  #Banner-template--15285239840954__16402743621c319e0f .banner__text {
+    margin-bottom: 2.8rem;
+}
+  #Banner-template--15285239840954__16398184069ef2e2b6 .banner__text {
+    margin-bottom: 30px !important;
+}
+  
+}
+.custom_image_with_text {
+    display: flex;
+    align-items: center;
+}
+.multicolumn-card__info ul li {
+    font-family: 'Rawson';
+    font-size: 18px;
+    color: black;
+}
+.overflow-hidden-tablet .header__icons {
+    visibility: hidden;
+}
+
+.newsletter-form__field-wrapper label.field__label {
+    letter-spacing: 0.5em;
+    font-family: rawsonBold;
+}
+button#Subscribe {
+    font-family: rawsonBold;
+}
+@media only screen and (min-width: 350px) and (max-width: 750px) {
+
+  .banner__box {
+    padding: 4rem 5rem!important;
+    padding-left: 20px !important;
+}
+  
+}
+@media only screen and (max-width: 400px){
+h3.announcement-bar__message.recoletaRegular.yellow {
+    font-size: 18px !important;
+}
+  div#Banner-template--15285239840954__16402743621c319e0f .banner__box {
+    padding: 4rem 0rem!important;
+    padding-left: 9px!important;
+}
+  .image-with-text__media--small {
+    height: 225px!important;
+}
+}
+@media only screen and (max-width: 350px){
+#shopify-section-template--15285239840954__1641197566577f5198>div>div>div:nth-child(1)>div {
+    height: 295px!important;
+}
+
+}
+.junip-separator {
+    display: none;
+}
+a.link.list-social__link path {
+    fill: rgb(53 53 53);
+}
+section#shopify-section-template--15285240004794__164018193646519cc4 {
+    padding-top: 20px;
+}
+section#shopify-section-template--15285239709882__1642928352037f60ca h2 {
+    font-size: 40px !important;
+    line-height: 40px !important;
+}
+section#shopify-section-template--15285239840954__1639826488965de794 {
+    background: #928B80;
+    padding-top: 30px;
+}
+section#shopify-section-template--15285239840954__16398337028d52ee80 {
+    padding-top: 20px;
+}
+section#shopify-section-template--15285239840954__16467704358e2cc71e {
+    background: #353535;
+}
+article.article-template .element-margin.center {
+    margin: 0;
+}
+a.article-template__link {
+    margin: 0 !important;
+}
+ul.compare-other {
+    max-width: 546px;
+    margin: auto;
+}
+ul.compare-other li {
+    font-size: 35px;
+}
+ul.compare-other li span {
+    font-size: 35px !important;
+}
+@media only screen and (max-width: 749px){
+ul.compare-other li {
+    font-size: 20px;
+}
+ul.compare-other li span {
+    font-size: 20px !important;
+}
+
+}
+.custom-compare {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 15px;
+}
+.custom-compare .product__accordion.accordion {
+    margin: 40px 0;
+}
+.custom-compare  svg.icon.icon-caret {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 0.6rem);
+    right: 2px;
+}
+.accordion details[open]>summary .icon-caret {
+    transform: rotate(180deg);
+}
+.accordion__content.rte {
+    margin-top: 20px;
+}
+
+#shopify-section-template--15285239840954__1639826488965de794{
+  background-color: #928B80 !important;
+  font-size:36px !important;
+}
+
+#shopify-section-template--15285239840954__1639826488965de794 .announcement-bar__message{
+  font-size:42px !important;
+}
+
+@media only screen and (max-width: 750px) {
+  #shopify-section-template--15285239840954__1639826488965de794 .announcement-bar__message{
+    font-size:24px !important;
+  }
+  
+  .bigger-content h4{
+    font-size: 64px !important;
+  }
+}
+
+.product-form__input input[type=radio]+label{
+  text-transform: uppercase;
+     padding-left:20px !important;
+  padding-right:20px !important;
+}
+
+.product-form__input input[type=radio]:checked+label{
+    padding-left:20px !important;
+  padding-right:20px !important;
+}
+
+
+.page-width{
+  padding-right:6% !important;
+  padding-left:6% !important;
+}
+
+.image-with-text__content, .banner__box{
+  padding-left: 0px !important;
+}
+
+.banner__text{
+  max-width: 475px !important;
+}
+
+.lupin-ingredients-item-block{
+  width:160px;
+}
+
+.learn-table-block:nth-child(2), .item-name{
+  padding-left:20px;
+}
+
+#shopify-section-template--15285240004794__16535073741194446b{
+  margin-top:0px !important;
+}
+
+#shopify-section-template--15285240004794__1640154206a3bd1e7f{
+  padding-top: 0px !important;
+}
+
+#shopify-section-template--15285240004794__164018571181ff80b8{
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.multicolumn.background-none.no-heading.idtemplate--15285240004794__164018571181ff80b8{
+    margin-bottom:0px !important;
+  padding-bottom:60px !important;
+}
+
+.blog-articles{
+  padding-top: 60px;
+}
+
+.aritcle-with-product{
+  column-gap: 150px;
+}
+
+.product-card-blog{
+  padding-top:20px;
+}
+
+@media only screen and (max-width: 750px) {
+.media>*:not(.zoom):not(.deferred-media__poster-button), .media model-viewer{
+  height: auto !important;
+}
+  
+  #shopify-section-template--15285240004794__164018571181ff80b8{
+    background-image: none !important;
+}
+  
+  #shopify-section-template--15285239840954__1640506382d82d1f7d{
+    background-image: url("https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Slider-BG.jpg?v=1658947619");
+    background-size: cover;
+    background-position: center;
+    background-height: 100% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:60px !important;
+    padding-bottom: 40px !important;
+}
+
+  #shopify-section-template--15285239840954__1639891676b2547d4d{
+   display:none !important;
+  }
+
+  
+  div#Banner-template--15285239840954__16402743621c319e0f .banner__box{
+  padding-left:8%!important;
+    padding-right: 30px !important;
+  }
+
+  .image-with-text__content{
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+  }
+  .image-with-text__media--small{
+    margin-bottom: 0px !important;
+  }
+
+  .learn-top-title h3{
+  font-size: 32px !important;
+  line-height: 40px !important;
+  }
+
+#shopify-section-template--15285240004794__164018571181ff80b8{
+  background-image: url("https://cdn.shopify.com/s/files/1/0528/4111/9930/files/HP-Hero-BG-Mobile2_4c6b7a36-fe39-4663-ba72-41c16e0a601f.jpg?v=1658953442") !important;
+}
+}
+
+#shopify-section-template--15285239840954__1639891676b2547d4d{
+    padding-top:80px !important;
+    padding-bottom: 80px !important;
+  }
+
+.learn-top-title{
+  font-size: 46px !important;
+  line-height: 58px !important;
+}
+
+.page-width--narrow{
+  max-width: 80rem !important;
+}
+
+#shopify-section-template--15285239840954__16398353568060b602, #shopify-section-template--15285239840954__16398353568060b602 h3, .card-information__wrapper{
+  color: #F4EEE1 !important;
+}
+
+#shopify-section-template--15285239840954__16398353568060b602{
+  padding-top: 40px !important;
+  padding-bottom:60px !important;
+  margin-bottom:0px !important;
+}
+
+
+.health-benefits-block{
+  max-height: 110px !important;
+}
+  

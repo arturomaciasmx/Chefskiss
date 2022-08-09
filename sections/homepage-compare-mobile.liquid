@@ -1,0 +1,145 @@
+<section class="ingredients-home page-width desktop-hide">
+  <h2 class="section-heading text-center recoletaRegular">{{section.settings.heading}}</h2>
+  <div class="ingredients-content-home">
+      
+{%- for block in section.blocks -%}
+  <div class="single-ingredietns-item-home item-{{forloop.index}}">
+    <div class="image-{{forloop.index}}">
+      <div class="ingredient-imgBox-home {% if forloop.first == true %}current{% endif %}" data-tab="tab-{{forloop.index}}"><img class="ingredients-img-home" src="{{ block.settings.image | img_url: 'master'}}" alt=""> </div>
+    </div>
+    
+   
+   <div class="tab-content  {% if forloop.first == true %}current{% endif %} textbox-{{forloop.index}}"  id="tab-{{forloop.index}}" >
+       <h3 class="heading yellow recoletaRegular"> {{ block.settings.ingredient_heading}}</h3>
+       <p class="ingredientsContent-home offwhite rawsonLight">{{ block.settings.ingredient_des}}</p>
+   </div>
+  
+  
+  </div>
+{%- endfor -%}
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function(){
+	
+	$('.ingredient-imgBox-home').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.ingredient-imgBox-home').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+      console.log("working fine")
+	})
+
+})
+
+
+</script>
+<style>
+.secton-ingredients{
+  background:{{section.settings.bg-color}};
+    padding:{{section.settings.padding}}px 0;
+
+}
+	.tab-content{
+			display: none;
+			background: #00000059;
+			padding: 15px;
+      		text-align: center;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+
+  .ingredients-content-home {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    justify-content: space-between;
+}
+  img.ingredients-img-home {
+    max-width: 100px;
+}
+  .tab-content {
+  	position: absolute;
+    top:15px;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+</style>
+
+
+
+
+{% schema %}
+{
+"name": "compare mobile toggle",
+"tag": "section",
+"class": "secton-ingredients",
+"settings": [
+{
+  "type": "text",
+  "id": "heading",
+  "label": "Section Heading"
+},{
+"type": "color",
+"id": "bg-color",
+"label": "Section Background"
+},
+{
+"type": "range",
+"id": "padding",
+"min": 0,
+"max": 250,
+"step": 5,
+"default": 50,
+"unit": "px",
+"label": "Section padding"
+}
+
+],
+"blocks": [
+  {
+    "type": "Ingredients",
+    "name": "Ingredients",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Item Image"
+      },
+  {
+        "type": "textarea",
+        "id": "text",
+        "label": "Item Text"
+      },
+  {
+        "type": "textarea",
+        "id": "ingredient_heading",
+        "label": "ingredient Heading"
+      },
+  {
+        "type": "textarea",
+        "id": "ingredient_des",
+        "label": "ingredient Description"
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "compare mobile toggle",
+    "blocks": [
+     
+     
+    ]
+  }
+]
+}
+
+{% endschema %}

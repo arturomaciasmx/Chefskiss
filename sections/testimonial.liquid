@@ -1,0 +1,153 @@
+
+<style>
+ 
+  @media screen and (min-width: 750px) {
+  .testimonial-content .single-content .content-box .review h3{
+    font-size: {{section.settings.content_font }}
+  }
+  .testimonial-content .single-content .content-box .author p{
+  	font-size: {{section.settings.content_font }}
+  }
+  }
+   @media screen and (max-width: 749px) {
+  .testimonial-content .single-content .content-box .review h3{
+    font-size: {{section.settings.mcontent_font }}
+  }
+  .testimonial-content .single-content .content-box .author p{
+  	font-size: {{section.settings.mcontent_font }}
+  }
+  }
+</style>
+
+<section class="testimonial-section page-width">
+<div class="testimonial-slider">
+{%- for block in section.blocks -%}
+  <div class="testimonial-content">
+    <div class="single-content">
+      <div class="img-box">
+        <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="content-box">
+        <div class="review">
+          <h3 class="content recoletaRegular offwhite"> {{ block.settings.review }}</h3>
+        </div>
+        <div class="author rawson black">
+          <p class="lt rawsonBold black uppercase"> {{ block.settings.author-name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endfor -%}
+</div>
+</section>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$('.testimonial-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  prevArrow:"<img class='a-left control-c prev slick-prev' src='{{ 'left-arrow.svg' | asset_url }}'>",
+  nextArrow:"<img class='a-right control-c next slick-next' src='{{ 'right-arrow.svg' | asset_url }}'>"
+ 
+});
+</script>
+
+<style>
+  .testimonial-Section{
+    background:{{section.settings.bg-color}};
+      padding:{{section.settings.padding}}px 0;
+  
+  }
+  
+</style>
+
+{% schema %}
+ {
+  "name": "Testimonial Slider",
+  "tag": "section",
+  "class": "testimonial-Section",
+  "settings": [
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Section Background"
+      },
+      {
+        "type": "range",
+        "id": "padding",
+        "min": 0,
+        "max": 250,
+        "step": 5,
+        "default": 50,
+        "unit": "px",
+        "label": "Section padding"
+      },
+	  {
+		"type":"header",
+		"content":"Desktop Font Size"
+	  },
+	  {
+        "type": "text",
+        "id": "content_font",
+        "label": "Content Font Size"
+      },
+	  {
+        "type": "text",
+        "id": "content_author_font",
+        "label": "Author Font Size"
+      },
+	  {
+		"type":"header",
+		"content":"Mobile Font Size"
+	  },
+	  {
+        "type": "text",
+        "id": "mcontent_font",
+        "label": "Content Font Size"
+      },
+	  {
+        "type": "text",
+        "id": "mcontent_author_font",
+        "label": "Author Font Size"
+      }
+],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Author Image"
+        },
+        {
+          "type": "text",
+          "id": "review",
+          "label": "Review"
+        },
+        {
+          "type": "textarea",
+          "id": "author-name",
+          "label": "Author Name"
+        }
+      ]
+    }
+  ],
+ "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+       
+       
+      ]
+    }
+  ]
+}
+
+{% endschema %}

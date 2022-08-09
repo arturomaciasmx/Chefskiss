@@ -1,0 +1,185 @@
+{
+  "current": {
+    "colors_solid_button_labels": "#fff",
+    "colors_accent_1": "#dba036",
+    "gradient_accent_1": "#dba036",
+    "colors_accent_2": "#dba036",
+    "gradient_accent_2": "linear-gradient(180deg, rgba(219, 160, 54, 1), rgba(221, 39, 57, 1) 100%)",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#f4eee1",
+    "colors_background_2": "#ffffff",
+    "type_header_font": "assistant_n4",
+    "heading_scale": 110,
+    "type_body_font": "assistant_n4",
+    "body_scale": 105,
+    "social_twitter_link": "",
+    "social_facebook_link": "#",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/eatchefskiss\/",
+    "social_tiktok_link": "#",
+    "social_youtube_link": "",
+    "predictive_search_enabled": false,
+    "predictive_search_show_price": false,
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "FROM THE TEAM THAT BROUGHT YOU GNOODA",
+              "announcement_font": "",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-2",
+          "logo": "shopify:\/\/shop_images\/CK_Logo_Yellow.png",
+          "logo_width": 250,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": false,
+          "enable_sticky_header": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "22c9ca58-07ce-4824-aeb1-d54f8759c0b3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/CK_Logo_Badge_Cream_3x_687547dd-0b8c-41e8-87f3-a3087d4ef4fb.png",
+              "headingSocial": "Follow Us on Social:",
+              "menu-bottom": "footer-top",
+              "image_width": 100,
+              "alignment": ""
+            }
+          },
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "22c9ca58-07ce-4824-aeb1-d54f8759c0b3",
+          "footer-1"
+        ],
+        "settings": {
+          "footer-menu": "footer",
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "see what’s cookin’!",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/CK_Logo_Yellow.png",
+          "logo_max_width": 130,
+          "color_scheme": "inverse"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "inverse"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "16017602894386113438": {
+        "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-store-key\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}

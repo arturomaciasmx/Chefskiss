@@ -1,0 +1,164 @@
+<section class="lupin-ingredients-item-section page-width">
+    <div class="lupin-ingredients-item-box">
+<!--         <div class="heading-area">
+            <h2 class="section-heading text-center recoleta white ">{{section.settings.heading}}</h2>
+        </div> -->
+
+
+        <div class="lupin-ingredients-item-content">
+            <div class="lupin-ingredients-item-content-heading">
+                <h2 class=" recoletaReular offwhite">{{section.settings.heading}}</h2>
+            </div>
+          <div class="lupin-ingredients-block-items">
+            {%- for block in section.blocks -%}
+            <div class="lupin-ingredients-item-block">
+                <div id="img-{{block.id}}" class="lupin-ingredients-item-block-image"><img src="{{ block.settings.image | img_url: 'mater'}}" alt=""></div>
+                <div class="lupin-ingredients-item-block-subtitle">
+                    <p class="offwhite rawsonBold uppercase lt">{{ block.settings.sub_title }}</p>
+                </div>
+                <div class="lupin-ingredients-item-block-title">
+                    <h3 class="offwhite recoletaRegular">{{ block.settings.title }}</h3>
+                </div>
+            </div>
+            {%- endfor -%}
+          </div>
+        </div>
+
+    </div>
+</section>
+<style>
+  .section-Lupin-Ingredients{
+    background:{{section.settings.bg-color}};
+      padding:{{section.settings.padding}}px 0;
+  
+  }
+   @media screen and (min-width: 750px) {
+  .lupin-ingredients-item-content .lupin-ingredients-item-content-heading h2{
+  	font-size: {{ section.settings.heading_font_size }};
+  }
+  .lupin-ingredients-item-content .upin-ingredients-block-items .lupin-ingredients-item-block .lupin-ingredients-item-block-subtitle p{
+  	font-size: {{ section.settings.block_subtitle_font_size }};
+  }
+  .lupin-ingredients-item-content .upin-ingredients-block-items .lupin-ingredients-item-block .lupin-ingredients-item-block-title h3{
+  	font-size: {{ section.settings.block_title_font_size }};
+  }
+   }
+  
+  @media screen and (max-width: 749px) {
+  .lupin-ingredients-item-content .lupin-ingredients-item-content-heading h2{
+  	font-size: {{ section.settings.mheading_font_size }};
+  }
+  .lupin-ingredients-item-content .upin-ingredients-block-items .lupin-ingredients-item-block .lupin-ingredients-item-block-subtitle p{
+  	font-size: {{ section.settings.mblock_subtitle_font_size }};
+  }
+  .lupin-ingredients-item-content .upin-ingredients-block-items .lupin-ingredients-item-block .lupin-ingredients-item-block-title h3{
+  	font-size: {{ section.settings.mblock_title_font_size }};
+  }
+   }
+</style>
+{% schema %}
+{
+  "name": "Lupin Ingredients",
+  "tag": "section",
+  "class": "section-Lupin-Ingredients",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading"
+    }, 
+    {
+      "type": "text",
+      "id": "sub-heading",
+      "label": "Section sub-heading"
+    },
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Section Background"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 250,
+      "step": 5,
+      "default": 50,
+      "unit": "px",
+      "label": "Section padding"
+    },
+	{
+      "type": "header",
+      "content": "Desktop font Size"
+    },
+	{
+      "type": "text",
+      "id": "heading_font_size",
+      "label": "Section Heading Font Size"
+    },
+	{
+      "type": "text",
+      "id": "block_subtitle_font_size",
+      "label": "Block Sub title Font Size"
+    },
+	{
+      "type": "text",
+      "id": "block_title_font_size",
+      "label": "Block Title Font Size"
+    },
+	{
+      "type": "header",
+      "content": "Mobile font Size"
+    },
+	{
+      "type": "text",
+      "id": "mheading_font_size",
+      "label": "Section Heading Font Size"
+    },
+	{
+      "type": "text",
+      "id": "mblock_subtitle_font_size",
+      "label": "Block Sub title Font Size"
+    },
+	{
+      "type": "text",
+      "id": "mblock_title_font_size",
+      "label": "Block Title Font Size"
+    }
+],
+"blocks": [
+{
+"type": "content",
+"name": "Block content",
+"settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Block Image"
+    },
+    {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Block Sub title"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Block Title"
+    }
+
+]
+}
+],
+"presets": [
+{
+"name": "Lupin Ingredients",
+"blocks": [
+
+
+]
+}
+]
+}
+
+{% endschema %}

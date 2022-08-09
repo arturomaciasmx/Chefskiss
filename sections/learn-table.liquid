@@ -1,0 +1,102 @@
+<section class="learn-table-section">
+  <div class="table-left-image">
+  	<img src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Chefs_Kiss-9_1.png?v=1644652657"/>
+  </div>
+<div class="learn-table">
+  <h4 class="section-heading text-center offblack rawsonBold lt uppercase">{{section.settings.heading}}</h4>
+  <div class="overflow-box">
+{%- for block in section.blocks -%}
+
+<div class="learn-table-block block-{{ block.shopify_attributes }}">
+  <div class="item-name"> {{block.settings.heading}}</div>
+  <div class="item-number"> <div class="table-bg"><p class="RawsonMedium deepBlack"> {{block.settings.number}}</p> </div></div>
+  <div class="item-number"> <div class="table-bg"><p class="RawsonMedium deepBlack"> {{block.settings.second-number}}</p> </div></div>
+  <div class="item-number"> <div class="table-bg"><p class="RawsonMedium deepBlack"> {{block.settings.third-number}}</p> </div></div>
+
+</div>
+  
+{%- endfor -%}
+</div>
+  </div>
+<div class="table-right-image">
+  	<img src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/COLOR_F7F2E9_1.png?v=1644652657"/>
+  </div>
+</section>
+<style>
+  .secton-Learn-table{
+    background:{{section.settings.bg-color}};
+      padding:{{section.settings.padding}}px 0;
+  
+  }
+  
+</style>
+
+
+
+{% schema %}
+{
+"name": "Learn-table",
+"tag": "section",
+"class": "secton-Learn-table",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Section Heading"
+},{
+"type": "color",
+"id": "bg-color",
+"label": "Section Background"
+},
+{
+"type": "range",
+"id": "padding",
+"min": 0,
+"max": 250,
+"step": 5,
+"default": 50,
+"unit": "px",
+"label": "Section padding"
+}
+],
+"blocks": [
+{
+"type": "table",
+"name": "Table-content",
+"settings": [
+{
+"type": "liquid",
+"id": "heading",
+"default": "20g",
+"label": "Item Name"
+},
+{
+"type": "text",
+"id": "number",
+"label": "Block item one"
+},
+{
+"type": "text",
+"id": "second-number",
+"label": " Block item two"
+},
+{
+"type": "text",
+"id": "third-number",
+"label": "Block item three"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Learn table content",
+"blocks": [
+
+
+]
+}
+]
+}
+
+{% endschema %}

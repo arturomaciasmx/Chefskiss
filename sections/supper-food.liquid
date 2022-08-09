@@ -1,0 +1,180 @@
+<section class="super-food-section page-width">
+    <div class="super-food-box">
+        <div class="heading-area">
+               <h2 class="section-heading text-center recoletaRegular ">{{section.settings.heading}}</h2>
+        </div>
+        
+
+        <div class="super-food-content">
+            {%- for block in section.blocks -%}
+            <div class="super-food-block">
+                
+                <h4 class="superFood-content rawsonBold yellow lt"> {{block.settings.heading}}</h4>
+                <div class="inner-content topOne">
+                    <div class="bigNumber">{{block.settings.big-text}}</div>
+                    <div class="smallText">{{block.settings.content}}</div>
+                </div>
+               <div class="inner-content">
+                    <div class="bigNumber">{{block.settings.big-text-2}}</div>
+                    <div class="smallText">{{block.settings.content-2}}</div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+       
+    </div>
+</section>
+<style>
+  .secton-Super-Food{
+    background:{{section.settings.bg-color}};
+      padding:{{section.settings.padding}}px 0;
+  
+  }
+  @media screen and (min-width: 750px) {
+  .super-food-box .heading-area h2{
+  	font-size:{{section.settings.heading_font_size}};
+  }
+  .super-food-content .super-food-block h4{
+  	font-size:{{section.settings.block_heading_font_size}};
+  }
+  .super-food-content .super-food-block .inner-content .bigNumber{
+  	font-size:{{section.settings.number_font_size}};
+  }
+  .super-food-content .super-food-block .inner-content .smallText p{
+  	font-size:{{section.settings.text_font_size}};
+  }
+ }
+  @media screen and (max-width: 749px) {
+  .super-food-box .heading-area h2{
+  	font-size:{{section.settings.mheading_font_size}};
+  }
+  .super-food-content .super-food-block h4{
+  	font-size:{{section.settings.mblock_heading_font_size}};
+  }
+  .super-food-content .super-food-block .inner-content .bigNumber{
+  	font-size:{{section.settings.mnumber_font_size}};
+  }
+  .super-food-content .super-food-block .inner-content .smallText p{
+  	font-size:{{section.settings.mtext_font_size}};
+  }
+ }
+  
+</style>
+
+{% schema %}
+    {
+    "name": "Super Food",
+    "tag": "section",
+    "class": "secton-Super-Food",
+    "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Section Heading"
+        }, 
+        {
+          "type": "color",
+          "id": "bg-color",
+          "label": "Section Background"
+        },
+        {
+          "type": "range",
+          "id": "padding",
+          "min": 0,
+          "max": 250,
+          "step": 5,
+          "default": 50,
+          "unit": "px",
+          "label": "Section padding"
+        },
+		{
+          "type": "header",
+          "content": "Desktop font size"
+    	},
+		{
+          "type": "text",
+          "id": "heading_font_size",
+          "label": "Section Heading Font Size"
+    	},
+		{
+          "type": "text",
+          "id": "block_heading_font_size",
+          "label": "Block Heading Font Size"
+    	},
+		{
+          "type": "text",
+          "id": "number_font_size",
+          "label": "Block Number Font Size"
+    	},
+		{
+          "type": "text",
+          "id": "text_font_size",
+          "label": "Block Text Font Size"
+    	},
+		{
+          "type": "header",
+          "content": "Mobile font size"
+    	},
+		{
+          "type": "text",
+          "id": "mheading_font_size",
+          "label": "Section Heading Font Size"
+    	},
+		{
+          "type": "text",
+          "id": "mblock_heading_font_size",
+          "label": "Block Heading Font Size"
+    	},
+		{
+          "type": "text",
+          "id": "mnumber_font_size",
+          "label": "Block Number Font Size"
+    	},
+		{
+          "type": "text",
+          "id": "mtext_font_size",
+          "label": "Block Text Font Size"
+    	}
+],
+"blocks": [
+{
+"type": "content",
+"name": "Block content",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Block heading"
+},{
+    "type": "text",
+    "id": "big-text",
+    "label": "Block number"
+    },{
+        "type": "richtext",
+        "id": "content",
+        "label": "Block content"
+        },
+	{
+    "type": "text",
+    "id": "big-text-2",
+    "label": "Block number bottom"
+    },{
+        "type": "richtext",
+        "id": "content-2",
+        "label": "Block content bottom"
+        }
+]
+}
+],
+"presets": [
+{
+"name": "Supper Food",
+"blocks": [
+
+
+]
+}
+]
+}
+
+{% endschema %}
