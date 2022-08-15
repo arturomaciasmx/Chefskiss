@@ -12,17 +12,6 @@
     },
     "1653582216d302f8ad": {
       "type": "rich-text",
-      "blocks": {
-        "1653582216d0b85b60-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1653582216d0b85b60-1"
-      ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true

@@ -138,7 +138,7 @@
           "type": "announcement",
           "settings": {
             "text": "HIGH PROTEIN",
-            "number": "22g",
+            "number": "20g",
             "inner-heading": "PROTEIN",
             "inner-content": "PER SERVING"
           }
@@ -147,7 +147,7 @@
           "type": "announcement",
           "settings": {
             "text": "GUT FRIENDLY",
-            "number": "15g",
+            "number": "19g",
             "inner-heading": "FIBER",
             "inner-content": "PER SERVING"
           }
@@ -330,14 +330,14 @@
           "type": "sider",
           "settings": {
             "text": "",
-            "content": "<h4>KETO FRIENDLY<\/h4>\n<p>Low carb, gluten\/grain free, and high in protein...a perfect keto staple<\/p>\n<br>\n<br>\n<h4>GLUTEN & GRAIN FREE<\/h4>\n<p>Made with certified gluten free ingredients<\/p>\n<br>\n<br>\n<h4>SIMPLE, CLEAN INGREDIENTS<\/h4>\n<p>Made with only Lupin flour, eggs, and a touch of xantham gum<\/p>"
+            "content": "<h4>KETO FRIENDLY<\/h4>\n<p>Low carb, gluten\/grain free, and high in protein...a perfect keto staple<\/p>\n<br>\n<br>\n<h4>GLUTEN & GRAIN FREE<\/h4>\n<p>Made with certified gluten free ingredients<\/p>\n<br>\n<br>\n<h4>PLANT-BASED INGREDIENTS<\/h4>\n<p>Made with only Lupin flour and a touch of xanthan gum<\/p>"
           }
         },
         "42fe3895-131f-45e5-b3ce-adcec7acdbd7": {
           "type": "sider",
           "settings": {
             "text": "",
-            "content": "<h4>NUTRIENT DENSE<\/h4>\n<p> Packed with vitamins (B + E) , minerals (potassium and calcium) and antioxidants (lutein + zeaxanthin)\n <\/p>\n<br>\n<br>\n<h4>TRADITIONAL PASTA TASTE<\/h4>\n<p>Tastes like traditional semolina pasta, but without the carbs!<\/p>\n<br>\n<br>\n<h4>LOW GLYCEMIC IMPACT<\/h4>\n<p>Won’t spike blood sugar unlike traditional wheat based pasta<\/p>"
+            "content": "<h4>NUTRIENT DENSE<\/h4>\n<p> Packed with vitamins (B + E) , minerals (potassium and calcium) and antioxidants (lutein + zeaxanthin)\n <\/p>\n<br>\n<br>\n<h4>TRADITIONAL PASTA TASTE<\/h4>\n<p>Tastes like traditional semolina pasta, but without the carbs!<\/p>\n<br>\n<br>\n<h4>LOW GLYCEMIC IMPACT<\/h4>\n<p>Doesn’t spike blood sugar unlike traditional wheat based pasta<\/p>"
           }
         },
         "387b9bdd-29c8-43fe-8ada-cc4344d81247": {
