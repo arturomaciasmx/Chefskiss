@@ -33,16 +33,17 @@ p, span{
 .footer-logo-box {
     margin-bottom: 20px;
 }
-/* div#Banner-template--15752569749690__16402743621c319e0f .banner__box {
-    max-width: 678px !important;
-} */
+/* Home Page */
+.home-header-banner .media > img {
+  object-fit: cover;
+}
 @media only screen and (max-width: 750px) {
 	.product-slider-box {
     flex-direction: inherit !important;
 }
-  #Banner-template--15285239840954__16398184069ef2e2b6 .banner__text p {
+  /* #Banner-template--15285239840954__16398184069ef2e2b6 .banner__text p {
     font-size: 16px !important;
-}
+} */
   h1, h2, .h2 {
   font-size:38px !important;
   line-height: 40px !important;
@@ -77,9 +78,6 @@ p, span{
   
 
 }
-
-
-
 
    .yellow {
    color: #dba036 !important;
@@ -143,9 +141,7 @@ p, span{
 a.header__menu-item.header__menu-item.list-menu__item.link span {
     font-family: RawsonBold !important;
 }
-section#shopify-section-template--15285239840954__16402743621c319e0f h2.Hero-heading {
-/*     font-family: RecoletaMedium !important; */
-}
+
 /* Hero Section */
 .list-menu__item {
     display: flex;
@@ -161,15 +157,11 @@ section#shopify-section-template--15285239840954__16402743621c319e0f h2.Hero-hea
     text-align: center;
     padding: 5px;
     margin: 0;
-/*     letter-spacing: .2em; */
 }
 
 .header-wrapper {
     background: transparent;
   	z-index: 5;
-}
-.transparent-bg .header-wrapper {
-/*     background: #fbeee5; */
 }
 a.custom-btn {
     padding: 17px 40px;
@@ -222,10 +214,6 @@ a.custom-btn {
     text-align: left;
     max-width: 615px!important;
 }
-/* .banner__box>.banner__buttons {
-    justify-content: flex-start !important;
-
-} */
 .Hero-heading {
     font-size: 62px;
     line-height: 78px;
@@ -769,10 +757,7 @@ li.list-itme:first-child{
     text-align: center;
     width: 210px;
 }
- 
-  .lupin-ingredients-item-block-image img {
-/*     width: 100%; */
-}
+
   .lupin-ingredients-item-block-image {
     max-width: 80px;
     margin: auto;
@@ -973,9 +958,6 @@ body.gradient.collection #shopify-section-header > div > header > nav > ul > li:
   section#shopify-section-template--15285240004794__164015303893c45fcd {
     margin-top: 20px;
 }
-  /* div#Banner-template--15752569749690__16402743621c319e0f .banner__content {
-    padding: 0;
-} */
   .desktop-hide{
   	display: none !important;
   }
@@ -1013,9 +995,6 @@ img.smaller-section {
   fieldset.js.product-form__input {
     max-width: 300px;
 }
-  /* #Banner-template--15752569749690__16402743621c319e0f .banner__text {
-    margin-bottom: 40px !important;
-} */
   .variant-box .product-form__input {
     margin-bottom: 0;
 }
@@ -1108,16 +1087,6 @@ button.product-form__submit.button.custom-btn.button--primary {
   .banner__buttons a.custom-btn {
     width: 235px !important;
 }
-.banner__box {
-  padding: 4rem 0;
-}
-   /* div#Banner-template--15752569749690__16402743621c319e0f .banner__box {
-    padding: 4rem 4rem!important;
-    padding-left: 20px!important;
-} */
-  /* .banner__box {
-    padding: 4rem 1.5rem !important;
-} */
   button.search__button.field__button {
     position: absolute;
 }
@@ -1190,9 +1159,6 @@ button.product-form__submit.button.custom-btn.button--primary {
   .mobile-hide{
   	display: none !important;
   } 
-.header__icons {
-/*     display: none; */
-}
   .header {
     display: grid;
     grid-template-areas: 'left-icon heading icons';
@@ -1200,7 +1166,6 @@ button.product-form__submit.button.custom-btn.button--primary {
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-/*     direction: rtl; */
 }
   .excelent-pasta-content {
     display: grid;
@@ -1380,17 +1345,6 @@ button.product-form__submit.button.custom-btn.button--primary {
     font-size: 36px !important;
     line-height: 46px !important;
 }
-   /* div#Banner-template--15752569749690__16402743621c319e0f:not(.banner--mobile-bottom) .banner__content::before {
-    padding-bottom: 750px !important;
-} */
-  .banner__content.banner__content--center-right.page-width {
-    position: relative;
-}
-  /* .banner__box.color-accent-1.center-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
   .variant-with-price {
     display: flex;
     flex-direction: column;
@@ -1433,9 +1387,6 @@ button.product-form__submit.button.custom-btn.button--primary {
   .compare_box ul.slick-dots {
     bottom: -50px;
 }
-  /* div#Banner-template--15752569749690__16402743621c319e0f > div.banner__media.media > img.desktop-hide {
-    object-fit: cover;
-} */
   .image-with-text__grid.color-background-1.grid.grid--gapless.grid--1-col.grid--2-col-tablet.gradient.image-with-text__grid--reverse {
     flex-direction: column-reverse;
 }
@@ -1463,9 +1414,6 @@ button.product-form__submit.button.custom-btn.button--primary {
     font-size: 13px !important;
     padding: 19px 12px;
 }
-  /* #Banner-template--15752569749690__16402743621c319e0f .banner__text {
-    margin-bottom: 2.8rem;
-} */
   #Banner-template--15285239840954__16398184069ef2e2b6 .banner__text {
     margin-bottom: 30px !important;
 }
@@ -1491,22 +1439,10 @@ button.product-form__submit.button.custom-btn.button--primary {
 button#Subscribe {
     font-family: rawsonBold;
 }
-@media only screen and (min-width: 350px) and (max-width: 750px) {
-
-  /* .banner__box {
-    padding: 4rem 5rem!important;
-    padding-left: 20px !important;
-} */
-  
-}
 @media only screen and (max-width: 400px){
 h3.announcement-bar__message.recoletaRegular.yellow {
     font-size: 18px !important;
 }
-  /* div#Banner-template--15752569749690__16402743621c319e0f .banner__box {
-    padding: 4rem 0rem!important;
-    padding-left: 9px!important;
-} */
   .image-with-text__media--small {
     height: 225px!important;
 }
@@ -1622,10 +1558,6 @@ ul.compare-other li span {
   padding-left:6% !important;
 }
 
-/* .image-with-text__content, .banner__box{
-  padding-left: 0px !important;
-} */
-
 .banner__text{
   max-width: 475px !important;
 }
@@ -1693,13 +1625,6 @@ ul.compare-other li span {
   #shopify-section-template--15285239840954__1639891676b2547d4d{
    display:none !important;
   }
-
-  
-  /* div#Banner-template--15752569749690__16402743621c319e0f .banner__box{
-  padding-left:8%!important;
-    padding-right: 30px !important;
-  } */
-
   .image-with-text__content{
     padding-left: 0!important;
     padding-right: 0!important;
