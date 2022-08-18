@@ -26,10 +26,15 @@
   }   
  }
   {%- if section.settings.section_bg_img  != blank -%}
-  #shopify-section-{{ section.id }}{
-       background:url({{section.settings.section_bg_img | img_url: "1200x"}});
+  #shopify-section-{{ section.id }} .multicolumn {
+       background:url({{ section.settings.section_bg_img | img_url: "1200x" }});
+       background-position: center;
      }
   {%- endif -%}
+  #shopify-section-{{ section.id }} .multicolumn {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 </style>
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %} id{{section.id}}">
   <div class="page-width">
@@ -128,7 +133,7 @@
 {% schema %}
 {
   "name": "t:sections.multicolumn.name",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "spaced-section spaced-section--full-width multi-column-section",
   "tag": "section",
   "settings": [
     {
@@ -137,10 +142,22 @@
       "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
     },
-	{
+	  {
       "type": "image_picker",
       "id": "section_bg_img",
       "label": "Section background"
+    },
+    {
+      "type": "number",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 50
+    },
+    {
+      "type": "number",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 50
     },
     {
       "type": "select",

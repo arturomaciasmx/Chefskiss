@@ -49,57 +49,8 @@
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "16467704358e2cc71e": {
-      "type": "excellent-pasta-scroller",
-      "disabled": true,
-      "blocks": {
-        "3e614d2c-2140-4cd4-9bcc-dbadfda7f778": {
-          "type": "Excelent-Pasta-scroller",
-          "settings": {
-            "text": "You’ve never had pasta like this...",
-            "link": ""
-          }
-        },
-        "778fbac5-ac5f-491e-9816-281824c6301a": {
-          "type": "Excelent-Pasta-scroller",
-          "settings": {
-            "text": "You’ve never had pasta like this...",
-            "link": ""
-          }
-        },
-        "90a09633-7621-458f-839b-8da5c36d56b2": {
-          "type": "Excelent-Pasta-scroller",
-          "settings": {
-            "text": "You’ve never had pasta like this...",
-            "link": ""
-          }
-        },
-        "2e0764b9-a511-4e14-831e-5c110ba38173": {
-          "type": "Excelent-Pasta-scroller",
-          "settings": {
-            "text": "You’ve never had pasta like this...",
-            "link": ""
-          }
-        },
-        "72ae46ae-0ed9-4dca-96f7-fb9e2df84e54": {
-          "type": "Excelent-Pasta-scroller",
-          "settings": {
-            "text": "You’ve never had pasta like this...",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "3e614d2c-2140-4cd4-9bcc-dbadfda7f778",
-        "778fbac5-ac5f-491e-9816-281824c6301a",
-        "90a09633-7621-458f-839b-8da5c36d56b2",
-        "2e0764b9-a511-4e14-831e-5c110ba38173",
-        "72ae46ae-0ed9-4dca-96f7-fb9e2df84e54"
-      ],
-      "settings": {
+        "show_text_below": false,
+        "custom_class": "home-header-banner"
       }
     },
     "1639826488965de794": {
@@ -193,136 +144,6 @@
         "btn_url": "shopify:\/\/pages\/learn"
       }
     },
-    "1647033006b8546422": {
-      "type": "homepage-compare-mobile",
-      "disabled": true,
-      "blocks": {
-        "724d9a2c-96e5-49b5-a4a9-da24b7cc92cc": {
-          "type": "Ingredients",
-          "settings": {
-            "text": "",
-            "ingredient_heading": "KETO FRIENDLY\n\nsjsjs",
-            "ingredient_des": "Low carb, gluten\/grain free, and high in protein...a perfect keto staple"
-          }
-        },
-        "ce3d4706-5dda-4bad-b179-a837cc4931b7": {
-          "type": "Ingredients",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chefs_Kiss-9_1.png",
-            "text": "",
-            "ingredient_heading": "NUTRIENT DENSE",
-            "ingredient_des": "Packed with vitamins (B + E) , minerals (potassium and calcium) and antioxidants (lutein + zeaxanthin)"
-          }
-        },
-        "a501e9bf-30d1-47f9-85ba-530944bc732d": {
-          "type": "Ingredients",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chefs_Kiss-9_1.png",
-            "text": "",
-            "ingredient_heading": "GLUTEN & GRAIN FREE",
-            "ingredient_des": "Made with certified gluten free ingredients"
-          }
-        },
-        "b8f26bc7-8126-4b86-a0ca-1e1a5f5d46b9": {
-          "type": "Ingredients",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chefs_Kiss-9_1.png",
-            "text": "",
-            "ingredient_heading": "TRADITIONAL PASTA TASTE",
-            "ingredient_des": "Tastes like traditional semolina pasta, but without the carbs!"
-          }
-        },
-        "ecde7b7a-16cd-428a-b6ff-b3290234a9ee": {
-          "type": "Ingredients",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chefs_Kiss-9_1.png",
-            "text": "",
-            "ingredient_heading": "PLANT-BASED INGREDIENTS",
-            "ingredient_des": "Made with only Lupin flour and a touch of xanthan gum"
-          }
-        },
-        "7aabc09f-4081-4589-b3e4-8e0fd5eaec28": {
-          "type": "Ingredients",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chefs_Kiss-9_1.png",
-            "text": "",
-            "ingredient_heading": "LOW GLYCEMIC INDEX",
-            "ingredient_des": "Doesn’t spike blood sugar unlike traditional wheat based pasta"
-          }
-        }
-      },
-      "block_order": [
-        "724d9a2c-96e5-49b5-a4a9-da24b7cc92cc",
-        "ce3d4706-5dda-4bad-b179-a837cc4931b7",
-        "a501e9bf-30d1-47f9-85ba-530944bc732d",
-        "b8f26bc7-8126-4b86-a0ca-1e1a5f5d46b9",
-        "ecde7b7a-16cd-428a-b6ff-b3290234a9ee",
-        "7aabc09f-4081-4589-b3e4-8e0fd5eaec28"
-      ],
-      "settings": {
-        "heading": "",
-        "bg-color": "",
-        "padding": 50
-      }
-    },
-    "164742408237595a00": {
-      "type": "compare-section-mobile",
-      "disabled": true,
-      "blocks": {
-        "4fdf01a0-56c1-4db2-b236-14f460bb1df9": {
-          "type": "tabs",
-          "settings": {
-            "heading": "KETO FRIENDLY",
-            "content": "Low carb, gluten\/grain free, and high in protein...a perfect keto staple"
-          }
-        },
-        "a53fa1df-b163-4944-8a7e-3fe5d1b60ec0": {
-          "type": "tabs",
-          "settings": {
-            "heading": "NUTRIENT DENSE",
-            "content": "Packed with vitamins (B + E) , minerals (potassium and calcium) and antioxidants (lutein + zeaxanthin)"
-          }
-        },
-        "3a787bc5-f331-4071-9698-648b4097ed87": {
-          "type": "tabs",
-          "settings": {
-            "heading": "GLUTEN & GRAIN FREE",
-            "content": "Made with certified gluten free ingredients"
-          }
-        },
-        "ce147173-3eed-4140-b824-b41240ee40fb": {
-          "type": "tabs",
-          "settings": {
-            "heading": "TRADITIONAL PASTA TASTE",
-            "content": "Tastes like traditional semolina pasta, but without the carbs!"
-          }
-        },
-        "95c97a73-e06d-44b8-8373-2446d3c3c79b": {
-          "type": "tabs",
-          "settings": {
-            "heading": "SIMPLE, CLEAN INGREDIENTS",
-            "content": "Made only with Lupin flour, eggs, and a touch of xanthan gum"
-          }
-        },
-        "5294b9e8-63d9-478b-864e-6817a0ebba7b": {
-          "type": "tabs",
-          "settings": {
-            "heading": "LOW GLYCEMIC IMPACT",
-            "content": "Won’t spike blood sugar unlike traditional wheat based pasta"
-          }
-        }
-      },
-      "block_order": [
-        "4fdf01a0-56c1-4db2-b236-14f460bb1df9",
-        "a53fa1df-b163-4944-8a7e-3fe5d1b60ec0",
-        "3a787bc5-f331-4071-9698-648b4097ed87",
-        "ce147173-3eed-4140-b824-b41240ee40fb",
-        "95c97a73-e06d-44b8-8373-2446d3c3c79b",
-        "5294b9e8-63d9-478b-864e-6817a0ebba7b"
-      ],
-      "settings": {
-      }
-    },
     "1640506382d82d1f7d": {
       "type": "compare-blocks-section",
       "blocks": {
@@ -337,7 +158,7 @@
           "type": "sider",
           "settings": {
             "text": "",
-            "content": "<h4>NUTRIENT DENSE<\/h4>\n<p> Packed with vitamins (B + E) , minerals (potassium and calcium) and antioxidants (lutein + zeaxanthin)\n <\/p>\n<br>\n<br>\n<h4>TRADITIONAL PASTA TASTE<\/h4>\n<p>Tastes like traditional semolina pasta, but without the carbs!<\/p>\n<br>\n<br>\n<h4>LOW GLYCEMIC IMPACT<\/h4>\n<p>Doesn’t spike blood sugar unlike traditional wheat based pasta<\/p>"
+            "content": "<h4>NUTRIENT DENSE<\/h4>\n<p> Packed with vitamins (B + E) , minerals (potassium and calcium) and antioxidants (lutein + zeaxanthin)\n <\/p>\n<br>\n<br>\n<h4>TRADITIONAL PASTA TASTE<\/h4>\n<p>Tastes like traditional semolina pasta, but without the carbs!<\/p>\n<br>\n<br>\n<h4>LOW GLYCEMIC INDEX<\/h4>\n<p>Doesn’t spike blood sugar unlike traditional wheat based pasta<\/p>"
           }
         },
         "387b9bdd-29c8-43fe-8ada-cc4344d81247": {
@@ -541,7 +362,8 @@
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
-        "show_text_below": false
+        "show_text_below": false,
+        "custom_class": "one-product-section"
       }
     },
     "1641197566577f5198": {
@@ -584,36 +406,18 @@
         "color_scheme": "background-1",
         "layout": "text_first"
       }
-    },
-    "16437227126516551f": {
-      "type": "featured-blog",
-      "disabled": true,
-      "settings": {
-        "heading": "Blog posts",
-        "blog": "recipes",
-        "post_limit": 2,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
-      }
     }
   },
   "order": [
     "16398184069ef2e2b6",
-    "16467704358e2cc71e",
     "1639826488965de794",
     "16398337028d52ee80",
     "1639891676b2547d4d",
-    "1647033006b8546422",
-    "164742408237595a00",
     "1640506382d82d1f7d",
     "16398353568060b602",
     "16398852713f1264c3",
     "16398384382550835a",
     "16402743621c319e0f",
-    "1641197566577f5198",
-    "16437227126516551f"
+    "1641197566577f5198"
   ]
 }

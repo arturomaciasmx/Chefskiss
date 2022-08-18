@@ -3,7 +3,7 @@
 }
 
 .product-grid.negative-margin {
-  margin-bottom: -2rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -12,7 +12,7 @@
   }
 
   .product-grid.negative-margin {
-    margin-bottom: calc(-5rem - var(--page-width-margin));
+    margin-bottom: calc(0rem - var(--page-width-margin));
   }
 
   .product-grid.negative-margin--small {
