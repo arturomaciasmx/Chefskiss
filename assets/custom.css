@@ -440,7 +440,7 @@ section#shopify-section-template--15240483045562__16399859601c8a92f3 {
 .ingredients-content {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: center;
 }
 .single-ingredietns-item {
     margin: 0 50px;
