@@ -1700,6 +1700,12 @@ ul.compare-other li span {
 @media screen and (max-width: 1600px) {
   /* Home Page */
   .compare-content .left-side .single-box:nth-child(3) {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* Home Page */
+  .compare-content .left-side .single-box:nth-child(3) {
     margin-top: 50px;
   }
 }
