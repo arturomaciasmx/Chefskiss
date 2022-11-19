@@ -1,23 +1,20 @@
 <section class="lupin-ingredients-item-section page-width">
     <div class="lupin-ingredients-item-box">
-<!--         <div class="heading-area">
-            <h2 class="section-heading text-center recoleta white ">{{section.settings.heading}}</h2>
-        </div> -->
+         <div class="heading-area">
+            <h2 class="section-heading text-center recoleta ">{{section.settings.heading}}</h2>
+        </div>
 
 
         <div class="lupin-ingredients-item-content">
-            <div class="lupin-ingredients-item-content-heading">
-                <h2 class=" recoletaReular offwhite">{{section.settings.heading}}</h2>
-            </div>
           <div class="lupin-ingredients-block-items">
             {%- for block in section.blocks -%}
             <div class="lupin-ingredients-item-block">
                 <div id="img-{{block.id}}" class="lupin-ingredients-item-block-image"><img src="{{ block.settings.image | img_url: 'mater'}}" alt=""></div>
-                <div class="lupin-ingredients-item-block-subtitle">
-                    <p class="offwhite rawsonBold uppercase lt">{{ block.settings.sub_title }}</p>
-                </div>
                 <div class="lupin-ingredients-item-block-title">
-                    <h3 class="offwhite recoletaRegular">{{ block.settings.title }}</h3>
+                  <h3 class="recoletaRegular">{{ block.settings.title }}</h3>
+              </div>
+                <div class="lupin-ingredients-item-block-subtitle">
+                    <p class="rawsonBold uppercase lt">{{ block.settings.sub_title }}</p>
                 </div>
             </div>
             {%- endfor -%}

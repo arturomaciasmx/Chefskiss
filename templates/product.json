@@ -26,6 +26,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
@@ -44,6 +45,12 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false
+          }
+        },
+        "1704ab9c-dd98-49aa-8812-6b873c066b79": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "description": {
@@ -87,6 +94,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "1704ab9c-dd98-49aa-8812-6b873c066b79",
         "description",
         "dfc85cfe-d8d0-468e-8f4f-1a4cb8d936e6",
         "ddd424cd-f092-4f88-a054-42b97d0c9379",
@@ -96,19 +104,6 @@
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
       }
     },
     "1642924923612782d9": {
@@ -127,11 +122,200 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "16677942495b5a4e35": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16677942829673d6a8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "4c914242-78cc-492e-b4e2-2a856d5776f1": {
+      "type": "image-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_3.png",
+        "width": 1200,
+        "height": 140,
+        "space_top": 50,
+        "space_bottom": 50
+      }
+    },
+    "f50e1304-d799-4681-ac10-c946fc76b9da": {
+      "type": "its-LUPIN",
+      "settings": {
+        "bg-color": "",
+        "padding": 50,
+        "subHeading": "HOW’D WE DO IT?",
+        "heading": "It’s not magic, it’s LUPIN!",
+        "subheading_font_size": "22px!important",
+        "heading_font_size": "",
+        "msubheading_font_size": "",
+        "mheading_font_size": "",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-07_at_15.11.18.png",
+        "inner-heading": "Meet the secret behind Chef’s Kiss Pasta",
+        "inner-content": "Lupin beans are a legume and part of the same family as chickpeas, lentils, and peas. This incredible bean originated in the Middle East thousands of years ago and today is commonly consumed across Mediterranean and Latin American Countries.",
+        "inner_heading_font_size": "",
+        "inner_content_font_size": "",
+        "block_content_font_size": "",
+        "minner_heading_font_size": "",
+        "minner_content_font_size": "",
+        "mblock_content_font_size": ""
+      }
+    },
+    "d436585e-a81e-4d67-b3d4-b8bbe925bd43": {
+      "type": "icons-grid",
+      "blocks": {
+        "dd0e4724-642a-4c6e-888c-cb1757752057": {
+          "type": "icon",
+          "settings": {
+            "text": "Highest protein content of ANY plant based source on the planet!",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_18_1.png"
+          }
+        },
+        "13692d68-4ff7-4ec8-83ae-52a4f5cc088c": {
+          "type": "icon",
+          "settings": {
+            "text": "Contains all 9 essential amino acids",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_19.png"
+          }
+        },
+        "fb9f31fa-53c8-49af-8b0e-372d7fdb13af": {
+          "type": "icon",
+          "settings": {
+            "text": "Super Low in Net Carbs",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_18.png"
+          }
+        },
+        "812211a6-63b7-4d0e-93e9-52888411562d": {
+          "type": "icon",
+          "settings": {
+            "text": "Rich in prebiotic fiber",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_13.png"
+          }
+        },
+        "d9b56f06-2f74-4679-9090-d0b2f8a5666c": {
+          "type": "icon",
+          "settings": {
+            "text": "Gluten Free",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_6.png"
+          }
+        },
+        "d6e634d0-7d54-49fc-b622-e587d82cff37": {
+          "type": "icon",
+          "settings": {
+            "text": "Packed with essential macronutrients",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_21.png"
+          }
+        }
+      },
+      "block_order": [
+        "dd0e4724-642a-4c6e-888c-cb1757752057",
+        "13692d68-4ff7-4ec8-83ae-52a4f5cc088c",
+        "fb9f31fa-53c8-49af-8b0e-372d7fdb13af",
+        "812211a6-63b7-4d0e-93e9-52888411562d",
+        "d9b56f06-2f74-4679-9090-d0b2f8a5666c",
+        "d6e634d0-7d54-49fc-b622-e587d82cff37"
+      ],
+      "settings": {
+        "icon_size": 60,
+        "columns": "6"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1c15681f-1f4d-4838-9921-8462253942b7": {
+      "type": "supper-food",
+      "blocks": {
+        "c203ee75-f57f-4afc-b5cc-abf59c4e826c": {
+          "type": "content",
+          "settings": {
+            "heading": "LOW CARB",
+            "big-text": "15x",
+            "content": "<p>LESS NET CARBS<\/p><p>THAN CHICKPEAS<\/p>",
+            "big-text-2": "26x",
+            "content-2": "<p>LESS NET CARBS<\/p><p>THAN CASSAVA FLOUR<\/p>",
+            "icon": "shopify:\/\/shop_images\/Recurso_18.png"
+          }
+        },
+        "770e2708-5cc0-4b60-9677-015fa8cbd5a2": {
+          "type": "content",
+          "settings": {
+            "heading": "HIGH PROTEIN",
+            "big-text": "2x",
+            "content": "<p>MORE PROTEIN<\/p><p>THAN CHICKPEAS<\/p>",
+            "big-text-2": "2.5x",
+            "content-2": "<p>MORE PROTEIN<\/p><p>THAN CHIA SEEDS<\/p>",
+            "icon": "shopify:\/\/shop_images\/Recurso_14.png"
+          }
+        },
+        "b54e30f6-f0f5-4c54-b930-12e4016f2a9f": {
+          "type": "content",
+          "settings": {
+            "heading": "GUT FRIENDLY",
+            "big-text": "4x",
+            "content": "<p>MORE FIBER<\/p><p>THAN OATS<\/p>",
+            "big-text-2": "3x",
+            "content-2": "<p>MORE FIBER<\/p><p>THAN LENTILS<\/p>",
+            "icon": "shopify:\/\/shop_images\/Recurso_13.png"
+          }
+        }
+      },
+      "block_order": [
+        "c203ee75-f57f-4afc-b5cc-abf59c4e826c",
+        "770e2708-5cc0-4b60-9677-015fa8cbd5a2",
+        "b54e30f6-f0f5-4c54-b930-12e4016f2a9f"
+      ],
+      "settings": {
+        "heading": "A superfood unlike any other!",
+        "bg-color": "linear-gradient(180deg, rgba(243, 240, 232, 1) 48%, rgba(255, 255, 255, 1) 83%)",
+        "padding": 30,
+        "heading_font_size": "",
+        "block_heading_font_size": "",
+        "number_font_size": "",
+        "text_font_size": "",
+        "mheading_font_size": "",
+        "mblock_heading_font_size": "",
+        "mnumber_font_size": "",
+        "mtext_font_size": ""
+      }
+    },
+    "dfce5692-017f-4692-83a1-4b7de34efca8": {
+      "type": "full-width-cta",
+      "settings": {
+        "cta_text": "Learn more",
+        "bg_color": "#ffffff",
+        "button_link": "shopify:\/\/pages\/learn",
+        "space_top": 0,
+        "space_bottom": 49
+      }
     }
   },
   "order": [
     "main",
+    "1642924923612782d9",
+    "16677942495b5a4e35",
+    "16677942829673d6a8",
+    "4c914242-78cc-492e-b4e2-2a856d5776f1",
+    "f50e1304-d799-4681-ac10-c946fc76b9da",
+    "d436585e-a81e-4d67-b3d4-b8bbe925bd43",
     "product-recommendations",
-    "1642924923612782d9"
+    "1c15681f-1f4d-4838-9921-8462253942b7",
+    "dfce5692-017f-4692-83a1-4b7de34efca8"
   ]
 }

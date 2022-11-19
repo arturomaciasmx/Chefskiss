@@ -1,8 +1,8 @@
 <section class="health-benefits-section page-width">
     <div class="health-benefits-box">
         <div class="heading-area">
-               <h2 class="section-heading text-center RecoletaRegular ">{{section.settings.heading}}</h2>
-          <h4 class="superFood-content sub-heading rawsonBold text-center lt uppercase"> {{section.settings.sub-heading}}</h4>
+          <h2 class="section-heading text-center RecoletaRegular ">{{section.settings.heading}}</h2>
+          <h4 class="superFood-content sub-heading rawsonBold text-center lt uppercase yellow"> {{section.settings.sub-heading}}</h4>
         </div>
         
 
@@ -12,7 +12,7 @@
                 
                 
                 <div class="inner-content topOne">
-                    <div class="bigNumber ">{{block.settings.big-text}}</div>
+                    <div class="bigNumber yellow">{{block.settings.big-text}}</div>
                     <div class="smallText-health-benefits">{{block.settings.content}}</div>
                 </div>
                
@@ -47,15 +47,21 @@
   @media screen and (max-width: 749px) {
   .health-benefits-box .heading-area h2{
   	font-size: {{ section.settings.mheading_font_size }};
+    text-align: center!important;
   }
   .health-benefits-box .heading-area h4{
   	font-size: {{ section.settings.msubheading_font_size }};
+    text-align: center!important;
   }
   .health-benefits-box .health-benefits-content .health-benefits-block .bigNumber{
   	font-size: {{ section.settings.mnumber_font_size }};
   }
   .health-benefits-box .health-benefits-content .health-benefits-block .smallText-health-benefits{
   	font-size: {{ section.settings.mblock_text_font_size }};
+  }
+  .bigNumber {
+    display: flex;
+    justify-content: center;
   }
  }
 </style>

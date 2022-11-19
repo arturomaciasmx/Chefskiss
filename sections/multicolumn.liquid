@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <style>
-  @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .multicolumn .title-wrapper-with-link h2{
   	font-size: {{ section.settings.heading_font_size }};
   }
@@ -14,16 +14,30 @@
   }
  }
   
-   @media screen and (max-width: 749px) {
+@media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link h2{
   	font-size: {{ section.settings.mheading_font_size }};
+    text-align: center!important;
   }
   .multicolumn .multicolumn-card .multicolumn-card__info h2 {
   	font-size: {{ section.settings.mcolumn_heading_font_size }};
+    text-align: center!important;
   }
   .multicolumn .multicolumn-card .multicolumn-card__info .rte p{
   	font-size: {{ section.settings.mcolumn_content_font_size }};
+    text-align: center!important;
   }   
+  #shopify-section-{{ section.id }} .multicolumn {
+    background: url({{ section.settings.section_bg_img_mobile | img_url: "600x" }})!important;
+    background-size: cover!important;
+    background-position: bottom!important;
+    padding-bottom: 70px!important;
+  }
+
+  #shopify-section-{{ section.id }} .multicolumn ul li {
+    margin-bottom: 15px;
+  }
+
  }
   {%- if section.settings.section_bg_img  != blank -%}
   #shopify-section-{{ section.id }} .multicolumn {
@@ -146,6 +160,11 @@
       "type": "image_picker",
       "id": "section_bg_img",
       "label": "Section background"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_bg_img_mobile",
+      "label": "Section background Mobile"
     },
     {
       "type": "number",

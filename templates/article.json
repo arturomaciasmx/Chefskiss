@@ -35,6 +35,7 @@
       "blocks": {
         "164292835270a2e8ef-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Did you make this recipe or create your own?",
             "heading_size": "h2"

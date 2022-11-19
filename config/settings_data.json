@@ -3,21 +3,21 @@
     "colors_solid_button_labels": "#fff",
     "colors_accent_1": "#dba036",
     "gradient_accent_1": "#dba036",
-    "colors_accent_2": "#dba036",
+    "colors_accent_2": "#a8a398",
     "gradient_accent_2": "linear-gradient(180deg, rgba(219, 160, 54, 1), rgba(221, 39, 57, 1) 100%)",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
-    "colors_background_1": "#f4eee1",
+    "colors_background_1": "#f3f0e8",
     "colors_background_2": "#ffffff",
     "type_header_font": "assistant_n4",
     "heading_scale": 110,
     "type_body_font": "assistant_n4",
     "body_scale": 105,
     "social_twitter_link": "",
-    "social_facebook_link": "#",
+    "social_facebook_link": "",
     "social_pinterest_link": "",
     "social_instagram_link": "https:\/\/www.instagram.com\/eatchefskiss\/",
-    "social_tiktok_link": "#",
+    "social_tiktok_link": "",
     "social_youtube_link": "",
     "predictive_search_enabled": false,
     "predictive_search_show_price": false,
@@ -28,9 +28,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "FROM THE TEAM THAT BROUGHT YOU GNOODA",
+              "text": "BROUGHT TO YOU BY THE FOUNDER OF GNOODA",
               "announcement_font": "",
-              "color_scheme": "background-1",
+              "color_scheme": "accent-2",
               "link": ""
             }
           }

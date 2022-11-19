@@ -237,6 +237,7 @@
                 </div>
               </noscript>
             {%- when 'buy_buttons' -%}
+              <div class="rc-widget-injection-parent"></div>
               <div {{ block.shopify_attributes }}>
                 {%- if product != blank -%}
                   <product-form class="product-form">
@@ -252,21 +253,22 @@
 
                     {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-{% render 'bsub-widget', product: product %}
+{% comment %} {% render 'bsub-widget', product: product %} {% endcomment %}
+
                       <div class="product-form__buttons">
                         <button
                           type="submit"
                           name="add"
-                          class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                          class="custom-btn product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                         {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                         >
-                            <span>
+                            
                               {%- if product.selected_or_first_available_variant.available -%}
                                 {{ 'products.product.add_to_cart' | t }}
                               {%- else -%}
                                 {{ 'products.product.sold_out' | t }}
                               {%- endif -%}
-                            </span>
+                            
                             <div class="loading-overlay__spinner hidden">
                               <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                                 <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
@@ -294,6 +296,12 @@
                   </div>
                 {%- endif -%}
               </div>
+            {%- when 'description' -%}
+              {%- if product.description != blank -%}
+                <div class="product__description rte">
+                  {{ product.description }}
+                </div>
+              {%- endif -%}
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'rating' -%}
@@ -478,6 +486,9 @@
   "class": "featured-product-section spaced-section spaced-section--full-width",
   "blocks": [
     {
+      "type": "@app"
+    },
+    {
       "type": "text",
       "name": "t:sections.featured-product.blocks.text.name",
       "settings": [
@@ -560,6 +571,11 @@
           "info": "t:sections.featured-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         }
       ]
+    },
+    {
+      "type": "description",
+      "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
     },
     {
       "type": "share",

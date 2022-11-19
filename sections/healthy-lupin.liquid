@@ -1,7 +1,7 @@
 <section class="healthy-item-section page-width">
     <div class="healthy-item-box">
         <div class="heading-area">
-               <h3 class="section-heading text-center recoletaRegular offwhite " style="max-width:625px; margin:0 auto 50px auto;">{{section.settings.heading}}</h3>
+               <h3 class="section-heading text-center recoletaRegular " style="max-width:625px; margin:0 auto 50px auto;">{{section.settings.heading}}</h3>
         </div>
         
 
@@ -9,50 +9,44 @@
             {%- for block in section.blocks -%}
             <div class="healthy-item-block">
                 
-                <h4 class="healthyItem-content rawsonBold offwhite uppercase lt"> {{block.settings.heading}}</h4>
+                <h4 class="healthyItem-content rawsonBold uppercase lt"> {{block.settings.heading}}</h4>
                 <div class="list-items">
                     <ul>
                         <li class="list-itme">
                             {% if block.settings.show-lupin-one%}
-                            <div class="list-item-img bg-lupin"><svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.7042 37.8691C27.9528 39.5914 24.9206 39.9539 21.7787 39.4999C18.5414 39.0312 15.5011 37.9101 12.716 36.2042C10.6253 34.9366 8.88085 33.2542 7.78543 31.0279C6.57601 28.5891 5.34395 24.7619 5.81078 22.0835C6.49649 18.1613 7.60696 16.2548 10.06 13.1603C12.4757 10.1185 17.2527 8.2982 21.1576 8.42098C22.2938 8.45921 23.4154 8.59272 24.5494 8.70865C25.1164 8.76661 25.5871 8.62446 26.0795 8.33936C27.9839 7.17919 30.4002 7.46309 31.8731 9.00622C32.4027 9.56556 32.81 10.2231 32.9271 10.992C33.0358 11.6232 33.3198 12.1935 33.6038 12.7638C34.9469 15.35 36.6176 17.772 37.5782 20.5627C38.4445 23.0755 38.7468 25.6381 38.0489 28.2322C37.0999 31.7044 35.0564 34.4815 32.3381 36.7551C32.0809 36.9691 31.8363 37.1655 31.5616 37.3671C31.2692 37.5561 30.9841 37.6976 30.7042 37.8691ZM30.7667 11.2059C30.0578 10.4142 28.9943 9.89948 27.6632 9.98732C26.806 10.0407 26.5208 10.6308 26.9561 11.3609C27.4774 12.231 29.1867 12.9913 30.2565 12.8243C31.1159 12.6932 31.3513 12.1735 30.7667 11.2059Z" fill="#DBA036"/>
-                                </svg></div>
+                            <div class="list-item-img bg-lupin">
+                                <img style="width: 35px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"/>
+                            </div>
                                 {%else%}
                             <div class="list-item-img bg-cross">
-                                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="31.8201" y1="10.6065" x2="10.6069" y2="31.8197" stroke="#F4EEE1" stroke-width="8"/>
-                                <line x1="31.82" y1="31.8199" x2="10.6068" y2="10.6067" stroke="#F4EEE1" stroke-width="8"/>
-                                </svg></div>
+                                <img  style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"/>
+                            </div>
                                 {%endif%}
-                            <p class="lsit-item-content rawsonBold uppercase lt offwhite">{{block.settings.content-one}}</p>
+                            <p class="lsit-item-content rawsonBold uppercase lt">{{block.settings.content-one}}</p>
                         </li>
                       <li class="list-itme">
                             {% if block.settings.show-lupin-two%}
-                            <div class="list-item-img bg-lupin"><svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.7042 37.8691C27.9528 39.5914 24.9206 39.9539 21.7787 39.4999C18.5414 39.0312 15.5011 37.9101 12.716 36.2042C10.6253 34.9366 8.88085 33.2542 7.78543 31.0279C6.57601 28.5891 5.34395 24.7619 5.81078 22.0835C6.49649 18.1613 7.60696 16.2548 10.06 13.1603C12.4757 10.1185 17.2527 8.2982 21.1576 8.42098C22.2938 8.45921 23.4154 8.59272 24.5494 8.70865C25.1164 8.76661 25.5871 8.62446 26.0795 8.33936C27.9839 7.17919 30.4002 7.46309 31.8731 9.00622C32.4027 9.56556 32.81 10.2231 32.9271 10.992C33.0358 11.6232 33.3198 12.1935 33.6038 12.7638C34.9469 15.35 36.6176 17.772 37.5782 20.5627C38.4445 23.0755 38.7468 25.6381 38.0489 28.2322C37.0999 31.7044 35.0564 34.4815 32.3381 36.7551C32.0809 36.9691 31.8363 37.1655 31.5616 37.3671C31.2692 37.5561 30.9841 37.6976 30.7042 37.8691ZM30.7667 11.2059C30.0578 10.4142 28.9943 9.89948 27.6632 9.98732C26.806 10.0407 26.5208 10.6308 26.9561 11.3609C27.4774 12.231 29.1867 12.9913 30.2565 12.8243C31.1159 12.6932 31.3513 12.1735 30.7667 11.2059Z" fill="#DBA036"/>
-                                </svg></div>
+                            <div class="list-item-img bg-lupin">
+                                <img style="width: 35px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"/>
+                            </div>
                                 {%else%}
                             <div class="list-item-img bg-cross">
-                                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="31.8201" y1="10.6065" x2="10.6069" y2="31.8197" stroke="#F4EEE1" stroke-width="8"/>
-                                <line x1="31.82" y1="31.8199" x2="10.6068" y2="10.6067" stroke="#F4EEE1" stroke-width="8"/>
-                                </svg></div>
+                                <img  style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"/>
+                            </div>
                                 {%endif%}
-                            <p class="lsit-item-content rawsonBold uppercase lt offwhite">{{block.settings.content-two}}</p>
+                            <p class="lsit-item-content rawsonBold uppercase lt">{{block.settings.content-two}}</p>
                         </li>
                       <li class="list-itme">
                             {% if block.settings.show-lupin-three%}
-                            <div class="list-item-img bg-lupin"><svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.7042 37.8691C27.9528 39.5914 24.9206 39.9539 21.7787 39.4999C18.5414 39.0312 15.5011 37.9101 12.716 36.2042C10.6253 34.9366 8.88085 33.2542 7.78543 31.0279C6.57601 28.5891 5.34395 24.7619 5.81078 22.0835C6.49649 18.1613 7.60696 16.2548 10.06 13.1603C12.4757 10.1185 17.2527 8.2982 21.1576 8.42098C22.2938 8.45921 23.4154 8.59272 24.5494 8.70865C25.1164 8.76661 25.5871 8.62446 26.0795 8.33936C27.9839 7.17919 30.4002 7.46309 31.8731 9.00622C32.4027 9.56556 32.81 10.2231 32.9271 10.992C33.0358 11.6232 33.3198 12.1935 33.6038 12.7638C34.9469 15.35 36.6176 17.772 37.5782 20.5627C38.4445 23.0755 38.7468 25.6381 38.0489 28.2322C37.0999 31.7044 35.0564 34.4815 32.3381 36.7551C32.0809 36.9691 31.8363 37.1655 31.5616 37.3671C31.2692 37.5561 30.9841 37.6976 30.7042 37.8691ZM30.7667 11.2059C30.0578 10.4142 28.9943 9.89948 27.6632 9.98732C26.806 10.0407 26.5208 10.6308 26.9561 11.3609C27.4774 12.231 29.1867 12.9913 30.2565 12.8243C31.1159 12.6932 31.3513 12.1735 30.7667 11.2059Z" fill="#DBA036"/>
-                                </svg></div>
+                            <div class="list-item-img bg-lupin">
+                                <img style="width: 35px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"/>
+                            </div>
                                 {%else%}
                             <div class="list-item-img bg-cross">
-                                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="31.8201" y1="10.6065" x2="10.6069" y2="31.8197" stroke="#F4EEE1" stroke-width="8"/>
-                                <line x1="31.82" y1="31.8199" x2="10.6068" y2="10.6067" stroke="#F4EEE1" stroke-width="8"/>
-                                </svg></div>
+                                <img  style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"/>
+                            </div>
                                 {%endif%}
-                            <p class="lsit-item-content rawsonBold uppercase lt offwhite">{{block.settings.content-three}}</p>
+                            <p class="lsit-item-content rawsonBold uppercase lt">{{block.settings.content-three}}</p>
                         </li>
                     </ul>
                 </div>
@@ -84,9 +78,11 @@
   @media screen and (max-width: 749px) {
   .healthy-item-box .heading-area h3{
   	font-size: {{ section.settings.mheading_font_size }};
+      text-align: center!important;
   }
   .healthy-item-box .healthy-item-content .healthy-item-block h4{
   	font-size: {{ section.settings.mblock_heading_font_size }};
+    text-align: center!important;
   }
   .healthy-item-box .healthy-item-content .healthy-item-block .list-items .list-itme p{
   	font-size: {{ section.settings.mblock_content_font_size }};

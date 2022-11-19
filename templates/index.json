@@ -20,7 +20,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify:\/\/pages\/shop",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -34,10 +34,10 @@
         "1639818406c3bc044e-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/HP-Hero-BG-2.jpg",
+        "image": "shopify:\/\/shop_images\/header-bg_1.png",
         "image_mobile": "shopify:\/\/shop_images\/HP-Hero-BG-Mobile2.jpg",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
+        "image_height": "small",
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "heading-color": "#353535",
         "content-color": "#000000",
@@ -68,8 +68,8 @@
         "af68748a-8326-47be-a7a1-41d685d0a0a7"
       ],
       "settings": {
-        "background": "#928b80",
-        "top-space": "30px",
+        "background": "#f4f1e9",
+        "top-space": "50px",
         "bottom-space": "0px"
       }
     },
@@ -81,8 +81,8 @@
           "settings": {
             "text": "LOW CARB",
             "number": "1g",
-            "inner-heading": "NET CARB",
-            "inner-content": "PER SERVING"
+            "inner-heading": "Net Carb",
+            "inner-content": "Per serving"
           }
         },
         "79cc6890-97b8-4163-ad7b-db6e65e0e079": {
@@ -90,8 +90,8 @@
           "settings": {
             "text": "HIGH PROTEIN",
             "number": "20g",
-            "inner-heading": "PROTEIN",
-            "inner-content": "PER SERVING"
+            "inner-heading": "Protein",
+            "inner-content": "Per serving"
           }
         },
         "4caf5c77-faec-48c2-b893-4d3a13b3ac41": {
@@ -99,8 +99,8 @@
           "settings": {
             "text": "GUT FRIENDLY",
             "number": "19g",
-            "inner-heading": "FIBER",
-            "inner-content": "PER SERVING"
+            "inner-heading": "Fiber",
+            "inner-content": "Per serving"
           }
         }
       },
@@ -110,20 +110,40 @@
         "4caf5c77-faec-48c2-b893-4d3a13b3ac41"
       ],
       "settings": {
-        "bg-color": "#928b80",
-        "padding": 40,
-        "block_title": "28px!important",
-        "content_title_size": "",
-        "number_size": "60px!important",
+        "bg-color": "#f4f1e9",
+        "padding": 15,
+        "block_title": "25px!important",
+        "content_title_size": "18px!important",
+        "number_size": "28px!important",
         "Content_size": "",
-        "mblock_title": "28px!important",
-        "mcontent_title_size": "",
-        "mnumber_size": "60px!important",
+        "mblock_title": "22px!important",
+        "mcontent_title_size": "18px!important",
+        "mnumber_size": "28px!important",
         "mContent_size": ""
+      }
+    },
+    "0569c607-ddc2-4dd6-a4ff-87c4ad367f85": {
+      "type": "banner",
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/Recurso_3_9b841314-9feb-429c-b328-ad79670a1743.png",
+        "mobile_image": "shopify:\/\/shop_images\/chefskiss-mobile-home-pasta3.png",
+        "bg_color": "#f4f1e9",
+        "class": "specs"
+      }
+    },
+    "8320461d-3f6f-437d-85ad-19210e10c5dc": {
+      "type": "full-width-cta",
+      "settings": {
+        "cta_text": "",
+        "bg_color": "#f3f0e8",
+        "button_link": "",
+        "space_top": 0,
+        "space_bottom": 0
       }
     },
     "1639891676b2547d4d": {
       "type": "compare",
+      "disabled": true,
       "settings": {
         "bg-color": "",
         "padding": 20,
@@ -146,6 +166,7 @@
     },
     "1640506382d82d1f7d": {
       "type": "compare-blocks-section",
+      "disabled": true,
       "blocks": {
         "6ac593ea-8347-4de8-bdc2-2064026ba265": {
           "type": "sider",
@@ -214,6 +235,7 @@
     },
     "16398353568060b602": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "bg-color": "#928b80",
         "padding": 80,
@@ -232,6 +254,7 @@
     },
     "16398852713f1264c3": {
       "type": "testimonial",
+      "disabled": true,
       "blocks": {
         "6072a1e8-2f97-4b35-a3ac-ff292371bed0": {
           "type": "testimonial",
@@ -272,13 +295,110 @@
         "mcontent_author_font": ""
       }
     },
+    "78bc20c9-f4a1-484f-ad7a-3863b5aba34a": {
+      "type": "full-width-cta",
+      "settings": {
+        "cta_text": "SEE HOW WE COMPARE",
+        "bg_color": "#f3f0e8",
+        "button_link": "shopify:\/\/pages\/learn",
+        "space_top": 0,
+        "space_bottom": 0
+      }
+    },
+    "efbef011-676b-4cbf-ae2a-6447764faddb": {
+      "type": "image-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_3.png",
+        "width": 1280,
+        "height": 150,
+        "space_top": 50,
+        "space_bottom": 50
+      }
+    },
+    "9e449fd0-f6ac-4fed-8e34-f0c5a52b686f": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "da60c0c6-d024-4145-996b-fc35ec37f46c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-4": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-5": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "424251fa-db2c-4414-9ac6-b19f2e511f8b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ product.id }}"
+          }
+        },
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-1",
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-2",
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-3",
+        "da60c0c6-d024-4145-996b-fc35ec37f46c",
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-4",
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-5",
+        "424251fa-db2c-4414-9ac6-b19f2e511f8b",
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-6",
+        "template--15955662504122__9e449fd0-f6ac-4fed-8e34-f0c5a52b686f-1667363672051a6a4b-7"
+      ],
+      "settings": {
+        "product": "lupin-rotini",
+        "secondary_background": false,
+        "hide_variants": true,
+        "enable_video_looping": true
+      }
+    },
     "16398384382550835a": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1639838438b234202b-0": {
           "type": "heading",
           "settings": {
-            "heading": "Meet the powerful  lupin bean."
+            "heading": "Meet the powerful <span class=\"yellow\"> lupin bean.<\/span>"
           }
         },
         "1639838438b234202b-1": {
@@ -310,11 +430,51 @@
         "image": "shopify:\/\/shop_images\/Lupin_Illustration.png",
         "height": "small",
         "color_scheme": "background-1",
-        "layout": "text_first"
+        "layout": "image_first"
+      }
+    },
+    "e3d3f918-da51-467a-b249-c4dd2a49d760": {
+      "type": "two-culumns",
+      "settings": {
+        "heading": "Meet the powerful <br><span class=\"yellow\">Lupin Bean.<\/span>",
+        "text": "<span style=\"max-width: 370px;display: inline-block;\">Chef’s Kiss pasta is made from Lupin Beans. Lupin is a nutrient dense legume that is part of the same family as chickpeas, lentils and peas.<\/span>",
+        "cta": "LEARN MORE",
+        "button_link": "shopify:\/\/pages\/learn",
+        "space_top": 50,
+        "space_bottom": 50,
+        "content_image": "shopify:\/\/shop_images\/Recurso_4.png",
+        "content_image_size": 100,
+        "multiply": true,
+        "background": "linear-gradient(180deg, rgba(243, 240, 232, 1), rgba(255, 255, 255, 1) 100%)",
+        "reverse": true,
+        "center_content": false,
+        "class": "reverse-mobile",
+        "mobile_css": ""
+      }
+    },
+    "fe126e20-4f88-4b3d-a3b4-9db28c14da1b": {
+      "type": "two-culumns",
+      "settings": {
+        "heading": "One product, endless pastabilities.",
+        "text": "Make your favorite traditional pasta dishes like a Bolognese, Cacio e Pepe, Penne alla Vodka, Pasta Primavera, and a Pesto just to name a few. Or get creative and use Chef’s Kiss in soups, salads, and even casseroles. Our pasta is a versatile keto staple!",
+        "cta": "CHECK RECIPES",
+        "button_link": "shopify:\/\/blogs\/recipes",
+        "background_desktop": "shopify:\/\/shop_images\/Recurso_8.png",
+        "background_mobile": "shopify:\/\/shop_images\/Recurso_8_mobile_3.png",
+        "space_top": 50,
+        "space_bottom": 80,
+        "content_image_size": 100,
+        "multiply": true,
+        "background": "",
+        "reverse": false,
+        "center_content": false,
+        "class": "pastabilities",
+        "mobile_css": "background-size: contain!important;     padding-top: 270px!important;     padding-bottom: 30px!important;     background-repeat: no-repeat!important;     background-position: top!important;"
       }
     },
     "16402743621c319e0f": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "164027436215ac680a-0": {
           "type": "heading",
@@ -368,6 +528,7 @@
     },
     "1641197566577f5198": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16411975663880c9ec-0": {
           "type": "heading",
@@ -412,11 +573,18 @@
     "16398184069ef2e2b6",
     "1639826488965de794",
     "16398337028d52ee80",
+    "0569c607-ddc2-4dd6-a4ff-87c4ad367f85",
+    "8320461d-3f6f-437d-85ad-19210e10c5dc",
     "1639891676b2547d4d",
     "1640506382d82d1f7d",
     "16398353568060b602",
     "16398852713f1264c3",
+    "78bc20c9-f4a1-484f-ad7a-3863b5aba34a",
+    "efbef011-676b-4cbf-ae2a-6447764faddb",
+    "9e449fd0-f6ac-4fed-8e34-f0c5a52b686f",
     "16398384382550835a",
+    "e3d3f918-da51-467a-b249-c4dd2a49d760",
+    "fe126e20-4f88-4b3d-a3b4-9db28c14da1b",
     "16402743621c319e0f",
     "1641197566577f5198"
   ]

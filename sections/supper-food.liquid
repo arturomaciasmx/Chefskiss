@@ -8,14 +8,14 @@
         <div class="super-food-content">
             {%- for block in section.blocks -%}
             <div class="super-food-block">
-                
+                <img src="{{ block.settings.icon | image_url: width: full }}" style="height: 60px;"/>
                 <h4 class="superFood-content rawsonBold yellow lt"> {{block.settings.heading}}</h4>
                 <div class="inner-content topOne">
-                    <div class="bigNumber">{{block.settings.big-text}}</div>
+                    <div class="bigNumber" style="color: #BB6628;">{{block.settings.big-text}}</div>
                     <div class="smallText">{{block.settings.content}}</div>
                 </div>
                <div class="inner-content">
-                    <div class="bigNumber">{{block.settings.big-text-2}}</div>
+                    <div class="bigNumber" style="color: #BB6628;">{{block.settings.big-text-2}}</div>
                     <div class="smallText">{{block.settings.content-2}}</div>
                 </div>
             </div>
@@ -33,12 +33,14 @@
   @media screen and (min-width: 750px) {
   .super-food-box .heading-area h2{
   	font-size:{{section.settings.heading_font_size}};
+    margin-bottom:40px;
   }
   .super-food-content .super-food-block h4{
   	font-size:{{section.settings.block_heading_font_size}};
   }
   .super-food-content .super-food-block .inner-content .bigNumber{
   	font-size:{{section.settings.number_font_size}};
+    width: 40%;
   }
   .super-food-content .super-food-block .inner-content .smallText p{
   	font-size:{{section.settings.text_font_size}};
@@ -47,9 +49,11 @@
   @media screen and (max-width: 749px) {
   .super-food-box .heading-area h2{
   	font-size:{{section.settings.mheading_font_size}};
+    text-align:center!important;
   }
   .super-food-content .super-food-block h4{
   	font-size:{{section.settings.mblock_heading_font_size}};
+    text-align: center!important;
   }
   .super-food-content .super-food-block .inner-content .bigNumber{
   	font-size:{{section.settings.mnumber_font_size}};
@@ -73,7 +77,7 @@
           "label": "Section Heading"
         }, 
         {
-          "type": "color",
+          "type": "color_background",
           "id": "bg-color",
           "label": "Section Background"
         },
@@ -162,6 +166,11 @@
         "type": "richtext",
         "id": "content-2",
         "label": "Block content bottom"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
         }
 ]
 }

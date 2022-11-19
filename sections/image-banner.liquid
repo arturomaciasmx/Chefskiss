@@ -1,11 +1,11 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }} 
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
-  {%- style -%}
+<style>
   @media screen and (max-width: 749px) {
-    #Banner-{{ section.id }}::before,
-    #Banner-{{ section.id }} .banner__media::before,
-    #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+    #Banner-{{ section.id }}::after,
+    #Banner-{{ section.id }} .banner__media::after,
+    #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::after {
       padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
       content: '';
       display: block;
@@ -21,12 +21,11 @@
     }
   }
 
+</style>
 
-
-  {%- endstyle -%}
 {%- endif -%}
 
-{%- style -%}
+<style>
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
@@ -53,8 +52,9 @@
 		font-size:{{section.settings.mobile_content_font}};
 	}
   }
+</style>
 
-{%- endstyle -%}
+
 <div class="{{section.settings.custom_class}}">
 <div id="Banner-{{ section.id }}" class="banner banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}

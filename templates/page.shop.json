@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page-learn",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "e45d5fea-0290-4e15-b6a5-a310ecca3604": {
+      "type": "two-culumns",
+      "settings": {
+        "heading": "Lupin Rotini",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electroni ",
+        "cta": "Shop NOW",
+        "button_link": "shopify:\/\/products\/lupin-rotini",
+        "space_top": 50,
+        "space_bottom": 50,
+        "content_image": "shopify:\/\/shop_images\/Recurso_40.png",
+        "content_image_size": 100,
+        "multiply": true,
+        "background": "",
+        "reverse": true,
+        "center_content": true,
+        "class": "shop-columns",
+        "mobile_css": ""
+      }
+    },
+    "7e90badb-7a08-430f-af47-b08483a3b031": {
+      "type": "icons-grid",
+      "blocks": {
+        "2c079cfe-2d6f-447c-8188-bce37a18c92f": {
+          "type": "icon",
+          "settings": {
+            "text": "Gluten Free",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_6.png"
+          }
+        },
+        "eef73acd-a18a-4e59-9a53-3b89a0545a0c": {
+          "type": "icon",
+          "settings": {
+            "text": "Grain Free",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_7.png"
+          }
+        },
+        "d4873aca-70c7-481a-a704-a8f5d9ba6fc7": {
+          "type": "icon",
+          "settings": {
+            "text": "Keto <br>Friendly",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_10.png"
+          }
+        },
+        "5c93af6c-56dc-4d7a-99d3-ae30dd07a8f9": {
+          "type": "icon",
+          "settings": {
+            "text": "Dairy Free",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_9.png"
+          }
+        },
+        "9c9b0222-c826-4f5c-b606-fd06d44e6070": {
+          "type": "icon",
+          "settings": {
+            "text": "No Tapioca",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_8_afd26f83-5534-41c8-8a7d-5bd82ee4731c.png"
+          }
+        },
+        "e0bd7405-0c7e-406f-8ac9-fe5436517e6b": {
+          "type": "icon",
+          "settings": {
+            "text": "Plant Based",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_12.png"
+          }
+        },
+        "9d00d108-4f0d-4448-a696-7e2d46ebd25a": {
+          "type": "icon",
+          "settings": {
+            "text": "High Protein",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_14.png"
+          }
+        },
+        "7086dd5e-a261-4f3a-bb68-21ce1e9d20b2": {
+          "type": "icon",
+          "settings": {
+            "text": "Low Carb",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_18.png"
+          }
+        },
+        "4ce475d4-e1fa-4f5d-91b7-d8688f5d7507": {
+          "type": "icon",
+          "settings": {
+            "text": "Nutrient <br>Dense",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_11.png"
+          }
+        },
+        "e4b30824-bc92-4cab-bb84-766d8d73758b": {
+          "type": "icon",
+          "settings": {
+            "text": "Gut Friendly",
+            "icon_image": "shopify:\/\/shop_images\/Recurso_13.png"
+          }
+        }
+      },
+      "block_order": [
+        "2c079cfe-2d6f-447c-8188-bce37a18c92f",
+        "eef73acd-a18a-4e59-9a53-3b89a0545a0c",
+        "d4873aca-70c7-481a-a704-a8f5d9ba6fc7",
+        "5c93af6c-56dc-4d7a-99d3-ae30dd07a8f9",
+        "9c9b0222-c826-4f5c-b606-fd06d44e6070",
+        "e0bd7405-0c7e-406f-8ac9-fe5436517e6b",
+        "9d00d108-4f0d-4448-a696-7e2d46ebd25a",
+        "7086dd5e-a261-4f3a-bb68-21ce1e9d20b2",
+        "4ce475d4-e1fa-4f5d-91b7-d8688f5d7507",
+        "e4b30824-bc92-4cab-bb84-766d8d73758b"
+      ],
+      "settings": {
+        "icon_size": 60,
+        "columns": "5"
+      }
+    },
+    "00640eff-05e4-4b9f-a7bd-abbc0bc1dad1": {
+      "type": "two-culumns",
+      "settings": {
+        "heading": "Meet the powerful <br> <span class=\"yellow\">Lupin Bean.<\/span>",
+        "text": "Chef’s Kiss pasta is made mostly of lupin beans. Lupin is a nutrient dense legume that is part of the same family as chickpeas, lentils and peas.",
+        "cta": "TELL ME MORE",
+        "button_link": "shopify:\/\/pages\/learn",
+        "space_top": 50,
+        "space_bottom": 50,
+        "content_image": "shopify:\/\/shop_images\/Recurso_4.png",
+        "content_image_size": 100,
+        "multiply": true,
+        "background": "linear-gradient(180deg, rgba(243, 240, 232, 1) 48%, rgba(255, 255, 255, 1) 100%)",
+        "reverse": true,
+        "center_content": false,
+        "class": "",
+        "mobile_css": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e45d5fea-0290-4e15-b6a5-a310ecca3604",
+    "7e90badb-7a08-430f-af47-b08483a3b031",
+    "00640eff-05e4-4b9f-a7bd-abbc0bc1dad1"
+  ]
+}

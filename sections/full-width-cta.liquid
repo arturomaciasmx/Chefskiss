@@ -1,0 +1,46 @@
+<div style="text-align: center; background: {{ section.settings.bg_color }}; 
+  padding-top:{{ section.settings.space_top }}px;
+  padding-bottom:{{ section.settings.space_bottom }}px;">
+  <a class="button custom-btn" style="" href="{{ section.settings.button_link }}">{{ section.settings.cta_text }}</a>
+</div>
+
+{% schema %}
+  {
+    "name": "Full Width CTA",
+    "settings": [
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text",
+        "default": "Click"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "number",
+        "id": "space_top",
+        "label": "Space Top",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "space_bottom",
+        "label": "Space Bottom",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Full Width CTA"
+      }
+    ]
+  }
+{% endschema %}

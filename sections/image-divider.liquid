@@ -1,0 +1,55 @@
+<style>
+#shopify-section-{{section.id}} {
+  max-width: {{section.settings.width}}px;
+  height: {{section.settings.height}}px;
+  background: url({{section.settings.image | image_url: width: full}});
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-top: {{ section.settings.space_top}}px;
+  margin-bottom: {{ section.settings.space_bottom}}px;
+}
+</style>
+
+<div class="divider-image">
+</div>
+
+{% schema %}
+  {
+    "name": "Divider Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "number",
+        "id": "width",
+        "label": "Width"
+      },
+      {
+        "type": "number",
+        "id": "height",
+        "label": "height"
+      },
+      {
+        "type": "number",
+        "id": "space_top",
+        "label": "Space Top",
+        "default": 50
+      },
+      {
+        "type": "number",
+        "id": "space_bottom",
+        "label": "Space Bottom",
+        "default": 50
+      }
+    ],
+    "presets": [
+      {
+        "name": "Divider Image"
+      }
+    ]
+  }
+{% endschema %}

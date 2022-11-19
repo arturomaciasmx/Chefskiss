@@ -11,7 +11,7 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": false,
@@ -24,6 +24,7 @@
     },
     "16399774445fe21d5f": {
       "type": "ingredients-item",
+      "disabled": true,
       "blocks": {
         "97cd5043-c7a5-4ceb-a33e-693029232fb1": {
           "type": "Ingredient-Item",
@@ -105,6 +106,7 @@
     },
     "16399859601c8a92f3": {
       "type": "ingredients",
+      "disabled": true,
       "blocks": {
         "d5f96883-ad02-4ee7-8ebd-b5ea595109b4": {
           "type": "Ingredients",
@@ -137,6 +139,7 @@
     },
     "1639988495173514a2": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Shop_BG.jpg",
         "image_mobile": "shopify:\/\/shop_images\/Shop-Mobile.jpg",
