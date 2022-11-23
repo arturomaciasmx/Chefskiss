@@ -62,7 +62,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "INGREDIENTS",
-            "content": "<p>This is Ingredients text<\/p>",
+            "content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}<\/p>",
             "page": "",
             "icon": "none"
           }
@@ -71,7 +71,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "NUTRITION",
-            "content": "<p>This is Nutrition text<\/p>",
+            "content": "<p>{{ product.metafields.custom.nutrition | metafield_tag }}<\/p>",
             "page": "",
             "icon": "none"
           }
@@ -80,7 +80,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "COOKING INSTRUCTIONS",
-            "content": "<p>This is cooking instuctions<\/p>",
+            "content": "<p>{{ product.metafields.custom.instructions | metafield_tag }}<\/p>",
             "page": "",
             "icon": "none"
           }

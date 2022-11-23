@@ -21,6 +21,7 @@
     "social_youtube_link": "",
     "predictive_search_enabled": false,
     "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/chefskiss-logo2.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -45,7 +46,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-2",
-          "logo": "shopify:\/\/shop_images\/CK_Logo_Yellow.png",
+          "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_width": 250,
           "logo_position": "middle-left",
           "menu": "main-menu",
