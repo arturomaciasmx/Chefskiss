@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
     {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: '32x' }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
@@ -33,7 +32,7 @@
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
-{%- liquid
+    {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
@@ -109,84 +108,85 @@
       }
     {% endstyle %}
     <style>
-    @font-face {
-  font-family: 'Recoleta';
-  src: url({{'RecoletaAlt-SemiBold.woff2' | asset_url }}) format('woff2'); 
-  font-weight: 700;
-}
-      @font-face {
-  font-family: 'RecoletaMedium';
-  src: url({{'RecoletaAlt-Medium.woff2' | asset_url }}) format('woff2'); 
-  font-weight: 700;
-}
-      @font-face {
-  font-family: 'Recoletaupdated';
-  src: url({{'Recoleta.woff' | asset_url }}) format('woff'); 
-  font-weight: 700;
-}
-  
-      
-       @font-face {
-  font-family: 'RecoletaRegular';
-  src: url({{'RecoletaAlt-Regular.woff' | asset_url }}) format('woff2');
-  font-weight: 400;
-}
-       @font-face {
-  font-family: 'RecoletaLight';
-  src: url({{'RecoletaAlt-Light.woff' | asset_url }}) format('woff');
-  font-weight: 400;
-}
-      @font-face {
-  font-family: 'RecoletaThin';
-  src: url({{'RecoletaAlt-Thin.woff' | asset_url }}) format('woff2');
-  font-weight: 400;
-}
-     @font-face {
-  font-family: 'Rawson';
-  src: url({{'Rawson.woff' | asset_url }}) format('woff');
-  font-weight: 400;
-} @font-face {
-  font-family: 'RawsonBold';
-  src: url({{'RawsonBold.woff' | asset_url }}) format('woff');
-  font-weight: 800;
-} 
-      @font-face {
-  font-family: 'RawsonThin';
-  src: url({{'RawsonAltThin.woff' | asset_url }}) format('woff');
-  font-weight: 300;
-}
-      @font-face {
-  font-family: 'RawsonLight';
-  src: url({{'RawsonAltLight.woff' | asset_url }}) format('woff');
-  font-weight: 300;
-}
-      @font-face {
-  font-family: 'RawsonMedium';
-  src: url({{'RawsonAltMedium.woff' | asset_url }}) format('woff');
-      
+          @font-face {
+        font-family: 'Recoleta';
+        src: url({{'RecoletaAlt-SemiBold.woff2' | asset_url }}) format('woff2');
+        font-weight: 700;
+      }
+            @font-face {
+        font-family: 'RecoletaMedium';
+        src: url({{'RecoletaAlt-Medium.woff2' | asset_url }}) format('woff2');
+        font-weight: 700;
+      }
+            @font-face {
+        font-family: 'Recoletaupdated';
+        src: url({{'Recoleta.woff' | asset_url }}) format('woff');
+        font-weight: 700;
+      }
+
+
+             @font-face {
+        font-family: 'RecoletaRegular';
+        src: url({{'RecoletaAlt-Regular.woff' | asset_url }}) format('woff2');
+        font-weight: 400;
+      }
+             @font-face {
+        font-family: 'RecoletaLight';
+        src: url({{'RecoletaAlt-Light.woff' | asset_url }}) format('woff');
+        font-weight: 400;
+      }
+            @font-face {
+        font-family: 'RecoletaThin';
+        src: url({{'RecoletaAlt-Thin.woff' | asset_url }}) format('woff2');
+        font-weight: 400;
+      }
+           @font-face {
+        font-family: 'Rawson';
+        src: url({{'Rawson.woff' | asset_url }}) format('woff');
+        font-weight: 400;
+      } @font-face {
+        font-family: 'RawsonBold';
+        src: url({{'RawsonBold.woff' | asset_url }}) format('woff');
+        font-weight: 800;
+      }
+            @font-face {
+        font-family: 'RawsonThin';
+        src: url({{'RawsonAltThin.woff' | asset_url }}) format('woff');
+        font-weight: 300;
+      }
+            @font-face {
+        font-family: 'RawsonLight';
+        src: url({{'RawsonAltLight.woff' | asset_url }}) format('woff');
+        font-weight: 300;
+      }
+            @font-face {
+        font-family: 'RawsonMedium';
+        src: url({{'RawsonAltMedium.woff' | asset_url }}) format('woff');
     </style>
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
-    
-    {% comment %} {{ 'slick.css' | asset_url | stylesheet_tag }}   
- 	  {{ 'slick-theme.css' | asset_url | stylesheet_tag }} {% endcomment %}
-    
-  {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+
+    {%- unless settings.type_body_font.system? -%}
+      <link href="{{ settings.type_body_font | font_url | preload_tag: as: 'font' }}" type="font/woff2" crossorigin>
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+      <link href="{{ settings.type_header_font | font_url | preload_tag: as: 'font' }}" type="font/woff2" crossorigin>
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
     {%- endif -%}
 
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-   
-    {% comment %} {%- render 'bold-subscription-widget' -%} {% endcomment %}
-   
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
+
     {% if template == 'index' %}
       <style>
         .header-wrapper {
@@ -194,16 +194,16 @@
         }
       </style>
     {% endif %}
-</head>
+  </head>
 
   <body class="gradient {% if template == 'index' %} transparent-bg{% endif %} {{ template | replace: '.', '-' | handle }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ "accessibility.skip_to_text" | t }}
+      {{ 'accessibility.skip_to_text' | t }}
     </a>
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -220,32 +220,27 @@
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
         cart_update_url: '{{ routes.cart_update_url }}',
-        predictive_search_url: '{{ routes.predictive_search_url }}'
+        predictive_search_url: '{{ routes.predictive_search_url }}',
       };
 
       window.cartStrings = {
         error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
-      }
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+      };
 
       window.variantStrings = {
         addToCart: `{{ 'products.product.add_to_cart' | t }}`,
         soldOut: `{{ 'products.product.sold_out' | t }}`,
         unavailable: `{{ 'products.product.unavailable' | t }}`,
-      }
+      };
 
       window.accessibilityStrings = {
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
-      }
+      };
     </script>
 
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    
-    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script> {% endcomment %}
-
-
   </body>
 </html>

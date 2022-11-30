@@ -6,7 +6,7 @@
     margin: auto;
     justify-content: space-around;
   }
-  #shopify-section-{{section.id}} .icon-grid div {
+  #shopify-section-{{ section.id }} .icon-grid div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,67 +24,67 @@
     margin-bottom: 20px;
   }
   @media screen and (max-width: 750px) {
-    #shopify-section-{{section.id}} .icon-grid div {
+    #shopify-section-{{ section.id }} .icon-grid div {
       width: 50%;
     }
   }
 </style>
 <div class="icon-grid">
-{% for block in section.blocks %}
-  <div>
-    <img src="{{block.settings.icon_image | image_url: width: x100}}" />
-    <p class="recoletaRegular">{{block.settings.text}}</p>
-  </div>
-{% endfor %}
+  {% for block in section.blocks %}
+    <div>
+      <img src="{{block.settings.icon_image | image_url: width: "100x" }}" width="auto" height="100" loading="lazy">
+      <p class="recoletaRegular">{{ block.settings.text }}</p>
+    </div>
+  {% endfor %}
 </div>
 {% schema %}
-  {
-    "name": "Icons Grid",
-    "settings": [
-      {
-        "type": "number",
-        "id": "icon_size",
-        "label": "Icon Size"  
-      },
-      {
-        "type": "select",
-        "id": "columns",
-        "label": "Number of Columns",
-        "options": [
-          {
-            "value": "5",
-            "label": "5"
-          },
-          {
-            "value": "6",
-            "label": "6"
-          }
-        ],
-        "default": "5"
-      }
-    ],   
-    "blocks": [
-      {
-        "type": "icon",
-        "name": "icon",
-        "settings": [
-          {
-            "type": "text",
-            "id": "text",
-            "label": "Text"
-          },
-          {
-            "type": "image_picker",
-            "id": "icon_image",
-            "label": "Icon"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Icons grid"
-      }
-    ]
-  }
+{
+  "name": "Icons Grid",
+  "settings": [
+    {
+      "type": "number",
+      "id": "icon_size",
+      "label": "Icon Size"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Number of Columns",
+      "options": [
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "default": "5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "icon",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icons grid"
+    }
+  ]
+}
 {% endschema %}

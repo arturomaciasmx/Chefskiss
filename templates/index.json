@@ -53,26 +53,6 @@
         "custom_class": "home-header-banner"
       }
     },
-    "1639826488965de794": {
-      "type": "Excelent-pasta",
-      "blocks": {
-        "af68748a-8326-47be-a7a1-41d685d0a0a7": {
-          "type": "announcement",
-          "settings": {
-            "text": "You’ve never had pasta like this.",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "af68748a-8326-47be-a7a1-41d685d0a0a7"
-      ],
-      "settings": {
-        "background": "#f4f1e9",
-        "top-space": "50px",
-        "bottom-space": "0px"
-      }
-    },
     "16398337028d52ee80": {
       "type": "bottom-excelent-pasta",
       "blocks": {
@@ -110,8 +90,10 @@
         "4caf5c77-faec-48c2-b893-4d3a13b3ac41"
       ],
       "settings": {
+        "title": "You’ve never had pasta like this.",
         "bg-color": "#f4f1e9",
-        "padding": 15,
+        "padding_top": 50,
+        "padding_bottom": 50,
         "block_title": "25px!important",
         "content_title_size": "18px!important",
         "number_size": "28px!important",
@@ -125,8 +107,8 @@
     "0569c607-ddc2-4dd6-a4ff-87c4ad367f85": {
       "type": "banner",
       "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/Recurso_3_9b841314-9feb-429c-b328-ad79670a1743.png",
-        "mobile_image": "shopify:\/\/shop_images\/chefskiss-mobile-home-pasta3.png",
+        "desktop_image": "shopify:\/\/shop_images\/Recurso_3_64a7abd8-3df0-4e1a-9ef9-beef5898741a.png",
+        "mobile_image": "shopify:\/\/shop_images\/chefskiss-mobile-home-pasta3_c7aef865-afd0-4cef-8328-5523cae46eff.png",
         "bg_color": "#f4f1e9",
         "class": "specs"
       }
@@ -279,7 +261,6 @@
   },
   "order": [
     "16398184069ef2e2b6",
-    "1639826488965de794",
     "16398337028d52ee80",
     "0569c607-ddc2-4dd6-a4ff-87c4ad367f85",
     "8320461d-3f6f-437d-85ad-19210e10c5dc",

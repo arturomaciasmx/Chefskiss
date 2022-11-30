@@ -1,113 +1,146 @@
 <section class="healthy-item-section page-width">
-    <div class="healthy-item-box">
-        <div class="heading-area">
-               <h3 class="section-heading text-center recoletaRegular " style="max-width:625px; margin:0 auto 50px auto;">{{section.settings.heading}}</h3>
-        </div>
-        
-
-        <div class="healthy-item-content">
-            {%- for block in section.blocks -%}
-            <div class="healthy-item-block">
-                
-                <h4 class="healthyItem-content rawsonBold uppercase lt"> {{block.settings.heading}}</h4>
-                <div class="list-items">
-                    <ul>
-                        <li class="list-itme">
-                            {% if block.settings.show-lupin-one%}
-                            <div class="list-item-img bg-lupin">
-                                <img style="width: 35px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"/>
-                            </div>
-                                {%else%}
-                            <div class="list-item-img bg-cross">
-                                <img  style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"/>
-                            </div>
-                                {%endif%}
-                            <p class="lsit-item-content rawsonBold uppercase lt">{{block.settings.content-one}}</p>
-                        </li>
-                      <li class="list-itme">
-                            {% if block.settings.show-lupin-two%}
-                            <div class="list-item-img bg-lupin">
-                                <img style="width: 35px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"/>
-                            </div>
-                                {%else%}
-                            <div class="list-item-img bg-cross">
-                                <img  style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"/>
-                            </div>
-                                {%endif%}
-                            <p class="lsit-item-content rawsonBold uppercase lt">{{block.settings.content-two}}</p>
-                        </li>
-                      <li class="list-itme">
-                            {% if block.settings.show-lupin-three%}
-                            <div class="list-item-img bg-lupin">
-                                <img style="width: 35px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"/>
-                            </div>
-                                {%else%}
-                            <div class="list-item-img bg-cross">
-                                <img  style="width: 30px;" src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"/>
-                            </div>
-                                {%endif%}
-                            <p class="lsit-item-content rawsonBold uppercase lt">{{block.settings.content-three}}</p>
-                        </li>
-                    </ul>
-                </div>
-              
-            </div>
-            {%- endfor -%}
-        </div>
-       
+  <div class="healthy-item-box">
+    <div class="heading-area">
+      <h3 class="section-heading text-center recoletaRegular " style="max-width:625px; margin:0 auto 50px auto;">
+        {{ section.settings.heading }}
+      </h3>
     </div>
+
+    <div class="healthy-item-content">
+      {%- for block in section.blocks -%}
+        <div class="healthy-item-block">
+          <h4 class="healthyItem-content rawsonBold uppercase lt">{{ block.settings.heading }}</h4>
+          <div class="list-items">
+            <ul>
+              <li class="list-itme">
+                {% if block.settings['show-lupin-one'] %}
+                  <div class="list-item-img bg-lupin">
+                    <img
+                      style="width: 35px;"
+                      src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"
+                      width="35"
+                      height="35"
+                      loading="lazy"
+                    >
+                  </div>
+                {% else %}
+                  <div class="list-item-img bg-cross">
+                    <img
+                      style="width: 30px;"
+                      src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                    >
+                  </div>
+                {% endif %}
+                <p class="lsit-item-content rawsonBold uppercase lt">{{ block.settings['content-one'] }}</p>
+              </li>
+              <li class="list-itme">
+                {% if block.settings['show-lupin-two'] %}
+                  <div class="list-item-img bg-lupin">
+                    <img
+                      style="width: 35px;"
+                      src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"
+                      width="35"
+                      height="35"
+                      loading="lazy"
+                    >
+                  </div>
+                {% else %}
+                  <div class="list-item-img bg-cross">
+                    <img
+                      style="width: 30px;"
+                      src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                    >
+                  </div>
+                {% endif %}
+                <p class="lsit-item-content rawsonBold uppercase lt">{{ block.settings['content-two'] }}</p>
+              </li>
+              <li class="list-itme">
+                {% if block.settings['show-lupin-three'] %}
+                  <div class="list-item-img bg-lupin">
+                    <img
+                      style="width: 35px;"
+                      src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_41.png?v=1667594066"
+                      width="35"
+                      height="35"
+                      loading="lazy"
+                    >
+                  </div>
+                {% else %}
+                  <div class="list-item-img bg-cross">
+                    <img
+                      style="width: 30px;"
+                      src="https://cdn.shopify.com/s/files/1/0528/4111/9930/files/Recurso_42.png?v=1667594066"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                    >
+                  </div>
+                {% endif %}
+                <p class="lsit-item-content rawsonBold uppercase lt">{{ block.settings['content-three'] }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
 </section>
 <style>
-  .section-Healthy-Lupin{
-    background:{{section.settings.bg-color}};
-      padding:{{section.settings.padding}}px 0;
-  
+   .section-Healthy-Lupin{
+     background:{{section.settings.bg-color}};
+       padding:{{section.settings.padding}}px 0;
+
+   }
+   @media screen and (min-width: 750px) {
+   .healthy-item-box .heading-area h3{
+   	font-size: {{ section.settings.heading_font_size }};
+   }
+   .healthy-item-box .healthy-item-content .healthy-item-block h4{
+   	font-size: {{ section.settings.block_heading_font_size }};
+   }
+   .healthy-item-box .healthy-item-content .healthy-item-block .list-items .list-itme p{
+   	font-size: {{ section.settings.block_content_font_size }};
+   }
   }
-  @media screen and (min-width: 750px) {
-  .healthy-item-box .heading-area h3{
-  	font-size: {{ section.settings.heading_font_size }};
+
+   @media screen and (max-width: 749px) {
+   .healthy-item-box .heading-area h3{
+   	font-size: {{ section.settings.mheading_font_size }};
+       text-align: center!important;
+   }
+   .healthy-item-box .healthy-item-content .healthy-item-block h4{
+   	font-size: {{ section.settings.mblock_heading_font_size }};
+     text-align: center!important;
+   }
+   .healthy-item-box .healthy-item-content .healthy-item-block .list-items .list-itme p{
+   	font-size: {{ section.settings.mblock_content_font_size }};
+   }
   }
-  .healthy-item-box .healthy-item-content .healthy-item-block h4{
-  	font-size: {{ section.settings.block_heading_font_size }};
-  }
-  .healthy-item-box .healthy-item-content .healthy-item-block .list-items .list-itme p{
-  	font-size: {{ section.settings.block_content_font_size }};
-  }
- }
-  
-  @media screen and (max-width: 749px) {
-  .healthy-item-box .heading-area h3{
-  	font-size: {{ section.settings.mheading_font_size }};
-      text-align: center!important;
-  }
-  .healthy-item-box .healthy-item-content .healthy-item-block h4{
-  	font-size: {{ section.settings.mblock_heading_font_size }};
-    text-align: center!important;
-  }
-  .healthy-item-box .healthy-item-content .healthy-item-block .list-items .list-itme p{
-  	font-size: {{ section.settings.mblock_content_font_size }};
-  }
- }
-  
 </style>
 
 {% schema %}
 {
-"name": "Healthy Lupin",
-"tag": "section",
-"class": "section-Healthy-Lupin",
-"settings": [
+  "name": "Healthy Lupin",
+  "tag": "section",
+  "class": "section-Healthy-Lupin",
+  "settings": [
     {
-    "type": "text",
-    "id": "heading",
-    "label": "Section Heading"
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading"
     },
     {
       "type": "text",
       "id": "sub-heading",
       "label": "Section sub-heading"
     },
-	{
+    {
       "type": "color",
       "id": "bg-color",
       "label": "Section Background"
@@ -122,93 +155,93 @@
       "unit": "px",
       "label": "Section padding"
     },
-	{
+    {
       "type": "header",
       "content": "Desktop font Size"
     },
-	{
+    {
       "type": "text",
       "id": "heading_font_size",
       "label": "Section Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "block_heading_font_size",
       "label": "Block Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "block_content_font_size",
       "label": "Block Content Font Size"
     },
-	{
+    {
       "type": "header",
       "content": "Mobile font Size"
     },
-	{
+    {
       "type": "text",
       "id": "mheading_font_size",
       "label": "Section Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "mblock_heading_font_size",
       "label": "Block Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "mblock_content_font_size",
       "label": "Block Content Font Size"
     }
-],
-"blocks": [
-{
-"type": "content",
-"name": "Block content",
-"settings": [
-{
-"type": "text",
-"id": "heading",
-"label": "Block heading"
-},
-{
-    "type": "checkbox",
-    "id": "show-lupin-one",
-    "label": "Show Lupin"
-    },{
-        "type": "text",
-        "id": "content-one",
-        "label": "Block content one"
-        },{
-            "type": "checkbox",
-            "id": "show-lupin-two",
-            "label": "Show Lupin"
-            },{
-                "type": "text",
-                "id": "content-two",
-                "label": "Block content two"
-                },{
-                    "type": "checkbox",
-                    "id": "show-lupin-three",
-                    "label": "Show Lupin"
-                    },{
-                        "type": "text",
-                        "id": "content-three",
-                        "label": "Block content three"
-                        }
-
-]
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "Block content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Block heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "show-lupin-one",
+          "label": "Show Lupin"
+        },
+        {
+          "type": "text",
+          "id": "content-one",
+          "label": "Block content one"
+        },
+        {
+          "type": "checkbox",
+          "id": "show-lupin-two",
+          "label": "Show Lupin"
+        },
+        {
+          "type": "text",
+          "id": "content-two",
+          "label": "Block content two"
+        },
+        {
+          "type": "checkbox",
+          "id": "show-lupin-three",
+          "label": "Show Lupin"
+        },
+        {
+          "type": "text",
+          "id": "content-three",
+          "label": "Block content three"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Healthy lupin",
+      "blocks": []
+    }
+  ]
 }
-],
-"presets": [
-{
-"name": "Healthy lupin",
-"blocks": [
-
-
-]
-}
-]
-}
-
 {% endschema %}

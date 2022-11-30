@@ -1,73 +1,74 @@
+<h2 class="recoletaRegular" style="text-align:center">
+  {{ section.settings.title | escape }}
+</h2>
 <div class="excelent-pasta-content page-width">
-
-{%- for block in section.blocks -%}
-
-<div class="custom-block" role="region" aria-label="{{ 'sections.header.announcement' | t }}"
-  {{ block.shopify_attributes }}>
-  {%- if block.settings.text != blank -%}
-
-  <div class="Pasta-content">
-    <div class="top">
-      <h4 class="heading yellow rawsonBold"> {{ block.settings.text }}</h4>
+  {%- for block in section.blocks -%}
+    <div
+      class="custom-block"
+      role="region"
+      aria-label="{{ 'sections.header.announcement' | t }}"
+      {{ block.shopify_attributes }}
+    >
+      {%- if block.settings.text != blank -%}
+        <div class="Pasta-content">
+          <div class="top">
+            <h4 class="heading yellow rawsonBold">{{ block.settings.text }}</h4>
+          </div>
+          <div class="bottom">
+            <div class="bigger-content">
+              <h4 class="offwhite rawsonBold">
+                {{ block.settings.number }}
+                <span class="smaller-one"></span>
+              </h4>
+            </div>
+            <div class="smaller-content">
+              <h4 class="inner-heading offwhite recoleta">{{ block.settings['inner-heading'] }}</h4>
+              <p class="inner-content lt offwhite recoleta">{{ block.settings['inner-content'] }}</p>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
     </div>
-    <div class="bottom">
-      <div class="bigger-content">
-        <h4 class="offwhite rawsonBold">{{ block.settings.number }} <span class="smaller-one"></span></h4>
-      </div>
-      <div class="smaller-content">
-        <h4 class="inner-heading offwhite recoleta">{{ block.settings.inner-heading }}</h4>
-        <p class="inner-content lt offwhite recoleta">{{ block.settings.inner-content }}</p>
-      </div>
-
-    </div>
-
-  </div>
-
-  {%- endif -%}
-</div>
-
-{%- endfor -%}
+  {%- endfor -%}
 </div>
 <style>
-  .bottom-exelent-pasta{
-    background:{{ section.settings.bg-color }};
-      padding:{{ section.settings.padding }}px 0;
-  
+   .bottom-exelent-pasta{
+      background:{{ section.settings.bg-color }};
+      padding-top:{{ section.settings.padding_top }}px;
+      padding-bottom:{{ section.settings.padding_bottom }}px;
+
+   }
+   @media screen and (min-width: 750px) {
+   .custom-block .Pasta-content .top h4 {
+     font-size: {{ section.settings.block_title }};
   }
-  @media screen and (min-width: 750px) {
-  .custom-block .Pasta-content .top h4 {
-    font-size: {{ section.settings.block_title }};
-	}
-	  
-  .custom-block .Pasta-content .bottom .bigger-content h4 {
-     font-size: {{ section.settings.number_size }};
-	}
-  .custom-block .Pasta-content .bottom .smaller-content h4{
-  	 font-size: {{ section.settings.content_title_size }};
- 	}
-  .custom-block .Pasta-content .bottom .smaller-content p{
-  	 font-size: {{ section.settings.Content_size }};
+
+   .custom-block .Pasta-content .bottom .bigger-content h4 {
+      font-size: {{ section.settings.number_size }};
   }
- }
-   @media screen and (max-width: 749px) {
-  .custom-block .Pasta-content .top h4 {
-    font-size: {{ section.settings.mblock_title }};
-	}
-	  
-  .custom-block .Pasta-content .bottom .bigger-content h4 {
-     font-size: {{ section.settings.mnumber_size }};
-	}
-  .custom-block .Pasta-content .bottom .smaller-content h4{
-  	 font-size: {{ section.settings.mcontent_title_size }};
- 	}
-  .custom-block .Pasta-content .bottom .smaller-content p{
-  	 font-size: {{ section.settings.mContent_size }};
+   .custom-block .Pasta-content .bottom .smaller-content h4{
+   	 font-size: {{ section.settings.content_title_size }};
+  	}
+   .custom-block .Pasta-content .bottom .smaller-content p{
+   	 font-size: {{ section.settings.Content_size }};
+   }
   }
- }
-  
+    @media screen and (max-width: 749px) {
+   .custom-block .Pasta-content .top h4 {
+     font-size: {{ section.settings.mblock_title }};
+  }
+
+   .custom-block .Pasta-content .bottom .bigger-content h4 {
+      font-size: {{ section.settings.mnumber_size }};
+  }
+   .custom-block .Pasta-content .bottom .smaller-content h4{
+   	 font-size: {{ section.settings.mcontent_title_size }};
+  	}
+   .custom-block .Pasta-content .bottom .smaller-content p{
+   	 font-size: {{ section.settings.mContent_size }};
+   }
+  }
 </style>
-
-
 
 {% schema %}
 {
@@ -75,108 +76,119 @@
   "tag": "section",
   "class": "bottom-exelent-pasta",
   "settings": [
-              {
-                "type": "color",
-                "id": "bg-color",
-                "label": "Section Background"
-              },
-              {
-                "type": "range",
-                "id": "padding",
-                "min": 0,
-                "max": 250,
-                "step": 5,
-                "default": 50,
-                "unit": "px",
-                "label": "Section padding"
-              },
-			  {
-                "type": "header",
-                "content": "Desktop Font Size"
-              },
-			  {
-                "type": "text",
-                "id": "block_title",
-                "label": "Block  Title"
-              },
-			  {
-                "type": "text",
-                "id": "content_title_size",
-                "label": "Block Content Title"
-              },
-			  {
-                "type": "text",
-                "id": "number_size",
-                "label": "Block Number Title"
-              },
-			  {
-                "type": "text",
-                "id": "Content_size",
-                "label": "Block Content"
-              },
-			  {
-                "type": "header",
-                "content": "Mobile Font Size"
-              },
-			  {
-                "type": "text",
-                "id": "mblock_title",
-                "label": "Block  Title"
-              },
-			  {
-                "type": "text",
-                "id": "mcontent_title_size",
-                "label": "Block Content Title"
-              },
-			  {
-                "type": "text",
-                "id": "mnumber_size",
-                "label": "Block Number Title"
-              },
-			  {
-                "type": "text",
-                "id": "mContent_size",
-                "label": "Block Content"
-              }
-			],
-            "blocks": [
-            {
-            "type": "announcement",
-            "name": "pasta",
-            "settings": [
-                {
-                  "type": "text",
-                  "id": "text",
-                  "default": "LOW CARB",
-                  "label": "Block heading"
-                },
-                {
-                  "type": "text",
-                  "id": "number",
-                  "label": "Block heading number"
-                },
-                {
-                  "type": "text",
-                  "id": "inner-heading",
-                  "label": "Inner heading"
-                },
-                {
-                  "type": "text",
-                  "id": "inner-content",
-                  "label": "Innere content"
-                }
-            ]
-           }
-          ],
-          "presets": [
-          {
-          "name": "Bottom-Excelent-Pasta",
-          "blocks": [
-
-
-          		]
-          }
-        ]
-	}
-
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Section Background"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 250,
+      "step": 5,
+      "default": 50,
+      "unit": "px",
+      "label": "Section padding top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 250,
+      "step": 5,
+      "default": 50,
+      "unit": "px",
+      "label": "Section padding bottom"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Font Size"
+    },
+    {
+      "type": "text",
+      "id": "block_title",
+      "label": "Block  Title"
+    },
+    {
+      "type": "text",
+      "id": "content_title_size",
+      "label": "Block Content Title"
+    },
+    {
+      "type": "text",
+      "id": "number_size",
+      "label": "Block Number Title"
+    },
+    {
+      "type": "text",
+      "id": "Content_size",
+      "label": "Block Content"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Font Size"
+    },
+    {
+      "type": "text",
+      "id": "mblock_title",
+      "label": "Block  Title"
+    },
+    {
+      "type": "text",
+      "id": "mcontent_title_size",
+      "label": "Block Content Title"
+    },
+    {
+      "type": "text",
+      "id": "mnumber_size",
+      "label": "Block Number Title"
+    },
+    {
+      "type": "text",
+      "id": "mContent_size",
+      "label": "Block Content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "pasta",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "LOW CARB",
+          "label": "Block heading"
+        },
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Block heading number"
+        },
+        {
+          "type": "text",
+          "id": "inner-heading",
+          "label": "Inner heading"
+        },
+        {
+          "type": "text",
+          "id": "inner-content",
+          "label": "Innere content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bottom-Excelent-Pasta",
+      "blocks": []
+    }
+  ]
+}
 {% endschema %}

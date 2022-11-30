@@ -511,12 +511,18 @@ fieldset.js.product-form__input label {
   border: none !important;
 }
 
-.product-grid {
-  justify-content: center;
+
+.product-grid.grid--3-col-desktop .grid__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: calc(33.33% - 1rem * 2 / 3);
+  padding: 1em;
 }
 
-.product-grid .grid__item {
-  max-width: fit-content;
+.product-grid.grid--3-col-desktop .grid__item .card-wrapper {
+  width: 100%;
 }
 
 .junip-product-review-container {
@@ -1924,6 +1930,10 @@ ul.compare-other li span {
   .compare-content .right-side .single-box:nth-child(2) {
     margin-top: 62px;
   }
+
+  .product-grid.grid--3-col-desktop .grid__item {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1995,5 +2005,11 @@ ul.compare-other li span {
   .learn-footer {
     text-align: center;
     font-size: 1.6em !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-grid.grid--3-col-desktop .grid__item {
+    max-width: 100%;
   }
 }
