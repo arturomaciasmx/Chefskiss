@@ -1,0 +1,156 @@
+<script type="text/javascript" async="true" src="https://scripts.juniphq.com/v1/junip_shopify.js"></script>
+<style>
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.space_top }}px;
+    padding-bottom: {{ section.settings.space_bottom }}px;
+  }
+  .featured-products {
+    display: flex;
+    justify-content: space-around;
+  }
+  .featured-product-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 400px;
+    text-align: center;
+  }
+  .featured-product-block > div {
+  }
+  .featured-product-block > div img {
+    width: 100%;
+    max-width: 350px;
+  }
+  .featured-product-block-price {
+    font-size: 20px;
+    margin-top: 15px;
+    display: block;
+  }
+  .featured-product-block-description {
+    margin: 30px 0;
+  }
+  .junip-stars-container {
+    width: auto;
+    display: inline-block;
+    margin: auto;
+  }
+  .junip-star {
+    height: 27px;
+    padding: 3px;
+    width: 27px;
+  }
+  @media screen and (max-width: 960px) {
+    .featured-product-block {
+      max-width: 315px;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .featured-products {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+    .featured-product-block {
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .featured-product-block {
+      max-width: 300px;
+    }
+    .featured-product-block div a {
+      display: block!important;
+    }
+  }
+</style>
+
+<div class="page-width">
+  <span class="junip-store-key" data-store-key="P2VnCKLxMbRpUKtkQmP5V8uU"></span>
+  <div class="featured-products">
+    {%- for block in section.blocks -%}
+      <div class="featured-product-block">
+        <div>
+          <a href="{{ block.settings.product.url }}">
+            <img
+              src="{{ block.settings.product.featured_image | image_url: width: '600x' }}"
+              alt="{{ block.settings.product.featured_image.alt }}"
+              width="600"
+              height="auto"
+              loading="lazy"
+            >
+          </a>
+        </div>
+        <div>
+          <h2>{{ block.settings.product.title }}</h2>
+          <span
+            class="junip-product-summary"
+            data-product-id="{{ block.settings.product.id }}"
+            style="display: block; min-height: 28px;"
+          ></span>
+          {%- comment -%}
+             <span class="price-item price-item--regular rawsonBold lt featured-product-block-price">
+              {{ block.settings.product.price | money }}
+            </span>
+          {%- endcomment -%}
+          <p class="featured-product-block-description">{{ block.settings.product.description }}</p>
+          <a
+            class="custom-btn product-form__submit button button--primary"
+            href="{{ block.settings.product.url }}"
+            >SHOP NOW</a
+          >
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "settings": [
+    {
+      "type": "range",
+      "id": "space_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Space Top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "space_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Space Bottom",
+      "default": 50
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "name": "Product",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products"
+    }
+  ]
+}
+{% endschema %}

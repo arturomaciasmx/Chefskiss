@@ -1,10 +1,20 @@
 {
   "sections": {
+    "dca684f3-5bda-4395-ae45-0bde24b60d50": {
+      "type": "article-header",
+      "settings": {
+        "heading": "",
+        "text": "",
+        "button_link": "",
+        "button_text": ""
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
         "featured_image": {
           "type": "featured_image",
+          "disabled": true,
           "settings": {
             "image_height": "adapt"
           }
@@ -73,6 +83,7 @@
     }
   },
   "order": [
+    "dca684f3-5bda-4395-ae45-0bde24b60d50",
     "main",
     "1642928352037f60ca",
     "164292731030f9ff8d"

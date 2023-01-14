@@ -152,6 +152,10 @@ p {
   object-fit: cover;
 }
 
+.pastabilities p {
+  max-width: 400px;
+}
+
 .compare-section .btn-box .custom-btn {
   display: inline-block;
 }
@@ -360,7 +364,7 @@ a.custom-btn {
 }
 
 a.header__menu-item.header__menu-item.list-menu__item.link {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.2em;
   line-height: 22px;
@@ -466,6 +470,18 @@ a.header__menu-item.header__menu-item.list-menu__item.link span:hover {
   margin-top: -20px;
 }
 
+.oversize-image {
+  align-items: center;
+}
+
+.oversize-image .content-img img {
+  margin-left: -30%;
+}
+
+.oversize-image .content {
+  padding-left: 60px !important;
+}
+
 /* 
 **
 **
@@ -490,6 +506,16 @@ a.header__menu-item.header__menu-item.list-menu__item.link span:hover {
 }
 
 .atc-with-quantity {
+  display: block !important;
+  margin: 40px 0;
+}
+
+.qtybox {
+  display: flex;
+  align-items: center;
+}
+
+.product-form form {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1005,7 +1031,11 @@ input#NewsletterForm--footer {
   border: none !important;
   box-shadow: unset;
   background: white;
-  padding: 26px 40px !important;
+  padding: 26px 15px !important;
+}
+
+.newsletter-form__message--success {
+  bottom: -30% !important;
 }
 
 .checkbox {
@@ -1114,6 +1144,25 @@ body.gradient.collection #shopify-section-header>div>header>nav>ul>li:nth-child(
   color: #dba036 !important;
 }
 
+/* 
+**
+**
+**
+** ==============================
+** ==============================
+** Blogs page 
+** ==============================
+** ==============================
+**
+**
+**
+*/
+
+.article-card__title {
+  font-size: 25px !important;
+}
+
+
 @media only screen and (min-width: 751px) {
   section#shopify-section-template--15285240004794__164015303893c45fcd {
     margin-top: 20px;
@@ -1138,6 +1187,7 @@ body.gradient.collection #shopify-section-header>div>header>nav>ul>li:nth-child(
   .main-blog {
     width: 80%;
   }
+
 
   div.healthy-item-content>div:nth-child(1) {
     padding-right: 30px;
@@ -1934,6 +1984,15 @@ ul.compare-other li span {
   .product-grid.grid--3-col-desktop .grid__item {
     max-width: 50%;
   }
+
+  .oversize-image .content-img img {
+    width: 100% !important;
+    margin-left: 0;
+  }
+
+  .oversize-image .content {
+    padding-left: 10px !important;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1976,6 +2035,10 @@ ul.compare-other li span {
   .Pasta-content .inner-content {
     font-size: 12px !important;
     margin-top: -15px;
+  }
+
+  .pastabilities p {
+    margin: auto;
   }
 
   /* #pastabilities */

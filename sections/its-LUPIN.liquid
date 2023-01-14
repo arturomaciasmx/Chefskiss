@@ -1,133 +1,137 @@
 <section class="lupin-section page-width">
-    <div class="Lupin-box">
-        <div class="heading-area">
-            <p class="section-subHeading rawsonBold yellow uppercase text-center lt">{{section.settings.subHeading}}</p>
-            <h2 class="section-heading text-center recoletaRegular">{{section.settings.heading}}</h2>
-        </div>
-        <div class="image-with-conten">
-            <img  class="lupin-img"src="{{section.settings.image | img_url: 'master'}}" alt="">
-            <h3 class="heading recoletaRegular">{{section.settings.inner-heading}}</h3>
-            <p class="heading" style="margin-bottom: 60px;">{{section.settings.inner-content}}</p>
-        </div>
-
-       <div class="btn-box">
- <a href="https://chefskiss.myshopify.com/pages/shop" class="button custom-btn">SEE OUR PRODUCTS</a>
-  </div>
+  <div class="Lupin-box">
+    <div class="heading-area">
+      <p class="section-subHeading rawsonBold yellow uppercase text-center lt">{{ section.settings.subHeading }}</p>
+      <h2 class="section-heading text-center recoletaRegular">{{ section.settings.heading }}</h2>
     </div>
+    <div class="image-with-conten">
+      <img class="lupin-img" src="{{section.settings.image | img_url: 'master'}}" alt="">
+      <h3 class="heading recoletaRegular">{{ section.settings['inner-heading'] }}</h3>
+      <p class="heading" style="margin-bottom: 60px;">{{ section.settings['inner-content'] }}</p>
+    </div>
+
+    <div class="btn-box">
+      <a href="https://chefskiss.myshopify.com/pages/shop" class="button custom-btn">SEE OUR PRODUCTS</a>
+    </div>
+  </div>
 </section>
 
 <style>
-  .secton-its-lupin{
-    background:{{section.settings.bg-color}};
-      padding:{{section.settings.padding}}px 0;
-  
-  }
-  .lupin-img {
-    width: 100%;
-    max-width: 620px;
-
-  }
-  @media screen and (min-width: 750px) {
-  .Lupin-box .heading-area p{
-  	font-size:{{section.settings.subheading_font_size}};
-  }
-  .Lupin-box .heading-area h2{
-  	font-size:{{section.settings.heading_font_size}};
-  }
-    .Lupin-box .image-with-conten h3{
-      font-size:{{section.settings.inner_heading_font_size}};
+    .secton-its-lupin{
+      background:{{ section.settings.bg-color }};
+      padding:{{ section.settings.padding }}px 0;
     }
-    .Lupin-box .image-with-conten p{
-    	font-size:{{section.settings.inner_content_font_size}};
+    .lupin-section {
+      overflow: hidden;
     }
-    .Lupin-box .lupin-slider .lupin-block p{
-    	font-size:{{section.settings.block_content_font_size}};
+    .lupin-section .image-with-conten {
+      max-width: none;
     }
-    .lupin-block svg path{
-    	transition: all .3s;
+    .lupin-img {
+      width: 140%;
+      margin-left: -20%;
+      mix-blend-mode: darken;
     }
-    .lupin-block:hover svg path {
-    fill: #DBA036;
-}
+    @media screen and (min-width: 750px) {
+    .Lupin-box .heading-area p{
+    	font-size:{{section.settings.subheading_font_size}};
+    }
+    .Lupin-box .heading-area h2{
+    	font-size:{{section.settings.heading_font_size}};
+    }
+      .Lupin-box .image-with-conten h3{
+        font-size:{{section.settings.inner_heading_font_size}};
+      }
+      .Lupin-box .image-with-conten p{
+      	font-size:{{section.settings.inner_content_font_size}};
+      }
+      .Lupin-box .lupin-slider .lupin-block p{
+      	font-size:{{section.settings.block_content_font_size}};
+      }
+      .lupin-block svg path{
+      	transition: all .3s;
+      }
+      .lupin-block:hover svg path {
+      fill: #DBA036;
   }
-   @media screen and (max-width: 749px) {
-  .Lupin-box .heading-area p{
-  	font-size:{{section.settings.mtitle_font}};
-  }
-  .Lupin-box .heading-area h2{
-  	font-size:{{section.settings.mtitle_font}};
-  }
-     .Lupin-box .image-with-conten h3{
-      font-size:{{section.settings.minner_heading_font_size}};
     }
-    .Lupin-box .image-with-conten p{
-    	font-size:{{section.settings.minner_content_font_size}};
+     @media screen and (max-width: 749px) {
+    .Lupin-box .heading-area p{
+    	font-size:{{section.settings.mtitle_font}};
     }
-     .Lupin-box .lupin-slider .lupin-block p{
-    	font-size:{{section.settings.mblock_content_font_size}};
+    .Lupin-box .heading-area h2{
+    	font-size:{{section.settings.mtitle_font}};
     }
-     .lupin-block.slick-active svg path{
-     	fill: #DBA036;
-     }
-  }
+       .Lupin-box .image-with-conten h3{
+        font-size:{{section.settings.minner_heading_font_size}};
+      }
+      .Lupin-box .image-with-conten p{
+      	font-size:{{section.settings.minner_content_font_size}};
+      }
+       .Lupin-box .lupin-slider .lupin-block p{
+      	font-size:{{section.settings.mblock_content_font_size}};
+      }
+       .lupin-block.slick-active svg path{
+       	fill: #DBA036;
+       }
+    }
 </style>
-
 
 {% schema %}
 {
-"name": "Its lupin",
-"tag": "section",
-"class": "secton-its-lupin",
-"settings": [
-  {
-"type": "color",
-"id": "bg-color",
-"label": "Section Background"
-},
-{
-"type": "range",
-"id": "padding",
-"min": 0,
-"max": 250,
-"step": 5,
-"default": 50,
-"unit": "px",
-"label": "Section padding"
-},  
+  "name": "Its lupin",
+  "tag": "section",
+  "class": "secton-its-lupin",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Section Background"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 250,
+      "step": 5,
+      "default": 50,
+      "unit": "px",
+      "label": "Section padding"
+    },
     {
       "type": "text",
       "id": "subHeading",
       "label": "Section Sub-Heading"
     },
-	{
+    {
       "type": "text",
       "id": "heading",
       "label": "Section Heading"
     },
-	{
+    {
       "type": "header",
       "content": "Desktop font size"
     },
-	{
+    {
       "type": "text",
       "id": "subheading_font_size",
       "label": "Sub Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "heading_font_size",
       "label": " Heading Font Size"
     },
-	{
+    {
       "type": "header",
       "content": "Mobile font size"
     },
-	{
+    {
       "type": "text",
       "id": "msubheading_font_size",
       "label": "Sub Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "mheading_font_size",
       "label": "Heading Font Size"
@@ -147,73 +151,69 @@
       "id": "inner-content",
       "label": "Inner content"
     },
-	{
+    {
       "type": "header",
       "content": "Desktop font Size"
     },
-	{
+    {
       "type": "text",
       "id": "inner_heading_font_size",
       "label": "Inner Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "inner_content_font_size",
       "label": " Inner Content Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "block_content_font_size",
       "label": "Block Content Font Size"
     },
-	{
+    {
       "type": "header",
       "content": "Mobile font size"
     },
-	{
+    {
       "type": "text",
       "id": "minner_heading_font_size",
       "label": "Inner Heading Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "minner_content_font_size",
       "label": " Inner Content Font Size"
     },
-	{
+    {
       "type": "text",
       "id": "mblock_content_font_size",
       "label": "Block Content Font Size"
     }
-    ],
-    "blocks": [
+  ],
+  "blocks": [
     {
-    "type": "sider",
-    "name": "Slide content",
-    "settings": [
-    {
-    "type": "text",
-    "id": "svg_image",
-    "label": "Block Image",
-	"info" : "Use svg code not image"
-    },
-    {
-    "type": "text",
-    "id": "text",
-    "label": "Block content"
+      "type": "sider",
+      "name": "Slide content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "svg_image",
+          "label": "Block Image",
+          "info": "Use svg code not image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Block content"
+        }
+      ]
     }
-]
+  ],
+  "presets": [
+    {
+      "name": "Its LUPIN",
+      "blocks": []
+    }
+  ]
 }
-],
-"presets": [
-{
-"name": "Its LUPIN",
-"blocks": [
-
-
-]
-}
-]
-}
-
 {% endschema %}

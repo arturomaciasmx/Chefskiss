@@ -29,7 +29,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "BROUGHT TO YOU BY THE FOUNDER OF GNOODA",
+              "text": "BROUGHT TO YOU BY THE CO-FOUNDER OF GNOODA",
               "announcement_font": "",
               "color_scheme": "accent-2",
               "link": ""
@@ -111,6 +111,12 @@
     "blocks": {
       "16017602894386113438": {
         "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-store-key\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }

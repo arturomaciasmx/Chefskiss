@@ -28,7 +28,9 @@
     text-align: center!important;
   }   
   #shopify-section-{{ section.id }} .multicolumn {
-    background: url({{ section.settings.section_bg_img_mobile | img_url: "600x" }})!important;
+    {%- if section.settings.section_bg_img_mobile != blank -%}
+      background: url({{ section.settings.section_bg_img_mobile | img_url: "600x" }})!important;
+    {%- endif -%}
     background-size: cover!important;
     background-position: bottom!important;
     padding-bottom: 70px!important;

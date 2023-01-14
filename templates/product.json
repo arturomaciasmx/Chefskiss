@@ -53,6 +53,12 @@
             "product": "{{product}}"
           }
         },
+        "d9be648d-3e52-43d3-8d0f-e4e7b4c342ec": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for variant in product.variants %}\n{% if product.selected_or_first_available_variant.id == variant.id %}\n<p class=\"rawsonBold\">{{ variant. metafields.custom.per_serving_subscription }}\n<br>\n{{ variant. metafields.custom. per_serving_one_time }}\n<\/p>\n\n\n{% endif %}\n{% endfor %}\n<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.5.1\/jquery.min.js\"><\/script>\n<script type=\"text\/javascript\">\njQuery(document).ready(function($){\n$(\".no-js-hidden\").on(\"click\", function(){\nvar refreshint = setInterval(function(){\nlocation.reload();\n}, 1000);    });   });\n<\/script>"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -71,7 +77,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "NUTRITION",
-            "content": "<p>{{ product.metafields.custom.nutrition | metafield_tag }}<\/p>",
+            "content": "",
+            "image": "{{ product.metafields.custom.nutrition.value }}",
             "page": "",
             "icon": "none"
           }
@@ -95,6 +102,7 @@
         "quantity_selector",
         "buy_buttons",
         "1704ab9c-dd98-49aa-8812-6b873c066b79",
+        "d9be648d-3e52-43d3-8d0f-e4e7b4c342ec",
         "description",
         "dfc85cfe-d8d0-468e-8f4f-1a4cb8d936e6",
         "ddd424cd-f092-4f88-a054-42b97d0c9379",
@@ -135,6 +143,16 @@
         "include_margins": true
       }
     },
+    "f63d6d4e-8c18-4335-b6e9-d1e6fb3461c9": {
+      "type": "full-width-cta",
+      "settings": {
+        "cta_text": "LEAVE A REVIEW",
+        "bg_color": "",
+        "button_link": "https:\/\/junip.co\/forms\/review\/onsite\/product?product_id=1774663&store_key=P2VnCKLxMbRpUKtkQmP5V8uU",
+        "space_top": 0,
+        "space_bottom": 0
+      }
+    },
     "4c914242-78cc-492e-b4e2-2a856d5776f1": {
       "type": "image-divider",
       "settings": {
@@ -156,9 +174,9 @@
         "heading_font_size": "",
         "msubheading_font_size": "",
         "mheading_font_size": "",
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-11-07_at_15.11.18.png",
-        "inner-heading": "Meet the secret behind Chef’s Kiss Pasta",
-        "inner-content": "Lupin beans are a legume and part of the same family as chickpeas, lentils, and peas. This incredible bean originated in the Middle East thousands of years ago and today is commonly consumed across Mediterranean and Latin American Countries.",
+        "image": "shopify:\/\/shop_images\/learn-more-hero_copy_9a9a2138-b721-4507-aae0-f949a240d3f5.jpg",
+        "inner-heading": "Meet the secret behind Chef’s Kiss pasta",
+        "inner-content": "Lupin is a nutrient-dense legume related to chickpeas and lentils.  Our lupin beans undergo a proprietary and natural debittering process, leaving a more neutral, almost sweet, taste when compared to other lupin products. Through an exclusive partnership, we source our lupin directly from the Australian farmers who harvest our secret ingredient. This ensures that we’re providing our customers with the highest quality, best tasting, most nutritious lupin on the planet!",
         "inner_heading_font_size": "",
         "inner_content_font_size": "",
         "block_content_font_size": "",
@@ -246,10 +264,10 @@
           "type": "content",
           "settings": {
             "heading": "LOW CARB",
-            "big-text": "15x",
-            "content": "<p>LESS NET CARBS<\/p><p>THAN CHICKPEAS<\/p>",
-            "big-text-2": "26x",
-            "content-2": "<p>LESS NET CARBS<\/p><p>THAN CASSAVA FLOUR<\/p>",
+            "big-text": "93%",
+            "content": "<p>FEWER NET CARBS <br\/>THAN CHICKPEAS<\/p>",
+            "big-text-2": "96%",
+            "content-2": "<p>FEWER NET CARBS THAN CASSAVA FLOUR<\/p>",
             "icon": "shopify:\/\/shop_images\/Recurso_18.png"
           }
         },
@@ -304,6 +322,12 @@
         "space_top": 0,
         "space_bottom": 49
       }
+    },
+    "9d9513d5-dba4-4bc5-a5e5-030386143e04": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n #shopify-section-{{ section.id }} {\nmargin:0;\n}\n<\/style>\n\n\n{% if product.id == 7283315736762 %}\n<style>\n #shopify-section-{{ section.id }} {\nmargin:0;\nposition: absolute;\n    width: 100%;\n    height: 900px;\n    top: 130px;\n    z-index: 999;\n    backdrop-filter: \n    blur(4px);\n}\n.close-comingsoon {\n    cursor: pointer;\n    position: absolute;\n    right: 0;\n    width: 30px;\n    height: 30px;\n    background: #333;\n    z-index: 999999;\n    border-radius: 50px;\n    color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-weight: bold;\n    padding-bottom: 4px;\n}\n@media screen and (max-width: 760px) {\n#shopify-section-{{ section.id }} {\nheight: 1100px;\n}\n}\n@media screen and (max-width: 750px) {\n#shopify-section-{{ section.id }} {\nheight: 1700px;\n}\n}\n@media screen and (max-width: 530px) {\n#shopify-section-{{ section.id }} {\nheight: 1400px;\n}\n}\n@media screen and (max-width: 460px) {\n#shopify-section-{{ section.id }} {\ntop:120px;\nheight: 1350px;\n}\n}\n<\/style>\n<div style=\"max-width: 600px; margin: auto; padding-top: 200px; position:relative\">\n<span class=\"close-comingsoon\" onclick=\"document.getElementById('shopify-section-{{ section.id }}').style.display = 'none'\">x<\/span>\n<div class=\"klaviyo-form-VyFJMb\"><\/div>\n\n<\/div>\n\n{% endif %}\n\n<script>\nfunction close() {\nconsole.log(\"fasfsafasF\");\ndocument.getElementById(\"shopify-section-{{ section.id }}\").style.display = \"none\";\n}\n<\/script>"
+      }
     }
   },
   "order": [
@@ -311,11 +335,13 @@
     "1642924923612782d9",
     "16677942495b5a4e35",
     "16677942829673d6a8",
+    "f63d6d4e-8c18-4335-b6e9-d1e6fb3461c9",
     "4c914242-78cc-492e-b4e2-2a856d5776f1",
     "f50e1304-d799-4681-ac10-c946fc76b9da",
     "d436585e-a81e-4d67-b3d4-b8bbe925bd43",
     "product-recommendations",
     "1c15681f-1f4d-4838-9921-8462253942b7",
-    "dfce5692-017f-4692-83a1-4b7de34efca8"
+    "dfce5692-017f-4692-83a1-4b7de34efca8",
+    "9d9513d5-dba4-4bc5-a5e5-030386143e04"
   ]
 }

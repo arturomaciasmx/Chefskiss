@@ -2,13 +2,17 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
-
 {%- paginate blog.articles by 6 -%}
-
   <div class="main-blog page-width">
-    <h1 class="title--primary recoletaRegular text-center">The pastabilities are endless with Chef’s Kiss lupin pasta!</h1>
-    <p><center>Follow one of the simple and tasty recipes below or create your own and tag us at <a href="https://www.instagram.com/eatchefskiss/">@eatchefskiss</a>!</center></p>
-<!--     <div class="search-box">
+    <h1 class="title--primary recoletaRegular text-center">The possibilities are endless with Chef’s Kiss!</h1>
+    <p>
+      <center>
+        Follow one of the simple and tasty recipes below or create your own and tag us at
+        <a href="https://www.instagram.com/eatchefskiss/">@eatchefskiss</a>!
+      </center>
+    </p>
+    <!--
+      <div class="search-box">
        {%- if settings.predictive_search_enabled -%}
                 <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
               {%- endif -%}
@@ -58,14 +62,19 @@
               {%- if settings.predictive_search_enabled -%}
                 </predictive-search>
       {%- endif -%}
-      </div> -->
-    
-    
+      </div>
+    -->
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
-          {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+          {%- render 'article-card',
+            article: article,
+            image_height: section.settings.image_height,
+            show_image: section.settings.show_image,
+            show_date: section.settings.show_date,
+            show_author: section.settings.show_author
+          -%}
         </div>
       {%- endfor -%}
     </div>

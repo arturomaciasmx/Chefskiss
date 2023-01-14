@@ -1,148 +1,173 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
- {%- assign tag = article.image.alt -%}
+{%- assign tag = article.image.alt -%}
 {%- assign collection = collections[tag] -%}
 {%- assign product_limit = 1 -%}
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+
+<script>
+  window.onload = (event) => {
+  document.querySelector("li:nth-child(1) > img").classList.add('active-thumb');
+  };
   
+        function newLargeImage(x) {
+              let clickedImage = x.dataset.mediaId;
+              const newImage = document.querySelector(`[data-media-id="${clickedImage}"]`);
+              const parentData = newImage.parentElement;
+  
+              parentData.prepend(newImage);
+              newImage.style.display = "block";
+  
+  document.querySelectorAll('.slide-image')
+  .forEach(thumb => thumb. classList.remove('active-thumb'));
+  const sliderComp = document.querySelector("slider-component");
+  document.querySelector(`[data-media-id="${clickedImage}"] > img`).classList.add('active-thumb');
+  };
+  </script>
+</script>
 
-
+<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
         <div class="page-width page-width--narrow">
           {% render block %}
         </div>
-      {%- when 'featured_image'-%}
+      {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
+            <div
+              class="article-template__hero-{{ block.settings.image_height }} media"
               itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
+              {% if block.settings.image_height == 'adapt' and article.image %}
+                style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"
+              {% endif %}
             >
               <img
-                srcset="{% if article.image.width >= 350 %}{{ article.image | img_url: '350x' }} 350w,{% endif %}
+                srcset="
+                  {% if article.image.width >= 350 %}{{ article.image | img_url: '350x' }} 350w,{% endif %}
                   {% if article.image.width >= 750 %}{{ article.image | img_url: '750x' }} 750w,{% endif %}
                   {% if article.image.width >= 1100 %}{{ article.image | img_url: '1100x' }} 1100w,{% endif %}
                   {% if article.image.width >= 1500 %}{{ article.image | img_url: '1500x' }} 1500w,{% endif %}
                   {% if article.image.width >= 2200 %}{{ article.image | img_url: '2200x' }} 2200w,{% endif %}
                   {% if article.image.width >= 3000 %}{{ article.image | img_url: '3000x' }} 3000w,{% endif %}
-                  {{ article.image | img_url: 'master' }} {{ article.image.width }}w"
+                  {{ article.image | img_url: 'master' }} {{ article.image.width }}w
+                "
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
                 src="{{ article.image | img_url: '1100x' }}"
                 loading="lazy"
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}"
-                alt="{{ article.image.alt | escape }}">
+                alt="{{ article.image.alt | escape }}"
+              >
             </div>
           </div>
         {%- endif -%}
-
-        {%- when 'title'-%}
-          <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title recoletaRegular" itemprop="headline">{{ article.title | escape }}</h1>
-            {%- if block.settings.blog_show_date -%}
-              <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
-            {%- if block.settings.blog_show_author -%}
-              <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ article.author }}</span>
-              </span>
-            {%- endif -%}
-          </header>
-
-        {%- when 'content'-%}
-  			<div class="aritcle-with-product page-width rte">
- 				 <div class="ariticle-left">
-       				 <div class="excerpt-box">
-          				{%- if article.excerpt.size > 0 -%}
-           				 {{ article.excerpt  | truncatewords: 500 }} 
-          				{%- endif -%}   
-        			</div>
-				{% if collection.products.size > 0 %}
-
-    				<div class="product-card-blog mobile-hide">
-     
-      				{% for product in collection.products limit: product_limit  %}
-       				{% render 'product-card-blog',
-          				product_card_product: product,
-           				media_size: section.settings.image_ratio,
-            			show_secondary_image: section.settings.show_secondary_image,
-            			add_image_padding: section.settings.add_image_padding,
-            			show_vendor: section.settings.show_vendor,
-            			show_image_outline: section.settings.show_image_outline,
-            			show_rating: section.settings.show_rating
-          			%}
-      
-      				{% endfor %}
-    				</div>
-  				{%endif%}
-  				</div>
-              	<div class="article-template__content aritcle-right" itemprop="articleBody" {{ block.shopify_attributes }}>
-              	{{ article.content }}
-                  {% if collection.products.size > 0 %}
-
-    				<div class="product-card-blog desktop-hide">
-     
-      				{% for product in collection.products limit: product_limit  %}
-       				{% render 'product-card-blog',
-          				product_card_product: product,
-           				media_size: section.settings.image_ratio,
-            			show_secondary_image: section.settings.show_secondary_image,
-            			add_image_padding: section.settings.add_image_padding,
-            			show_vendor: section.settings.show_vendor,
-            			show_image_outline: section.settings.show_image_outline,
-            			show_rating: section.settings.show_rating
-          			%}
-      
-      				{% endfor %}
-    				</div>
-  				{%endif%}
-          	  	</div>
-			</div>
-        {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
-            <share-button class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden">
+      {%- when 'title' -%}
+        <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
+          <h1 class="article-template__title recoletaRegular" itemprop="headline">{{ article.title | escape }}</h1>
+          {%- if block.settings.blog_show_date -%}
+            <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">
+              {{- article.published_at | time_tag: format: 'date' -}}
+            </span>
+          {%- endif -%}
+          {%- if block.settings.blog_show_author -%}
+            <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ article.author }}</span>
+            </span>
+          {%- endif -%}
+        </header>
+      {%- when 'content' -%}
+        <div class="aritcle-with-product page-width rte">
+          <div class="ariticle-left">
+            <div class="excerpt-box">
+              {%- if article.excerpt.size > 0 -%}
+                {{ article.excerpt | truncatewords: 500 }}
+              {%- endif -%}
+            </div>
+            {% if collection.products.size > 0 %}
+              <div class="product-card-blog mobile-hide">
+                {% for product in collection.products limit: product_limit %}
+                  {% render 'product-card-blog',
+                    product_card_product: product,
+                    media_size: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    add_image_padding: section.settings.add_image_padding,
+                    show_vendor: section.settings.show_vendor,
+                    show_image_outline: section.settings.show_image_outline,
+                    show_rating: section.settings.show_rating
+                  %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          <div class="article-template__content aritcle-right" itemprop="articleBody" {{ block.shopify_attributes }}>
+            {{ article.content }}
+            {% if collection.products.size > 0 %}
+              <div class="product-card-blog desktop-hide">
+                {% for product in collection.products limit: product_limit %}
+                  {% render 'product-card-blog',
+                    product_card_product: product,
+                    media_size: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    add_image_padding: section.settings.add_image_padding,
+                    show_vendor: section.settings.show_vendor,
+                    show_image_outline: section.settings.show_image_outline,
+                    show_rating: section.settings.show_rating
+                  %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {%- when 'share' -%}
+        <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
+          <share-button class="share-button" {{ block.shopify_attributes }}>
+            <button class="share-button__button hidden">
+              {% render 'icon-share' %}
+              {{ block.settings.share_label | escape }}
+            </button>
+            <details id="Details-{{ block.id }}-{{ section.id }}">
+              <summary class="share-button__button">
                 {% render 'icon-share' %}
                 {{ block.settings.share_label | escape }}
-              </button>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
-                <summary class="share-button__button">
-                  {% render 'icon-share' %}
-                  {{ block.settings.share_label | escape }}
-                </summary>
-                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                  <div class="field">
-                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                    </span>
-                    <input type="text"
-                          class="field__input"
-                          id="url"
-                          value="{{ shop.url | append: article.url }}"
-                          placeholder="{{ 'general.share.share_url' | t }}"
-                          onclick="this.select();"
-                          readonly
-                    >
-                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                  </div>
-                  <button class="share-button__close hidden no-js-hidden">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                  </button>
-                  <button class="share-button__copy no-js-hidden">
-                    {% render 'icon-clipboard' %}
-                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                  </button>
+              </summary>
+              <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                <div class="field">
+                  <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status"> </span>
+                  <input
+                    type="text"
+                    class="field__input"
+                    id="url"
+                    value="{{ shop.url | append: article.url }}"
+                    placeholder="{{ 'general.share.share_url' | t }}"
+                    onclick="this.select();"
+                    readonly
+                  >
+                  <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
                 </div>
-              </details>
-            </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-          </div>
+                <button class="share-button__close hidden no-js-hidden">
+                  {% render 'icon-close' %}
+                  <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                </button>
+                <button class="share-button__copy no-js-hidden">
+                  {% render 'icon-clipboard' %}
+                  <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                </button>
+              </div>
+            </details>
+          </share-button>
+          <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+        </div>
     {%- endcase -%}
   {%- endfor -%}
+  {{ 'product-slider.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+  
 
   <div class="element-margin center">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
+    <a
+      href="{{ blog.url }}"
+      class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}"
+    >
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
     </a>
@@ -153,7 +178,9 @@
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
 
-          <h2 id="Comments-{{ article.id }}" tabindex="-1">{{ 'blogs.article.comments' | t: count: article.comments_count }}</h2>
+          <h2 id="Comments-{{ article.id }}" tabindex="-1">
+            {{ 'blogs.article.comments' | t: count: article.comments_count }}
+          </h2>
           {% paginate article.comments by 5 %}
             <div class="article-template__comments">
               {%- if comment.status == 'pending' and comment.content -%}
@@ -169,7 +196,10 @@
                 <article id="{{ comment.id }}" class="article-template__comments-comment">
                   {{ comment.content }}
                   <footer class="right">
-                    <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span><span class="caption-with-letter-spacing">{{ comment.created_at | time_tag: format: 'date' }}</span>
+                    <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span
+                    ><span class="caption-with-letter-spacing">
+                      {{- comment.created_at | time_tag: format: 'date' -}}
+                    </span>
                   </footer>
                 </article>
               {%- endfor -%}
@@ -188,7 +218,8 @@
           {%- if form.errors -%}
             <div class="form__message" role="alert">
               <h3 class="form-status caption-large text-body" tabindex="-1" autofocus>
-                {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
+                {% render 'icon-error' %}
+                {{ 'templates.contact.form.error_heading' | t }}
               </h3>
             </div>
             <ul class="form-status-list caption-large">
@@ -197,8 +228,8 @@
                   <a href="#CommentForm-{{ field }}" class="link">
                     {%- if form.errors.translated_fields[field] contains 'author' -%}
                       {{ 'blogs.article.name' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'body'-%}
-                     {{ 'blogs.article.message' | t }}
+                    {%- elsif form.errors.translated_fields[field] contains 'body' -%}
+                      {{ 'blogs.article.message' | t }}
                     {%- else -%}
                       {{ form.errors.translated_fields[field] }}
                     {%- endif -%}
@@ -209,11 +240,18 @@
             </ul>
           {%- elsif form.posted_successfully? -%}
             <div class="form-status-list form__message" role="status">
-              <h3 class="form-status" tabindex="-1" autofocus>{% render 'icon-success' %} {{ post_message | t }}</h3>
+              <h3 class="form-status" tabindex="-1" autofocus>
+                {% render 'icon-success' %}
+                {{ post_message | t }}
+              </h3>
             </div>
           {%- endif -%}
 
-          <div{% if blog.moderated? == false %} class="article-template__comments-fields"{% endif %}>
+          <div
+            {% if blog.moderated? == false %}
+              class="article-template__comments-fields"
+            {% endif %}
+          >
             <div class="article-template__comment-fields">
               <div class="field field--with-error">
                 <input
@@ -230,10 +268,17 @@
                   {% endif %}
                   placeholder="{{ 'blogs.article.name' | t }}"
                 >
-                <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }} <span aria-hidden="true">*</span></label>
+                <label class="field__label" for="CommentForm-author">
+                  {{- 'blogs.article.name' | t }}
+                  <span aria-hidden="true">*</span></label
+                >
                 {%- if form.errors contains 'author' -%}
                   <small id="CommentForm-author-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span>
+                    <span class="form__message">
+                      {%- render 'icon-error' -%}
+                      {{- 'blogs.article.name' | t }}
+                      {{ form.errors.messages.author }}.</span
+                    >
                   </small>
                 {%- endif -%}
               </div>
@@ -254,10 +299,17 @@
                   {% endif %}
                   placeholder="{{ 'blogs.article.email' | t }}"
                 >
-                <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }} <span aria-hidden="true">*</span></label>
+                <label class="field__label" for="CommentForm-email">
+                  {{- 'blogs.article.email' | t }}
+                  <span aria-hidden="true">*</span></label
+                >
                 {%- if form.errors contains 'email' -%}
                   <small id="CommentForm-email-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span>
+                    <span class="form__message">
+                      {%- render 'icon-error' -%}
+                      {{- 'blogs.article.email' | t }}
+                      {{ form.errors.messages.email }}.</span
+                    >
                   </small>
                 {%- endif -%}
               </div>
@@ -275,11 +327,18 @@
                 {% endif %}
                 placeholder="{{ 'blogs.article.message' | t }}"
               >{{ form.body }}</textarea>
-                <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }} <span aria-hidden="true">*</span></label>
+              <label class="form__label field__label" for="CommentForm-body">
+                {{- 'blogs.article.message' | t }}
+                <span aria-hidden="true">*</span></label
+              >
             </div>
             {%- if form.errors contains 'body' -%}
               <small id="CommentForm-body-error">
-                <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span>
+                <span class="form__message">
+                  {%- render 'icon-error' -%}
+                  {{- 'blogs.article.message' | t }}
+                  {{ form.errors.messages.body }}.</span
+                >
               </small>
             {%- endif -%}
           </div>
@@ -289,7 +348,7 @@
           <input type="submit" class="button" value="{{ 'blogs.article.post' | t }}">
         {% endform %}
       </div>
-  </div>
+    </div>
   {%- endif -%}
 </article>
 
@@ -332,8 +391,7 @@
       "name": {{ shop.name | json }}
     }
   }
-  </script>
-
+</script>
 
 {% schema %}
 {

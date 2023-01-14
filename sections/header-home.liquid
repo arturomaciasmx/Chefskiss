@@ -1,0 +1,213 @@
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+<style>
+    header {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+    #shopify-section-{{ section.id }} {
+
+    }
+    .header-slider {
+      height: 600px;
+      display: flex;
+      align-items: center;
+    }
+    .header-home-content-container {
+      position: relative;
+      z-index: 2;
+      width: 1200px;
+      padding-top: 80px;
+    }
+    .splide__track {
+      position: absolute;
+      top: 0px;
+      height: 100%;
+    }
+    .splide__slide img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: left center;
+    }
+    .header-home-content {
+      width: 50%;
+      position: relative;
+    }
+    .header-home-content p {
+      margin-top: 20px;
+      max-width: 450px;
+    }
+    .header-home-content a {
+      display: inline-block;
+      margin-top: 30px;
+    }
+    .mobile-slide {
+      display: none;
+    }
+    .Hero-heading {
+      max-width: 420px;
+    }
+  @media screen and (max-width: 750px) {
+    .header-slider {
+      height: 900px;
+      align-items: flex-start;
+    }
+    .header-home-content-container {
+      padding-top: 100px;
+    }
+    .header-home-content {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+    .mobile-slide {
+      display: block;
+    }
+    .desktop_slide {
+      display: none;
+    }
+
+    .splide__slide img {
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+</style>
+
+<div class="header-home">
+  <div class="header-slider splide">
+    <div class="page-width header-home-content-container">
+      <div class="header-home-content">
+        <h1 class="Hero-heading recoletaRegular h1">
+          {{ section.settings.heading }}
+        </h1>
+        <p class="rawson">{{ section.settings.text | escape }}</p>
+        <a class="custom-btn rawsonBold" role="link" href="{{ section.settings.button_link }}">
+          {{ section.settings.button_text | escape }}
+        </a>
+      </div>
+    </div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img class="desktop_slide" src="{{ section.settings.bg_1 | image_url: width: '2000px' }}" alt="">
+          <img class="mobile_slide" src="{{ section.settings.bg_1_mobile | image_url: width: '800px' }}" alt="">
+        </li>
+        <li class="splide__slide">
+          <img class="desktop_slide" src="{{ section.settings.bg_2 | image_url: width: '2000px' }}" alt="">
+          <img class="mobile_slide" src="{{ section.settings.bg_2_mobile | image_url: width: '800px' }}" alt="">
+        </li>
+        <li class="splide__slide">
+          <img class="desktop_slide" src="{{ section.settings.bg_3 | image_url: width: '2000px' }}" alt="">
+          <img class="mobile_slide" src="{{ section.settings.bg_3_mobile | image_url: width: '800px' }}" alt="">
+        </li>
+        <li class="splide__slide">
+          <img class="desktop_slide" src="{{ section.settings.bg_4 | image_url: width: '2000px' }}" alt="">
+          <img class="mobile_slide" src="{{ section.settings.bg_4_mobile | image_url: width: '800px' }}" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  new Splide('.splide', {
+    type: 'fade',
+    arrows: false,
+    pagination: false,
+    rewind: true,
+    perPage: 1,
+    autoplay: 'play',
+    interval: 3000,
+    speed: 2000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+  }).mount();
+</script>
+
+{% schema %}
+{
+  "name": "Header Home",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading Text"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "number",
+      "id": "space_top",
+      "label": "Space Top"
+    },
+    {
+      "type": "number",
+      "id": "space_bottom",
+      "label": "Space Bottom"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_1",
+      "label": "Background 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_2",
+      "label": "Background 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_3",
+      "label": "Background 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_4",
+      "label": "Background 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_1_mobile",
+      "label": "Background Mobile 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_2_mobile",
+      "label": "Background Mobile 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_3_mobile",
+      "label": "Background Mobile 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_4_mobile",
+      "label": "Background Mobile 4"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header Home"
+    }
+  ]
+}
+{% endschema %}
